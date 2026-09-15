@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuha Home Care — Layanan Kesehatan &amp; Perawatan ke Rumah 24 Jam</title>
+<meta name="description" content="Yuha Home Care melayani tes lab, infus vitamin booster, pemasangan infus, perawatan luka, pemasangan selang NGT &amp; kateter, sampai perawatan pasien dengan alat bantu di rumah. Layanan 24 jam, pesan lewat WhatsApp.">
+<meta name="theme-color" content="#0A473F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yuha Home Care">
+<meta property="og:title" content="Yuha Home Care — Layanan Kesehatan &amp; Perawatan ke Rumah 24 Jam">
+<meta property="og:description" content="Tes lab, infus vitamin booster, perawatan luka, pemasangan selang, dan perawatan pasien dengan alat bantu — langsung di rumah Anda.">
+<meta property="og:image" content="logo-yuha-homecare.png">
+<meta property="og:url" content="https://yuhahomecare.my.id/">
+<link rel="canonical" href="https://yuhahomecare.my.id/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' rx='46' fill='%230A473F'/%3E%3Cg fill='none' stroke='%23BFA05A' stroke-width='13' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M120 148 C 106 134 80 120 80 105 C 80 93 89 87 98 87 C 107 87 115 92 120 100 C 125 92 133 87 142 87 C 151 87 160 93 160 105 C 160 120 134 134 120 148'/%3E%3Cpath d='M88 112 C 78 108 70 114 70 124 C 56 140 52 164 62 182 C 70 195 82 202 94 206'/%3E%3Cpath d='M152 112 C 162 108 170 114 170 124 C 184 140 188 164 178 182 C 170 195 158 202 146 206'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeHealthCareService",
+  "name": "Yuha Home Care",
+  "url": "https://yuhahomecare.my.id/",
+  "telephone": "+6281218146814",
+  "slogan": "Kesehatan & Kenyamanan di Rumah Anda",
+  "description": "Layanan kesehatan dan perawatan ke rumah: tes laboratorium, infus vitamin booster, pemasangan infus, perawatan luka, pemasangan selang NGT dan selang kencing, serta perawatan pasien dengan alat bantu.",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Layanan Yuha Home Care",
+    "itemListElement": [
+      {"@type":"Offer","name":"Paket Tes Lab Lengkap","price":"1500000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Paket Tes Lab Standar","price":"250000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Infus Cernevit","price":"700000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Infus Neurobion","price":"500000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Infus Paket Keluarga dengan Neurobion","price":"350000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Jasa Pemasangan Infus","price":"200000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Jasa Perawatan Luka","price":"200000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Jasa Pemasangan Selang Kencing","price":"200000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Jasa Pemasangan Selang NGT","price":"200000","priceCurrency":"IDR"},
+      {"@type":"Offer","name":"Perawatan di Rumah dengan Alat Bantu (3 shift perawat)","price":"1500000","priceCurrency":"IDR"}
+    ]
+  }
+}
+</script>
+<style>
+  :root{
+    --hijau:#0A473F;
+    --hijau-tua:#06332D;
+    --hijau-muda:#0F5A4F;
+    --emas:#BFA05A;
+    --emas-muda:#D9C48E;
+    --krem:#F5F6F1;
+    --krem-2:#EDEFE7;
+    --tinta:#122320;
+    --abu:#6B7A74;
+    --putih:#FFFFFF;
+    --radius:20px;
+    --shadow:0 18px 45px -28px rgba(6,51,45,.45);
+    --max:1160px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color:var(--tinta);
+    background:var(--krem);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:600;line-height:1.22;margin:0}
+  h2{font-size:clamp(1.55rem,3.4vw,2.35rem);color:var(--hijau)}
+  .lead{color:var(--abu);font-size:1.02rem}
+  .eyebrow{
+    display:inline-block;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--emas);font-weight:700;margin-bottom:14px;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;justify-content:center;
+    padding:14px 24px;border-radius:999px;font-weight:600;font-size:.96rem;
+    border:1px solid transparent;transition:.22s ease;cursor:pointer;
+  }
+  .btn-wa{background:var(--hijau);color:#fff;box-shadow:var(--shadow)}
+  .btn-wa:hover{background:var(--hijau-tua);transform:translateY(-2px)}
+  .btn-ghost{border-color:rgba(10,71,63,.22);color:var(--hijau);background:#fff}
+  .btn-ghost:hover{border-color:var(--emas);color:var(--hijau-tua)}
+  .btn-gold{background:var(--emas);color:#3A2E12}
+  .btn-gold:hover{background:#CBAE6C;transform:translateY(-2px)}
+  .ic{width:19px;height:19px;flex:0 0 auto}
+
+  /* HEADER */
+  header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(245,246,241,.88);backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(10,71,63,.09);
+  }
+  .nav{display:flex;align-items:center;gap:18px;height:76px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .mark{width:44px;height:44px}
+  .brand b{font-family:'Cinzel',Georgia,serif;font-weight:500;font-size:1.24rem;color:var(--hijau);letter-spacing:.1em;display:block;line-height:1}
+  .brand span{font-size:.6rem;letter-spacing:.3em;color:var(--abu);text-transform:uppercase}
+  nav.menu{margin-left:auto;display:none;gap:28px;font-size:.93rem;color:var(--hijau);font-weight:500}
+  nav.menu a:hover{color:var(--emas)}
+  .head-cta{display:none}
+  @media(min-width:1000px){nav.menu,.head-cta{display:flex}}
+  .burger{margin-left:auto;background:none;border:0;padding:8px;cursor:pointer}
+  .burger span{display:block;width:24px;height:2px;background:var(--hijau);margin:5px 0;border-radius:2px}
+  @media(min-width:1000px){.burger{display:none}}
+  .menu-mobile{display:none;border-top:1px solid rgba(10,71,63,.08);background:var(--krem);padding:12px 0 22px}
+  .menu-mobile.open{display:block}
+  .menu-mobile a{display:block;padding:11px 4px;color:var(--hijau);font-weight:500;border-bottom:1px solid rgba(10,71,63,.06)}
+  .menu-mobile .btn{margin-top:14px;width:100%}
+
+  /* HERO */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(1000px 480px at 88% -8%,rgba(191,160,90,.22),transparent 62%),
+      radial-gradient(760px 420px at -8% 18%,rgba(10,71,63,.10),transparent 60%),
+      var(--krem);
+    padding:64px 0 72px;
+  }
+  .hero-grid{display:grid;gap:44px;align-items:center}
+  @media(min-width:980px){.hero-grid{grid-template-columns:1.08fr .92fr;gap:56px}.hero{padding:82px 0 92px}}
+  .hero h1{font-size:clamp(2.05rem,5.1vw,3.5rem);color:var(--hijau);letter-spacing:-.4px}
+  .hero h1 em{font-style:normal;color:var(--emas);display:block}
+  .hero p.lead{margin:20px 0 28px;max-width:52ch}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+  .trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;padding-top:26px;border-top:1px solid rgba(10,71,63,.12)}
+  .chip{
+    display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(10,71,63,.1);
+    border-radius:999px;padding:9px 15px;font-size:.83rem;color:var(--hijau);font-weight:500;
+  }
+  .chip svg{width:16px;height:16px;color:var(--emas)}
+
+  .hero-card{
+    background:#fff;border-radius:26px;padding:30px;box-shadow:0 34px 70px -46px rgba(6,51,45,.6);
+    border:1px solid rgba(10,71,63,.07);
+  }
+  .hero-card .top{display:flex;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px dashed rgba(10,71,63,.16)}
+  .hero-card .top .mark{width:56px;height:56px}
+  .hero-card .top b{display:block;font-family:'Cinzel',Georgia,serif;color:var(--hijau);letter-spacing:.08em;font-size:1.05rem}
+  .hero-card .top small{color:var(--abu);letter-spacing:.16em;text-transform:uppercase;font-size:.62rem}
+  .hero-card ul{list-style:none;margin:20px 0 24px;padding:0;display:grid;gap:14px}
+  .hero-card li{display:flex;gap:12px;font-size:.94rem;color:#28403B}
+  .tick{width:22px;height:22px;border-radius:50%;background:rgba(191,160,90,.16);color:var(--emas);display:grid;place-items:center;flex:0 0 auto;margin-top:2px}
+  .tick svg{width:13px;height:13px}
+  .hero-card .note{font-size:.76rem;color:var(--abu);margin-top:14px;text-align:center}
+
+  /* SECTION */
+  section{padding:76px 0}
+  section.alt{background:#fff}
+  .head{max-width:640px;margin-bottom:44px}
+  .head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .grid{display:grid;gap:22px}
+  @media(min-width:720px){.g2{grid-template-columns:1fr 1fr}}
+  @media(min-width:980px){.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}}
+
+  .card{
+    background:#fff;border:1px solid rgba(10,71,63,.09);border-radius:var(--radius);
+    padding:28px;transition:.25s ease;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(191,160,90,.5)}
+  .card h3{font-size:1.18rem;color:var(--hijau);margin-bottom:10px}
+  .card p{color:var(--abu);font-size:.93rem;margin:0}
+  .ico{
+    width:52px;height:52px;border-radius:15px;display:grid;place-items:center;margin-bottom:18px;
+    background:linear-gradient(150deg,rgba(10,71,63,.1),rgba(191,160,90,.18));color:var(--hijau);
+  }
+  .ico svg{width:26px;height:26px}
+  .card ul.mini{margin:14px 0 0;padding-left:18px;color:#3A5049;font-size:.92rem}
+  .card ul.mini li{margin-bottom:6px}
+
+  /* HARGA */
+  .price-card{background:#fff;border:1px solid rgba(10,71,63,.09);border-radius:22px;padding:0;overflow:hidden;display:flex;flex-direction:column}
+  .price-card .pc-head{padding:22px 26px;background:linear-gradient(135deg,rgba(10,71,63,.055),rgba(191,160,90,.16));border-bottom:1px solid rgba(10,71,63,.08)}
+  .price-card .pc-head h3{font-size:1.1rem;color:var(--hijau);margin:0}
+  .price-card .pc-head span{font-size:.8rem;color:var(--abu);display:block;margin-top:4px}
+  .rows{list-style:none;margin:0;padding:8px 26px 22px}
+  .row{padding:15px 0;border-bottom:1px dashed rgba(10,71,63,.14)}
+  .row:last-child{border-bottom:0}
+  .row .r-top{display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+  .row b{font-weight:600;font-size:.96rem;color:#25403A;display:block}
+  .row .price{font-family:'Playfair Display',Georgia,serif;color:var(--hijau);font-size:1.12rem;white-space:nowrap}
+  .row .price small{font-family:'Plus Jakarta Sans',sans-serif;font-size:.72rem;color:var(--abu);display:block;text-align:right}
+  .row .det{font-size:.82rem;color:var(--abu);margin-top:5px;line-height:1.55}
+  .row .r-link{display:inline-flex;align-items:center;gap:6px;margin-top:9px;font-size:.8rem;font-weight:600;color:var(--emas)}
+  .row .r-link:hover{color:var(--hijau)}
+  .price-note{margin-top:26px;background:rgba(191,160,90,.12);border:1px solid rgba(191,160,90,.35);border-radius:16px;padding:18px 22px;font-size:.86rem;color:#4A3F22}
+
+  /* LANGKAH */
+  .steps{counter-reset:s;display:grid;gap:20px}
+  @media(min-width:900px){.steps{grid-template-columns:repeat(4,1fr)}}
+  .step{background:#fff;border:1px solid rgba(10,71,63,.09);border-radius:18px;padding:26px 24px;position:relative}
+  .step::before{
+    counter-increment:s;content:counter(s,decimal-leading-zero);
+    font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;color:var(--emas);
+    display:block;margin-bottom:12px;letter-spacing:.06em;
+  }
+  .step h3{font-size:1.02rem;color:var(--hijau);margin-bottom:8px}
+  .step p{font-size:.9rem;color:var(--abu);margin:0}
+
+  /* FAQ */
+  details.faq{background:#fff;border:1px solid rgba(10,71,63,.09);border-radius:16px;padding:4px 22px;margin-bottom:12px}
+  details.faq summary{
+    cursor:pointer;list-style:none;padding:18px 30px 18px 0;position:relative;
+    font-weight:600;color:var(--hijau);font-size:.98rem;
+  }
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{
+    content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+    color:var(--emas);font-size:1.4rem;line-height:1;transition:.2s
+  }
+  details.faq[open] summary::after{content:"–"}
+  details.faq p{margin:0 0 20px;color:var(--abu);font-size:.92rem}
+
+  /* FORM WA */
+  .wa-box{
+    background:linear-gradient(150deg,var(--hijau) 0%,var(--hijau-tua) 100%);
+    color:#fff;border-radius:26px;padding:40px;position:relative;overflow:hidden;
+  }
+  .wa-box::after{
+    content:"";position:absolute;width:320px;height:320px;right:-120px;bottom:-160px;border-radius:50%;
+    background:radial-gradient(circle,rgba(191,160,90,.38),transparent 70%);
+  }
+  .wa-grid{display:grid;gap:34px;position:relative}
+  @media(min-width:900px){.wa-grid{grid-template-columns:1fr 1fr;align-items:center}}
+  .wa-box h2{color:#fff}
+  .wa-box p{color:rgba(255,255,255,.78)}
+  .wa-form{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:26px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--emas-muda);margin-bottom:8px}
+  .field input,.field select,.field textarea{
+    width:100%;padding:13px 15px;border-radius:12px;border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.96);font-family:inherit;font-size:.95rem;color:var(--tinta);
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--emas);outline-offset:1px}
+  .wa-form .btn{width:100%;margin-top:6px}
+  .wa-preview{font-size:.78rem;color:rgba(255,255,255,.68);margin-top:14px;line-height:1.5;word-break:break-word}
+
+  /* CTA strip */
+  .strip{background:var(--krem-2);text-align:center;padding:66px 0}
+  .strip h2{margin-bottom:12px}
+  .strip p{color:var(--abu);max-width:56ch;margin:0 auto 26px}
+  .strip .hero-actions{justify-content:center}
+
+  /* FOOTER */
+  footer{background:var(--hijau-tua);color:rgba(255,255,255,.72);padding:56px 0 34px;font-size:.9rem}
+  .foot-grid{display:grid;gap:32px}
+  @media(min-width:820px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+  footer .brand b{color:#fff}
+  footer .brand span{color:var(--emas-muda)}
+  footer h4{color:#fff;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;margin:0 0 16px}
+  footer a:hover{color:var(--emas-muda)}
+  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .copy{margin-top:38px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.8rem}
+
+  /* FLOAT WA */
+  .float{
+    position:fixed;right:18px;bottom:18px;z-index:80;display:inline-flex;align-items:center;gap:10px;
+    background:#25D366;color:#063D2E;font-weight:700;padding:14px 20px;border-radius:999px;
+    box-shadow:0 18px 40px -16px rgba(6,51,45,.6);
+  }
+  .float svg{width:24px;height:24px}
+  .float:hover{transform:translateY(-2px)}
+  .float .pulse{
+    position:absolute;inset:0;border-radius:999px;border:2px solid rgba(37,211,102,.6);
+    animation:p 2.4s infinite;pointer-events:none
+  }
+  @keyframes p{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.25);opacity:0}}
+  @media(max-width:520px){.float span{display:none}.float{padding:16px}}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .rv.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#atas" aria-label="Yuha Home Care">
+        <svg class="mark" viewBox="0 0 240 240" aria-hidden="true">
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <g stroke="#0A473F" stroke-width="11">
+              <path d="M32 122 L120 40 L208 122"/>
+              <path d="M52 110 V196 a15 15 0 0 0 15 15 H173 a15 15 0 0 0 15-15 V110"/>
+            </g>
+            <g stroke="#BFA05A" stroke-width="10">
+              <path d="M120 150 C 106 136 78 122 78 106 C 78 94 87 88 97 88 C 107 88 115 93 120 101 C 125 93 133 88 143 88 C 153 88 162 94 162 106 C 162 122 134 136 120 150"/>
+              <path d="M86 113 C 75 108 66 115 66 126 C 50 143 46 168 58 188 C 66 202 78 210 92 214 C 98 202 100 186 98 172"/>
+              <path d="M154 113 C 165 108 174 115 174 126 C 190 143 194 168 182 188 C 174 202 162 210 148 214 C 142 202 140 186 142 172"/>
+            </g>
+          </g>
+        </svg>
+        <span class="txt">
+          <b>YUHA</b>
+          <span>Home Care</span>
+        </span>
+      </a>
+
+      <nav class="menu">
+        <a href="#layanan">Layanan</a>
+        <a href="#harga">Harga</a>
+        <a href="#cara">Cara Pesan</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn btn-wa head-cta" data-wa="Halo Yuha Home Care, saya ingin menanyakan layanan perawatan di rumah." target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.42 1.31-1.96 1.36-.5.05-.97.24-3.3-.7-2.8-1.13-4.55-3.99-4.69-4.18-.14-.19-1.12-1.5-1.12-2.86 0-1.36.71-2.03.96-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.79 1.92.86 2.06.07.14.12.3.02.48-.09.19-.5.71-.66.9-.14.17-.29.36-.12.64.17.28.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.28.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.28.38-.23.64-.14.26.09 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.7-.16 1.38Z"/></svg>
+        Chat WhatsApp
+      </a>
+
+      <button class="burger" aria-label="Buka menu" aria-expanded="false" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="menu-mobile" id="menuMobile">
+    <div class="wrap">
+      <a href="#layanan">Layanan</a>
+      <a href="#harga">Harga</a>
+      <a href="#cara">Cara Pesan</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-wa" data-wa="Halo Yuha Home Care, saya ingin menanyakan layanan perawatan di rumah." target="_blank" rel="noopener">Chat WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="atas">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Layanan ke rumah · 24 jam</span>
+      <h1>Perawatan kesehatan datang ke rumah<em>tenang, rapi, dan terjaga</em></h1>
+      <p class="lead">Dari tes lab, infus vitamin booster, pemasangan infus, perawatan luka, sampai pendampingan pasien dengan alat bantu seperti trakeostomi, NGT, selang DC, dan monitor — dikerjakan perawat langsung di rumah Anda.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" data-wa="Halo Yuha Home Care, saya ingin menanyakan layanan perawatan di rumah. Mohon info jadwal dan prosedurnya ya." target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.42 1.31-1.96 1.36-.5.05-.97.24-3.3-.7-2.8-1.13-4.55-3.99-4.69-4.18-.14-.19-1.12-1.5-1.12-2.86 0-1.36.71-2.03.96-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.79 1.92.86 2.06.07.14.12.3.02.48-.09.19-.5.71-.66.9-.14.17-.29.36-.12.64.17.28.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.28.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.28.38-.23.64-.14.26.09 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.7-.16 1.38Z"/></svg>
+          Konsultasi via WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#harga">Lihat daftar harga</a>
+      </div>
+      <div class="trust">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Layanan 24 jam</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6l7-3Z"/></svg>Perawat yang kompeten</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg>Layanan di rumah</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Harga jelas di depan</span>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <div class="top">
+        <svg class="mark" viewBox="0 0 240 240" aria-hidden="true">
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <g stroke="#0A473F" stroke-width="11">
+              <path d="M32 122 L120 40 L208 122"/>
+              <path d="M52 110 V196 a15 15 0 0 0 15 15 H173 a15 15 0 0 0 15-15 V110"/>
+            </g>
+            <g stroke="#BFA05A" stroke-width="10">
+              <path d="M120 150 C 106 136 78 122 78 106 C 78 94 87 88 97 88 C 107 88 115 93 120 101 C 125 93 133 88 143 88 C 153 88 162 94 162 106 C 162 122 134 136 120 150"/>
+              <path d="M86 113 C 75 108 66 115 66 126 C 50 143 46 168 58 188 C 66 202 78 210 92 214 C 98 202 100 186 98 172"/>
+              <path d="M154 113 C 165 108 174 115 174 126 C 190 143 194 168 182 188 C 174 202 162 210 148 214 C 142 202 140 186 142 172"/>
+            </g>
+          </g>
+        </svg>
+        <div>
+          <b>YUHA HOME CARE</b>
+          <small>Kesehatan &amp; Kenyamanan di Rumah Anda</small>
+        </div>
+      </div>
+      <ul>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg></span> Tes lab lengkap &amp; standar di rumah</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg></span> Infus vitamin booster: Cernevit, Neurobion, paket keluarga</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg></span> Pemasangan infus, perawatan luka, selang NGT &amp; selang kencing</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg></span> Pendampingan pasien dengan alat bantu, 3 shift perawat</li>
+      </ul>
+      <a class="btn btn-gold" data-wa="Halo Yuha Home Care, saya ingin konsultasi dulu mengenai layanan yang cocok untuk kondisi pasien." target="_blank" rel="noopener" style="width:100%">Tanya layanan yang cocok</a>
+      <p class="note">Balasan lewat WhatsApp setiap hari, 24 jam</p>
+    </aside>
+  </div>
+</div>
+
+<!-- LAYANAN -->
+<section id="layanan" class="alt">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Layanan kami</span>
+      <h2>Perawatan yang bisa dipanggil ke rumah</h2>
+      <p class="lead" style="margin-top:14px">Semua tindakan dikerjakan perawat di lokasi Anda — tidak perlu membawa pasien bolak-balik ke fasilitas kesehatan.</p>
+    </div>
+
+    <div class="grid g3">
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 3h6"/><path d="M10 3v5.5L5.6 17a3 3 0 0 0 2.7 4.4h7.4A3 3 0 0 0 18.4 17L14 8.5V3"/><path d="M7.4 14h9.2"/></svg></div>
+        <h3>Tes Laboratorium</h3>
+        <p>Pengambilan sampel dan pemeriksaan lab di rumah, untuk kebutuhan kontrol rutin maupun pemeriksaan menyeluruh.</p>
+        <ul class="mini">
+          <li>Paket tes lab lengkap</li>
+          <li>Paket tes lab standar</li>
+        </ul>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v6"/><path d="M9 5.5h6"/><rect x="8" y="9" width="8" height="12" rx="2.5"/><path d="M10.5 14h3"/></svg></div>
+        <h3>Vitamin Booster (Infus)</h3>
+        <p>Infus vitamin untuk menjaga kebugaran, tersedia pilihan per orang maupun paket keluarga.</p>
+        <ul class="mini">
+          <li>Infus Cernevit</li>
+          <li>Infus Neurobion</li>
+          <li>Paket keluarga dengan Neurobion</li>
+        </ul>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 6.6a5 5 0 0 0-7.1 0L12 8.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 22l8.8-8.3a5 5 0 0 0 0-7.1Z"/></svg></div>
+        <h3>Jasa Tindakan &amp; Perawatan</h3>
+        <p>Tindakan harian yang paling sering dibutuhkan pasien di rumah, dikerjakan oleh perawat.</p>
+        <ul class="mini">
+          <li>Pemasangan infus</li>
+          <li>Perawatan luka</li>
+          <li>Pemasangan selang kencing</li>
+          <li>Pemasangan selang NGT (makan)</li>
+        </ul>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h3l2-5 3 10 2.5-7 1.8 4h5.7"/></svg></div>
+        <h3>Perawatan Intensif di Rumah</h3>
+        <p>Pendampingan pasien dengan alat bantu seperti trakeostomi, NGT, selang DC, dan monitor.</p>
+        <ul class="mini">
+          <li>Dijaga 3 shift perawat yang kompeten</li>
+          <li>Rp 1,5 juta per hari, atau sesuai kesepakatan</li>
+        </ul>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>Kunjungan Sesuai Jadwal</h3>
+        <p>Jadwal kunjungan disepakati lewat WhatsApp: harian, berkala, atau menyesuaikan kondisi pasien.</p>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div>
+        <h3>Konsultasi Dulu, Baru Tindakan</h3>
+        <p>Ceritakan kondisi pasien lewat WhatsApp, kami bantu tentukan layanan dan alat yang perlu dibawa.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HARGA -->
+<section id="harga">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Daftar harga</span>
+      <h2>Harga jelas, tanpa kejutan</h2>
+      <p class="lead" style="margin-top:14px">Berikut daftar layanan dan harga resmi Yuha Home Care. Klik “Pesan” untuk langsung chat WhatsApp dengan pesan yang sudah terisi.</p>
+    </div>
+
+    <div class="grid g2">
+      <div class="price-card rv">
+        <div class="pc-head">
+          <h3>Paket Tes Lab</h3>
+          <span>Pemeriksaan di rumah</span>
+        </div>
+        <ul class="rows">
+          <li class="row">
+            <div class="r-top">
+              <b>Tes Lab Lengkap</b>
+              <span class="price">Rp 1.500.000</span>
+            </div>
+            <p class="det">Pemeriksaan: H2TL, OT/PT, UR/Cr, PT/APTT, Elektrolit, HBsAg, HCV, HIV</p>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya ingin pesan Paket Tes Lab Lengkap (Rp 1.500.000). Mohon info jadwal kunjungannya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+          <li class="row">
+            <div class="r-top">
+              <b>Tes Lab Standar</b>
+              <span class="price">Rp 250.000</span>
+            </div>
+            <p class="det">Pemeriksaan: H2TL, Kolesterol Total, Asam Urat, GDN</p>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya ingin pesan Paket Tes Lab Standar (Rp 250.000). Mohon info jadwal kunjungannya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price-card rv">
+        <div class="pc-head">
+          <h3>Vitamin Booster</h3>
+          <span>Infus vitamin</span>
+        </div>
+        <ul class="rows">
+          <li class="row">
+            <div class="r-top">
+              <b>Infus Cernevit</b>
+              <span class="price">Rp 700.000</span>
+            </div>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya ingin pesan Infus Cernevit (Rp 700.000). Mohon info jadwalnya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+          <li class="row">
+            <div class="r-top">
+              <b>Infus Neurobion</b>
+              <span class="price">Rp 500.000</span>
+            </div>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya ingin pesan Infus Neurobion (Rp 500.000). Mohon info jadwalnya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+          <li class="row">
+            <div class="r-top">
+              <b>Infus Paket Keluarga dengan Neurobion</b>
+              <span class="price">Rp 350.000 <small>per orang</small></span>
+            </div>
+            <p class="det">Untuk lebih dari 2 orang, dikerjakan dalam satu kunjungan.</p>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya ingin pesan Infus Paket Keluarga dengan Neurobion (Rp 350.000 per orang, lebih dari 2 orang). Mohon info jadwalnya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price-card rv">
+        <div class="pc-head">
+          <h3>Jasa Tindakan</h3>
+          <span>Pemasangan &amp; perawatan</span>
+        </div>
+        <ul class="rows">
+          <li class="row">
+            <div class="r-top"><b>Jasa Pemasangan Infus</b><span class="price">Rp 200.000</span></div>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya butuh Jasa Pemasangan Infus (Rp 200.000). Mohon info jadwalnya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+          <li class="row">
+            <div class="r-top"><b>Jasa Perawatan Luka</b><span class="price">Rp 200.000</span></div>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya butuh Jasa Perawatan Luka (Rp 200.000). Mohon info jadwalnya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+          <li class="row">
+            <div class="r-top"><b>Jasa Pemasangan Selang Kencing</b><span class="price">Rp 200.000</span></div>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya butuh Jasa Pemasangan Selang Kencing (Rp 200.000). Mohon info jadwalnya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+          <li class="row">
+            <div class="r-top"><b>Jasa Pemasangan Selang NGT (makan)</b><span class="price">Rp 200.000</span></div>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya butuh Jasa Pemasangan Selang NGT (Rp 200.000). Mohon info jadwalnya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price-card rv">
+        <div class="pc-head">
+          <h3>Perawatan di Rumah</h3>
+          <span>Pasien dengan alat bantu</span>
+        </div>
+        <ul class="rows">
+          <li class="row">
+            <div class="r-top">
+              <b>Perawatan di Rumah dengan Alat Bantu</b>
+              <span class="price">Rp 1.500.000 <small>per hari</small></span>
+            </div>
+            <p class="det">Alat bantu seperti trakeostomi, NGT, selang DC, dan monitor. Dijaga 3 shift perawat yang kompeten, atau sesuai kesepakatan.</p>
+            <a class="r-link" data-wa="Halo Yuha Home Care, saya ingin menanyakan Perawatan di Rumah dengan Alat Bantu (Rp 1.500.000 per hari / sesuai kesepakatan). Mohon info detailnya." target="_blank" rel="noopener">Pesan lewat WhatsApp →</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-note rv">
+      <b>Catatan:</b> harga tindakan (pemasangan infus, perawatan luka, selang kencing, selang NGT) adalah biaya jasa layanan dan dihitung terpisah dari paket tes lab maupun vitamin booster. Kebutuhan di luar daftar ini — misalnya jarak kunjungan, alat tambahan, atau jam khusus — dikonfirmasi lebih dulu lewat WhatsApp sebelum tindakan dilakukan.
+    </div>
+  </div>
+</section>
+
+<!-- CARA PESAN -->
+<section id="cara" class="alt">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Cara pesan</span>
+      <h2>Empat langkah, perawat siap datang</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Chat WhatsApp</h3><p>Kirim pesan ke 0812-1814-6814 dan sebutkan layanan yang dibutuhkan.</p></div>
+      <div class="step rv"><h3>Tentukan jadwal</h3><p>Kami konfirmasi jadwal kunjungan, kebutuhan alat, dan rincian biaya.</p></div>
+      <div class="step rv"><h3>Perawat datang</h3><p>Tindakan dikerjakan di rumah sesuai jadwal yang sudah disepakati.</p></div>
+      <div class="step rv"><h3>Tindak lanjut</h3><p>Jadwal berikutnya atau pemeriksaan ulang bisa diatur lewat WhatsApp yang sama.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section>
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Kenapa memilih kami</span>
+      <h2>Fokus pada kenyamanan pasien dan keluarga</h2>
+    </div>
+    <div class="grid g4">
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Siap 24 jam</h3><p>Pesan WhatsApp masuk kapan saja, jadwal kunjungan disesuaikan kebutuhan.</p>
+      </article>
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Perawat kompeten</h3><p>Ditangani perawat yang terbiasa menangani pasien di rumah, termasuk pasien dengan alat bantu.</p>
+      </article>
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>Nyaman di rumah</h3><p>Pasien tidak perlu bepergian; keluarga bisa mendampingi langsung.</p>
+      </article>
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+        <h3>Harga jelas</h3><p>Daftar harga terbuka, rincian biaya dikonfirmasi sebelum tindakan.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FORM WA -->
+<section class="alt" id="pesan">
+  <div class="wrap">
+    <div class="wa-box rv">
+      <div class="wa-grid">
+        <div>
+          <span class="eyebrow">Pesan langsung</span>
+          <h2>Susun pesan, langsung terkirim ke WhatsApp kami</h2>
+          <p style="margin-top:14px">Pilih layanan, isi nama dan jadwal yang diinginkan. Tombol di samping akan membuka WhatsApp dengan pesan yang sudah siap — tinggal kirim.</p>
+          <p style="margin-top:10px;font-size:.85rem">Nomor layanan: <b style="color:#fff">0812-1814-6814</b> (+62 812-1814-6814)</p>
+        </div>
+
+        <form class="wa-form" id="waForm" novalidate>
+          <div class="field">
+            <label for="nama">Nama</label>
+            <input id="nama" name="nama" type="text" placeholder="Nama Anda" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="svc">Layanan</label>
+            <select id="svc" name="layanan">
+              <option>Paket Tes Lab Lengkap — Rp 1.500.000</option>
+              <option>Paket Tes Lab Standar — Rp 250.000</option>
+              <option>Infus Cernevit — Rp 700.000</option>
+              <option>Infus Neurobion — Rp 500.000</option>
+              <option>Infus Paket Keluarga dengan Neurobion — Rp 350.000/orang</option>
+              <option>Jasa Pemasangan Infus — Rp 200.000</option>
+              <option>Jasa Perawatan Luka — Rp 200.000</option>
+              <option>Jasa Pemasangan Selang Kencing — Rp 200.000</option>
+              <option>Jasa Pemasangan Selang NGT — Rp 200.000</option>
+              <option>Perawatan di Rumah dengan Alat Bantu — Rp 1.500.000/hari</option>
+              <option>Konsultasi / belum tahu layanan yang cocok</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="jadwal">Jadwal yang diinginkan</label>
+            <input id="jadwal" name="jadwal" type="text" placeholder="Contoh: hari ini sore, atau Senin pagi">
+          </div>
+          <div class="field">
+            <label for="catatan">Catatan kondisi pasien (opsional)</label>
+            <textarea id="catatan" name="catatan" rows="2" placeholder="Contoh: pasien dengan selang NGT, rumah lantai 1"></textarea>
+          </div>
+          <a class="btn btn-gold" id="waSubmit" target="_blank" rel="noopener" href="#">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.42 1.31-1.96 1.36-.5.05-.97.24-3.3-.7-2.8-1.13-4.55-3.99-4.69-4.18-.14-.19-1.12-1.5-1.12-2.86 0-1.36.71-2.03.96-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.79 1.92.86 2.06.07.14.12.3.02.48-.09.19-.5.71-.66.9-.14.17-.29.36-.12.64.17.28.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.28.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.28.38-.23.64-.14.26.09 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.7-.16 1.38Z"/></svg>
+            Kirim ke WhatsApp
+          </a>
+          <p class="wa-preview" id="waPreview"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Pertanyaan umum</span>
+      <h2>Yang sering ditanyakan keluarga</h2>
+    </div>
+    <div style="max-width:820px;margin:0 auto">
+      <details class="faq rv" open>
+        <summary>Apakah perawat datang ke rumah?</summary>
+        <p>Ya. Semua layanan Yuha Home Care dikerjakan di rumah pasien — tes lab, infus, perawatan luka, pemasangan selang, sampai pendampingan pasien dengan alat bantu.</p>
+      </details>
+      <details class="faq rv">
+        <summary>Layanan tersedia jam berapa?</summary>
+        <p>Kami melayani 24 jam. Jadwal kunjungan disepakati lewat WhatsApp agar sesuai kebutuhan pasien dan keluarga.</p>
+      </details>
+      <details class="faq rv">
+        <summary>Bisa menangani pasien dengan alat bantu seperti trakeostomi atau NGT?</summary>
+        <p>Bisa. Untuk pasien dengan alat bantu seperti trakeostomi, NGT, selang DC, dan monitor, perawatan dijaga 3 shift perawat yang kompeten dengan biaya Rp 1,5 juta per hari atau sesuai kesepakatan.</p>
+      </details>
+      <details class="faq rv">
+        <summary>Apakah harus konsultasi dulu sebelum tindakan?</summary>
+        <p>Sangat disarankan. Ceritakan kondisi pasien lewat WhatsApp supaya kami bisa menentukan layanan dan alat yang perlu dibawa saat kunjungan.</p>
+      </details>
+      <details class="faq rv">
+        <summary>Apakah harga di halaman ini sudah final?</summary>
+        <p>Harga yang tertera adalah harga layanan yang berlaku. Kebutuhan di luar daftar — jarak kunjungan, alat tambahan, atau jam khusus — dikonfirmasi lebih dulu lewat WhatsApp sebelum tindakan dilakukan.</p>
+      </details>
+      <details class="faq rv">
+        <summary>Bisa pesan untuk lebih dari satu orang?</summary>
+        <p>Bisa. Infus paket keluarga dengan Neurobion berlaku untuk lebih dari 2 orang dalam satu kunjungan dengan biaya Rp 350.000 per orang.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="strip">
+  <div class="wrap">
+    <h2>Butuh perawat datang hari ini?</h2>
+    <p>Kirim pesan WhatsApp sekarang — sebutkan layanan yang dibutuhkan, kami bantu atur jadwal kunjungannya.</p>
+    <div class="hero-actions">
+      <a class="btn btn-wa" data-wa="Halo Yuha Home Care, saya butuh perawat datang ke rumah. Mohon info ketersediaan jadwal hari ini." target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.42 1.31-1.96 1.36-.5.05-.97.24-3.3-.7-2.8-1.13-4.55-3.99-4.69-4.18-.14-.19-1.12-1.5-1.12-2.86 0-1.36.71-2.03.96-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.79 1.92.86 2.06.07.14.12.3.02.48-.09.19-.5.71-.66.9-.14.17-.29.36-.12.64.17.28.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.28.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.28.38-.23.64-.14.26.09 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.7-.16 1.38Z"/></svg>
+        Chat WhatsApp 0812-1814-6814
+      </a>
+      <a class="btn btn-ghost" href="#harga">Cek harga layanan</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#atas" style="margin-bottom:16px">
+          <svg class="mark" viewBox="0 0 240 240" aria-hidden="true">
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <g stroke="#FFFFFF" stroke-width="11">
+                <path d="M32 122 L120 40 L208 122"/>
+                <path d="M52 110 V196 a15 15 0 0 0 15 15 H173 a15 15 0 0 0 15-15 V110"/>
+              </g>
+              <g stroke="#BFA05A" stroke-width="10">
+                <path d="M120 150 C 106 136 78 122 78 106 C 78 94 87 88 97 88 C 107 88 115 93 120 101 C 125 93 133 88 143 88 C 153 88 162 94 162 106 C 162 122 134 136 120 150"/>
+                <path d="M86 113 C 75 108 66 115 66 126 C 50 143 46 168 58 188 C 66 202 78 210 92 214 C 98 202 100 186 98 172"/>
+                <path d="M154 113 C 165 108 174 115 174 126 C 190 143 194 168 182 188 C 174 202 162 210 148 214 C 142 202 140 186 142 172"/>
+              </g>
+            </g>
+          </svg>
+          <span class="txt">
+            <b>YUHA</b>
+            <span>Home Care</span>
+          </span>
+        </a>
+        <p style="max-width:38ch">Kesehatan &amp; Kenyamanan di Rumah Anda. Layanan perawatan kesehatan ke rumah, 24 jam.</p>
+      </div>
+      <div>
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="#harga">Tes Lab</a></li>
+          <li><a href="#harga">Vitamin Booster</a></li>
+          <li><a href="#harga">Pemasangan Infus &amp; Perawatan Luka</a></li>
+          <li><a href="#harga">Selang NGT &amp; Selang Kencing</a></li>
+          <li><a href="#harga">Perawatan dengan Alat Bantu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi kami</h4>
+        <ul>
+          <li><a data-wa="Halo Yuha Home Care, saya ingin menanyakan layanan perawatan di rumah." target="_blank" rel="noopener">WhatsApp: 0812-1814-6814</a></li>
+          <li>Layanan 24 jam, setiap hari</li>
+          <li><a href="#cara">Cara pesan</a></li>
+          <li><a href="#faq">Pertanyaan umum</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="tahun">2026</span> Yuha Home Care. Seluruh hak cipta dilindungi.</span>
+      <span>yuhahomecare.my.id</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float" id="floatWa" data-wa="Halo Yuha Home Care, saya ingin menanyakan layanan perawatan di rumah." target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <span class="pulse"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.42 1.31-1.96 1.36-.5.05-.97.24-3.3-.7-2.8-1.13-4.55-3.99-4.69-4.18-.14-.19-1.12-1.5-1.12-2.86 0-1.36.71-2.03.96-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.79 1.92.86 2.06.07.14.12.3.02.48-.09.19-.5.71-.66.9-.14.17-.29.36-.12.64.17.28.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.28.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.28.38-.23.64-.14.26.09 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.7-.16 1.38Z"/></svg>
+  <span>Chat WhatsApp</span>
+</a>
+
+<script>
+(function(){
+  var NOMOR = "6281218146814";             // +62 812-1814-6814
+  var TAMPIL = "0812-1814-6814";
+
+  function tautanWA(pesan){
+    return "https://wa.me/" + NOMOR + "?text=" + encodeURIComponent(pesan);
+  }
+
+  // semua tombol dengan data-wa
+  document.querySelectorAll("[data-wa]").forEach(function(el){
+    el.setAttribute("href", tautanWA(el.getAttribute("data-wa")));
+  });
+
+  // menu mobile
+  var burger = document.getElementById("burger");
+  var menu = document.getElementById("menuMobile");
+  if (burger && menu){
+    burger.addEventListener("click", function(){
+      var buka = menu.classList.toggle("open");
+      burger.setAttribute("aria-expanded", buka ? "true" : "false");
+    });
+    menu.querySelectorAll("a").forEach(function(a){
+      a.addEventListener("click", function(){
+        menu.classList.remove("open");
+        burger.setAttribute("aria-expanded","false");
+      });
+    });
+  }
+
+  // form -> pesan WhatsApp
+  var form = document.getElementById("waForm");
+  var tombol = document.getElementById("waSubmit");
+  var pratinjau = document.getElementById("waPreview");
+
+  function susunPesan(){
+    var nama = (document.getElementById("nama").value || "").trim();
+    var layanan = document.getElementById("svc").value;
+    var jadwal = (document.getElementById("jadwal").value || "").trim();
+    var catatan = (document.getElementById("catatan").value || "").trim();
+
+    var p = "Halo Yuha Home Care,";
+    if (nama) p += " saya " + nama + ".";
+    p += " Saya ingin pesan layanan: " + layanan + ".";
+    if (jadwal) p += " Jadwal yang diinginkan: " + jadwal + ".";
+    if (catatan) p += " Catatan: " + catatan + ".";
+    p += " Mohon info ketersediaan dan rincian biayanya. Terima kasih.";
+    return p;
+  }
+
+  function perbarui(){
+    var pesan = susunPesan();
+    tombol.setAttribute("href", tautanWA(pesan));
+    pratinjau.textContent = "Pratinjau pesan: " + pesan;
+  }
+
+  if (form && tombol && pratinjau){
+    form.addEventListener("input", perbarui);
+    form.addEventListener("change", perbarui);
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      window.open(tautanWA(susunPesan()), "_blank", "noopener");
+    });
+    tombol.addEventListener("click", function(e){
+      if (!tombol.getAttribute("href") || tombol.getAttribute("href") === "#") e.preventDefault();
+    });
+    perbarui();
+  }
+
+  // tahun footer
+  var t = document.getElementById("tahun");
+  if (t) t.textContent = new Date().getFullYear();
+
+  // animasi muncul saat discroll
+  var items = document.querySelectorAll(".rv");
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, {rootMargin:"0px 0px -8% 0px", threshold:0.06});
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>
