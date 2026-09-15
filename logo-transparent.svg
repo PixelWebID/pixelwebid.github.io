@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900"
+     role="img" aria-labelledby="title desc">
+  <title id="title">YUHA Home Care</title>
+  <desc id="desc">YUHA Home Care — Kesehatan &amp; Kenyamanan di Rumah Anda</desc>
+
+  <!-- Icon -->
+  <g fill="none" stroke="#075A4E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M575 245 L800 80 L1025 245"/>
+    <path d="M600 230 V390 Q600 410 620 410 H720"/>
+    <path d="M1000 230 V390 Q1000 410 980 410 H880"/>
+  </g>
+
+  <path d="M800 435
+           C748 383 700 335 655 335
+           C612 335 585 367 585 407
+           C585 465 650 505 800 595
+           C950 505 1015 465 1015 407
+           C1015 367 988 335 945 335
+           C900 335 852 383 800 435 Z"
+        fill="none" stroke="#C6A04A" stroke-width="15"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Wordmark -->
+  <text x="800" y="665" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="145" letter-spacing="4" fill="#075A4E">YUHA</text>
+
+  <text x="800" y="750" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="52" font-weight="600" letter-spacing="13" fill="#075A4E">HOME CARE</text>
+
+  <text x="800" y="815" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="30" letter-spacing="1.5" fill="#075A4E">Kesehatan &amp; Kenyamanan di Rumah Anda</text>
+</svg>
