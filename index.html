@@ -467,6 +467,8 @@
     color: #FFFFFF; padding: 40px;
     position: relative; overflow: hidden;
     box-shadow: var(--shadow-lg);
+    max-width: 900px;
+    margin: 0 auto;
   }
   .booking-card::after {
     content: ""; position: absolute; width: 360px; height: 360px;
@@ -476,7 +478,7 @@
   }
   .booking-grid { display: grid; grid-template-columns: 1fr; gap: 36px; position: relative; z-index: 2; }
   @media(min-width: 960px) {
-    .booking-grid { grid-template-columns: 1fr 1fr; align-items: center; }
+    .booking-grid { grid-template-columns: 1fr 1.1fr; align-items: center; }
   }
 
   .booking-info h2 { color: #FFFFFF; font-size: 1.95rem; margin-bottom: 14px; }
