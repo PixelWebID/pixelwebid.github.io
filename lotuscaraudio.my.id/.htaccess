@@ -1,0 +1,30 @@
+# Situs statis lotuscaraudio.my.id (pengganti WordPress, 2026-09-24)
+Options -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# paksa HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# alamat lama WordPress → beranda
+RewriteRule ^(\d{4}/\d{2}/\d{2}/.*|sample-page/?|category/.*|author/.*|feed/?.*|comments/.*|page/.*|wp-sitemap.*|sitemap_index\.xml|[a-z]+-sitemap\.xml)$ / [L,R=301]
+RewriteRule ^(wp-login\.php|wp-admin/?.*|xmlrpc\.php|wp-json/?.*)$ - [G,L]
+</IfModule>
+
+# tolak eksekusi PHP apa pun di situs statis ini
+<FilesMatch "\.(php|phtml|php\d|phar)$">
+  Require all denied
+</FilesMatch>
+
+ErrorDocument 404 /index.html
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType font/woff2 "access plus 1 month"
+</IfModule>
