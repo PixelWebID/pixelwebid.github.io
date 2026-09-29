@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Jaya Denso Tangerang — Spesialis AC Mobil Profesional & Sistem Komputer</title>
+<meta name="description" content="Jaya Denso Tangerang: Spesialis AC mobil profesional berpengalaman 25 tahun. Mesin Recovery Full Flushing canggih & diagnostic scanner komputer. Cabang Curug & Cimone Karawaci.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b2223">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b2223'/%3E%3Crect x='6' y='17' width='4.5' height='9' rx='1.5' fill='%237d9b9d'/%3E%3Crect x='13.75' y='12' width='4.5' height='14' rx='1.5' fill='%232b5bff'/%3E%3Crect x='21.5' y='7' width='4.5' height='19' rx='1.5' fill='%23e5b93f'/%3E%3C/svg%3E">
+<style>
+:root {
+  --primary: #0b2223;
+  --accent: #0066cc;
+  --accent-light: #e6f0fa;
+  --denso-red: #d32f2f;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+header {
+  border-bottom: 1px solid var(--border);
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.brand {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #0b2223;
+}
+.brand span { color: var(--denso-red); }
+.brand small { display: block; font-size: 11px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn-primary { background: #25d366; color: #ffffff; }
+.btn-primary:hover { background: #1eb855; }
+.btn-accent { background: var(--accent); color: #ffffff; }
+.btn-accent:hover { background: #0052a3; }
+.btn-outline { border: 1.5px solid var(--border); color: var(--text); background: #ffffff; }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Mockup Notice */
+.mockup-badge-bar {
+  background: #fff8e6;
+  border-bottom: 1px solid #f2db9b;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #855d00;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  padding: 48px 0 36px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px;
+  align-items: center;
+}
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+h1 {
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.18;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+.hero-desc {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 24px;
+  max-width: 52ch;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.trust-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: #334155;
+  font-weight: 600;
+}
+.trust-points span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.hero-box {
+  background: linear-gradient(145deg, #0b2223 0%, #153739 100%);
+  border-radius: 20px;
+  padding: 28px;
+  color: #ffffff;
+  box-shadow: 0 16px 36px -10px rgba(11, 34, 35, 0.25);
+}
+.hero-box h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #7ef2ce;
+}
+.hero-box ul {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  font-size: 14px;
+}
+.hero-box li {
+  display: flex;
+  gap: 10px;
+  line-height: 1.45;
+}
+.hero-box li span.icon {
+  color: #7ef2ce;
+  font-weight: bold;
+}
+
+/* Sections */
+section { padding: 48px 0; }
+.section-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 36px;
+}
+.section-head h2 {
+  font-size: clamp(22px, 3.2vw, 32px);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+.section-head p {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* Feature Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -6px rgba(0,0,0,0.06);
+}
+.card-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+.card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* Branch Section */
+.branch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.branch-card {
+  background: #ffffff;
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.branch-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.branch-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+.branch-card p.addr {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* CTA Box */
+.cta-box {
+  background: #0b2223;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 44px 32px;
+  text-align: center;
+  margin-top: 20px;
+}
+.cta-box h2 {
+  color: #ffffff;
+  font-size: clamp(24px, 3.5vw, 34px);
+  margin-bottom: 12px;
+}
+.cta-box p {
+  color: #cbd5e1;
+  max-width: 580px;
+  margin: 0 auto 24px;
+  font-size: 15px;
+}
+
+/* Agency Callout */
+.agency-callout {
+  background: #f1f5f9;
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+.agency-callout h4 {
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+.agency-callout p {
+  font-size: 13.5px;
+  color: #64748b;
+  max-width: 620px;
+  margin: 0 auto 16px;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 30px 0 40px;
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+footer a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero { padding: 32px 0 24px; }
+}
+</style>
+</head>
+<body>
+
+<div class="mockup-badge-bar">
+  💡 Contoh Tampilan (Mockup Preview) Disiapkan oleh PixelWebID — Khusus untuk Jaya Denso Tangerang
+</div>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        JAYA DENSO<span>.</span>
+        <small>Specialist AC Mobil Profesional</small>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/6287771999977?text=Halo%20Jaya%20Denso%2C%20saya%20lihat%20website%20dan%20mau%20konsultasi%2Fbooking%20servis%20AC%20mobil" target="_blank" rel="noopener">
+        <span>💬 Chat WhatsApp</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <div class="badge-tag">⭐ Pengalaman 25+ Tahun di Tangerang</div>
+        <h1>AC Mobil Kurang Dingin? Atasi Cepat Tanpa Tebak-Tebak.</h1>
+        <p class="hero-desc">
+          Spesialis AC mobil profesional dengan <strong>Sistem Computer Diagnostic</strong> dan <strong>Mesin Recovery Full Flushing</strong> tercanggih. Kuras &amp; ganti oli kompresor efisien <em>tanpa bongkar baut satupun</em>.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/6287771999977?text=Halo%20Jaya%20Denso%2C%20mau%20konsultasi%20keluhan%20AC%20mobil%20saya" target="_blank" rel="noopener">
+            Konsultasi Sekarang (+62 877-7199-9977)
+          </a>
+          <a class="btn btn-outline" href="#lokasi">
+            📍 Lihat 2 Cabang Kami
+          </a>
+        </div>
+        <div class="trust-points">
+          <span>✓ Scan Komputer Akurat</span>
+          <span>✓ Full Flushing Otomatis</span>
+          <span>✓ Suku Cadang Resmi</span>
+          <span>✓ Garansi Servis</span>
+        </div>
+      </div>
+
+      <div class="hero-box">
+        <h3>Keunggulan Servis Jaya Denso</h3>
+        <ul>
+          <li>
+            <span class="icon">✓</span>
+            <div><strong>Tanpa Bongkar Baut:</strong> Mesin full flushing menguras tuntas gram besi &amp; oli kompresor lama langsung melalui sistem tertutup.</div>
+          </li>
+          <li>
+            <span class="icon">✓</span>
+            <div><strong>Deteksi Komputer Cepat:</strong> Masalah kelistrikan, tekanan freon, dan sensor terdeteksi presisi dalam hitungan menit.</div>
+          </li>
+          <li>
+            <span class="icon">✓</span>
+            <div><strong>Waktu Servis Jauh Lebih Singkat:</strong> Perawatan berkala selesai tanpa mobil harus menginap berhari-hari.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teknologi Unggulan -->
+  <section style="background:#ffffff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Teknologi Modern Perawatan AC Mobil</h2>
+        <p>Standar penanganan bengkel modern untuk memastikan udara kabin selalu sejuk, bersih, dan kompresor berumur panjang.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Mesin Recovery Full Flushing</h3>
+          <p>Alat recovery tercanggih untuk sirkulasi pembersihan total. Mengganti oli kompresor dan menarik endapan kotoran tanpa merusak baut orisinil kendaraan Anda.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Sistem Diagnostic Computer</h3>
+          <p>Pemeriksaan menyeluruh secara digital. Mengetahui kebocoran halus, suhu aktual, dan anomali modul AC mobil secara akurat dan pasti.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Garansi Servis &amp; Sparepart Asli</h3>
+          <p>Penggantian sparepart orisinil standar Denso bergaransi. Jaminan hasil kerja dingin maksimal dan awet untuk perjalanan jauh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan Lengkap -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Layanan Spesialis yang Kami Sediakan</h2>
+        <p>Dari perawatan rutin pencegahan hingga perbaikan komprehensif semua tipe mobil Jepang, Eropa, dan Asia.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="card">
+          <h3>Kuras &amp; Penggantian Oli Kompresor</h3>
+          <p>Membersihkan residu oli asam dan kotoran gram mesin agar kompresor tidak macet (ngorok).</p>
+        </div>
+        <div class="card">
+          <h3>Pembersihan Evaporator &amp; Kondensor</h3>
+          <p>Menghilangkan bau apek, debu, dan jamur pada kisi-kisi penyejuk untuk udara kabin yang higienis.</p>
+        </div>
+        <div class="card">
+          <h3>Isi Ulang Freon Presisi</h3>
+          <p>Freon berkualitas tinggi ditimbang sesuai gramatur spesifikasi pabrikan mobil Anda.</p>
+        </div>
+        <div class="card">
+          <h3>Ganti Sparepart Komponen AC</h3>
+          <p>Magnetic clutch, ekspansi valve, filter dryer, blower, dan kompresor baru resmi Denso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lokasi Bengkel -->
+  <section id="lokasi" style="background:#ffffff; border-top:1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Dua Titik Bengkel Resmi di Tangerang</h2>
+        <p>Pilih cabang terdekat dari rute harian Anda. Siap melayani dengan peralatan lengkap dan ruang tunggu nyaman.</p>
+      </div>
+
+      <div class="branch-grid">
+        <!-- Cabang 1 -->
+        <div class="branch-card">
+          <div>
+            <span class="branch-tag">Cabang 1 (Curug)</span>
+            <h3>JAYA DENSO 1 Curug</h3>
+            <p class="addr">
+              Jl. Raya PLP Curug No.17, Suka Bakti, Kec. Curug, Kabupaten Tangerang, Banten 15810
+            </p>
+          </div>
+          <div>
+            <a class="btn btn-outline" style="width:100%; margin-bottom:8px;" href="https://maps.app.goo.gl/yVow9CKBEiV11woWA" target="_blank" rel="noopener">
+              📍 Buka di Google Maps
+            </a>
+            <a class="btn btn-primary" style="width:100%" href="https://wa.me/6287771999977?text=Halo%20Jaya%20Denso%20Curug%2C%20mau%20tanya%20jadwal%20servis" target="_blank" rel="noopener">
+              Jadwalkan Servis Curug
+            </a>
+          </div>
+        </div>
+
+        <!-- Cabang 3 -->
+        <div class="branch-card">
+          <div>
+            <span class="branch-tag">Cabang 3 (Cimone Karawaci)</span>
+            <h3>JAYA DENSO 3 Cimone</h3>
+            <p class="addr">
+              Jl. Proklamasi No. Raya (Depan Mixue), Cimone Jaya, Kec. Karawaci, Kota Tangerang, Banten 15114
+            </p>
+          </div>
+          <div>
+            <a class="btn btn-outline" style="width:100%; margin-bottom:8px;" href="https://maps.app.goo.gl/zGbojemBfVJm9moq6" target="_blank" rel="noopener">
+              📍 Buka di Google Maps
+            </a>
+            <a class="btn btn-primary" style="width:100%" href="https://wa.me/6287771999977?text=Halo%20Jaya%20Denso%20Cimone%2C%20mau%20tanya%20jadwal%20servis" target="_blank" rel="noopener">
+              Jadwalkan Servis Cimone
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Box -->
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Rawat AC Mobil Anda Sebelum Rusak Parah</h2>
+      <p>Cegah kompresor jebol dengan flushing berkala. Dapatkan deteksi komputer akurat langsung dari ahlinya.</p>
+      <a class="btn btn-primary" style="padding: 14px 28px; font-size:16px;" href="https://wa.me/6287771999977?text=Halo%20Jaya%20Denso%2C%20saya%20mau%20jadwalkan%20servis%20AC%20mobil" target="_blank" rel="noopener">
+        Hubungi WhatsApp: 0877-7199-9977
+      </a>
+    </div>
+
+    <!-- PixelWebID Callout for Prospect -->
+    <div class="agency-callout">
+      <h4>Pesan Khusus untuk Manajemen Jaya Denso Tangerang</h4>
+      <p>
+        Tampilan di atas adalah simulasi/mockup preview website profil yang dirancang oleh PixelWebID. Teks, foto bengkel asli, jam buka, galeri pengerjaan, dan tombol booking dapat disesuaikan sepenuhnya sebelum peluncuran resmi.
+      </p>
+      <a class="btn btn-accent" href="https://wa.me/6285148367541?text=Halo%20PixelWebID%2C%20saya%20dari%20Jaya%20Denso%20Tangerang.%20Sudah%20lihat%20mockup%20websitenya." target="_blank" rel="noopener">
+        Chat PixelWebID untuk Aktifkan Website Resmi
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      &copy; <span id="year">2026</span> Jaya Denso Tangerang — Specialist AC Mobil Profesional.
+      <br>Halaman ini merupakan <strong>contoh rancangan (mockup preview)</strong> yang disiapkan oleh <a href="https://pixelweb.id/" target="_blank" rel="noopener">PixelWebID</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
