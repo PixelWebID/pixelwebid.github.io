@@ -719,6 +719,57 @@ details p {
   padding-top: 8px;
 }
 
+/* SOSMED BUTTONS */
+.sosmed-box {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 16px;
+  text-align: center;
+  margin: 28px 0 20px;
+  box-shadow: var(--shadow-sm);
+}
+.sosmed-box h4 {
+  font-size: 14px;
+  color: var(--carbon);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.sosmed-box p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+.sosmed-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-sosmed {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-sosmed:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+.btn-fb {
+  background: #1877F2;
+  color: #ffffff;
+}
+.btn-ig {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+}
+
 /* PROSPECT FOOTNOTE */
 .agency-box {
   background: #f8fafc;
@@ -1138,6 +1189,20 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
     </div>
   </section>
 
+  <!-- OFFICIAL SOCIAL MEDIA LINKS -->
+  <section class="sosmed-box">
+    <h4>📲 Ikuti Media Sosial Resmi Jaya Denso</h4>
+    <p>Dapatkan dokumentasi pengerjaan harian, tips perawatan AC mobil, dan promo terbaru.</p>
+    <div class="sosmed-links">
+      <a href="https://www.facebook.com/share/18i7FPRQ3A/" class="btn-sosmed btn-fb" target="_blank" rel="noopener">
+        <span>📘 Facebook Resmi</span>
+      </a>
+      <a href="https://www.instagram.com/jaya_denso_specialist_ac_mobil?obrf=cHdrenVjcHNseG1m" class="btn-sosmed btn-ig" target="_blank" rel="noopener">
+        <span>📸 Instagram @jaya_denso_specialist_ac_mobil</span>
+      </a>
+    </div>
+  </section>
+
   <!-- PROSPECT AGENT FOOTNOTE -->
   <div class="agency-box">
     <h5>💡 Pratinjau Desain Khusus untuk Manajemen Jaya Denso</h5>
@@ -1153,6 +1218,10 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
 <!-- FOOTER -->
 <footer>
   <div class="container">
+    <p style="margin-bottom:8px">
+      <a href="https://www.facebook.com/share/18i7FPRQ3A/" target="_blank" rel="noopener" style="margin-right:12px">Facebook</a>
+      <a href="https://www.instagram.com/jaya_denso_specialist_ac_mobil?obrf=cHdrenVjcHNseG1m" target="_blank" rel="noopener">Instagram</a>
+    </p>
     <p>
       &copy; <span id="year">2026</span> Jaya Denso Tangerang — Specialist AC Mobil Profesional.
       <br>Website Profile &amp; Lead Generation Architecture by <a href="https://pixelweb.id/" target="_blank" rel="noopener">PixelWebID</a>.
