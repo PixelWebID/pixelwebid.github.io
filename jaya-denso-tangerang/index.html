@@ -4,12 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Jaya Denso Tangerang — Bengkel Spesialis AC Mobil Profesional Bergaransi</title>
-<meta name="description" content="Bengkel Resmi Spesialis AC Mobil Jaya Denso Tangerang (Pengalaman 25 Tahun). Kuras Oli Kompresor & Recovery Flushing Tanpa Bongkar Baut, Scan Komputer Akurat. Cabang Curug & Cimone. Booking WA sekarang!">
+<meta name="description" content="Bengkel Spesialis AC Mobil Jaya Denso Tangerang (Pengalaman 25 Tahun). Kuras Oli Kompresor & Recovery Flushing Tanpa Bongkar Baut, Scan Komputer Akurat. Cabang Curug & Cimone. Booking WA sekarang!">
+<!-- HAPUS baris noindex ini saat tayang di jayadensotangerang.com -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#e60012">
 
-<!-- FAVICON RESMI JAYA DENSO -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e60012'/%3E%3Cpath d='M32 10 L44 26 L20 26 Z' fill='%23ffffff' opacity='0.9'/%3E%3Ctext x='32' y='52' font-family='Arial Black, Impact, sans-serif' font-size='26' font-weight='900' fill='%23ffffff' text-anchor='middle' letter-spacing='-1'%3EJD%3C/text%3E%3Ccircle cx='48' cy='18' r='4' fill='%2300f2fe'/%3E%3C/svg%3E">
+<!-- FAVICON & LOGO JAYA DENSO (22 Okt 2026) -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="alternate icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jaya Denso Tangerang — Spesialis AC Mobil">
+<meta property="og:description" content="Kuras oli kompresor & recovery flushing tanpa bongkar baut, scan komputer. Cabang Curug & Cimone, Tangerang.">
+<meta property="og:image" content="logo-jaya-denso.png">
 
 <!-- Schema.org for Local Business SEO & Trust -->
 <script type="application/ld+json">
@@ -17,7 +25,8 @@
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   "name": "Jaya Denso Tangerang - Specialist AC Mobil",
-  "image": "https://pixelweb.id/assets/mockup-denso.jpg",
+  "image": "https://jayadensotangerang.com/favicon-512.png",
+  "logo": "https://jayadensotangerang.com/logo-jaya-denso.png",
   "telephone": "+6287771999977",
   "priceRange": "$$",
   "address": [
@@ -867,6 +876,46 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
   gap: 6px;
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
 }
+
+/* ===== DESKTOP & TABLET (22 Okt 2026) — dulu semua dikunci 580px sehingga desktop tampil seperti HP ===== */
+@media (min-width: 720px) {
+  .branch-grid, .testi-grid { grid-template-columns: 1fr 1fr; }
+  .package-stack { grid-template-columns: 1fr 1fr; }
+  .package-card.popular { grid-column: 1 / -1; }
+}
+@media (min-width: 1000px) {
+  body { padding-bottom: 0; }
+  .header-inner, .container, .floating-inner { max-width: 1140px; padding-left: 28px; padding-right: 28px; }
+  .top-bar { padding: 8px max(28px, calc((100% - 1140px) / 2 + 28px)); font-size: 12.5px; }
+  .brand-name { font-size: 22px; }
+  .brand-sub { font-size: 11px; }
+  .quick-wa { font-size: 14px; padding: 11px 20px; }
+  .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; column-gap: 56px; align-items: start; padding: 48px 0 24px;
+          grid-template-areas: "kiri kanan" "cta kanan" "gejala mesin"; }
+  .hero-kiri { grid-area: kiri; } .hero-kanan { grid-area: kanan; padding-top: 44px; }
+  .hero-cta { grid-area: cta; } .hero-gejala { grid-area: gejala; } .hero-mesin { grid-area: mesin; }
+  h1 { font-size: 48px; line-height: 1.06; margin-bottom: 16px; }
+  .hero-p { font-size: 17px; max-width: 600px; }
+  .urgency-banner { font-size: 14px; }
+  .trust-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .trust-card { padding: 16px 18px; } .trust-card strong { font-size: 15.5px; } .trust-card span { font-size: 13px; }
+  .hero-cta-stack { flex-direction: row; } .hero-cta-stack a { flex: 1; }
+  .symptom-box, .machine-card { margin-bottom: 0; height: 100%; }
+  .symptom-item, .tech-row, .machine-card p { font-size: 14px; }
+  .sec-head { margin: 64px 0 20px; } .sec-head h2 { font-size: 32px; } .sec-kicker { font-size: 12.5px; }
+  .compare-col { padding: 22px 26px; } .compare-col ul { font-size: 14px; } .compare-col-title { font-size: 18px; }
+  .package-stack { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .package-card.popular { grid-column: auto; }
+  .package-card { display: flex; flex-direction: column; padding: 22px; }
+  .package-card .btn-pkg { margin-top: auto; }
+  .package-card h4 { font-size: 19px; } .package-card p.pkg-desc, .pkg-points { font-size: 13.5px; }
+  .car-box { padding: 22px 26px; } .car-pill { font-size: 13px; padding: 6px 12px; }
+  .branch-card { padding: 26px; } .branch-addr { font-size: 14.5px; }
+  .faq-stack { grid-template-columns: 1fr 1fr; align-items: start; }
+  summary { font-size: 15px; } details p { font-size: 14px; }
+  .floating-bottom { display: none; }
+  footer { font-size: 12.5px; padding: 28px; }
+}
 </style>
 </head>
 <body>
@@ -875,10 +924,10 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
 <div class="top-bar">
   <div class="live-status">
     <span class="pulse-dot"></span>
-    <span>Bengkel Buka Hari Ini • 08.30 – 17.00 WIB</span>
+    <span id="status-buka">Senin – Sabtu • 08.30 – 17.00 WIB</span>
   </div>
   <div class="preview-tag">
-    <span>Mockup oleh <b>PixelWebID</b></span>
+    <span>Curug &amp; Cimone, Tangerang</span>
   </div>
 </div>
 
@@ -886,18 +935,10 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
 <header>
   <div class="header-inner">
     <a href="#" class="brand-link">
-      <!-- VECTOR LOGO JAYA DENSO -->
-      <svg class="brand-logo-svg" width="44" height="44" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
-        <rect width="64" height="64" rx="12" fill="#E60012"/>
-        <!-- Denso Triangle / Snowflake Prism -->
-        <path d="M32 8L44 24H20L32 8Z" fill="white" opacity="0.95"/>
-        <circle cx="48" cy="18" r="3.5" fill="#38BDF8"/>
-        <!-- Bold Initials JD -->
-        <text x="32" y="52" font-family="'Barlow', 'Arial Black', sans-serif" font-weight="900" font-size="24" fill="white" text-anchor="middle" letter-spacing="-0.5">JD</text>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="46" height="46" class="brand-logo-svg" aria-hidden="true" style="flex-shrink:0"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E60012"/><stop offset="1" stop-color="#B8000E"/></linearGradient></defs><rect width="46" height="46" class="brand-logo-svg" aria-hidden="true" style="flex-shrink:0" rx="14" fill="url(#g)"/><g stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round"><line x1="32" y1="32" x2="32.00" y2="11.00"/><line x1="32.00" y1="20.45" x2="27.25" y2="15.70"/><line x1="32.00" y1="20.45" x2="36.75" y2="15.70"/><line x1="32" y1="32" x2="50.19" y2="21.50"/><line x1="42.00" y1="26.23" x2="43.74" y2="19.73"/><line x1="42.00" y1="26.23" x2="48.49" y2="27.96"/><line x1="32" y1="32" x2="50.19" y2="42.50"/><line x1="42.00" y1="37.77" x2="48.49" y2="36.04"/><line x1="42.00" y1="37.77" x2="43.74" y2="44.27"/><line x1="32" y1="32" x2="32.00" y2="53.00"/><line x1="32.00" y1="43.55" x2="36.75" y2="48.30"/><line x1="32.00" y1="43.55" x2="27.25" y2="48.30"/><line x1="32" y1="32" x2="13.81" y2="42.50"/><line x1="22.00" y1="37.77" x2="20.26" y2="44.27"/><line x1="22.00" y1="37.77" x2="15.51" y2="36.04"/><line x1="32" y1="32" x2="13.81" y2="21.50"/><line x1="22.00" y1="26.22" x2="15.51" y2="27.96"/><line x1="22.00" y1="26.22" x2="20.26" y2="19.73"/></g><circle cx="32" cy="32" r="3.78" fill="#FFFFFF"/><circle cx="51" cy="13" r="4.2" fill="#7DD3FC"/></svg>
       <div class="brand-titles">
-        <span class="brand-name">JAYA DENSO</span>
-        <span class="brand-sub">Specialist AC Mobil Profesional</span>
+        <span class="brand-name">JAYA <span style="color:var(--denso-red)">DENSO</span></span>
+        <span class="brand-sub">Spesialis AC Mobil · Tangerang</span>
       </div>
     </a>
     <a href="https://wa.me/6287771999977?text=Halo%20Jaya%20Denso%2C%20mau%20konsultasi%20keluhan%20AC%20mobil%20saya" class="quick-wa" target="_blank" rel="noopener">
@@ -909,8 +950,8 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
 <main class="container">
   <!-- HERO SECTION -->
   <section class="hero">
+   <div class="hero-kiri">
     <div class="rating-pill">
-      <span class="stars">★★★★★</span>
       <span>Spesialis 25 Tahun • Curug &amp; Karawaci</span>
     </div>
 
@@ -928,6 +969,8 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
       Oli kompresor yang sudah hitam dan asam bisa merontokkan piston AC. Biaya ganti kompresor baru mencapai Rp 2,5jt – Rp 5jt+. Kuras berkala menyelamatkan AC mobil Anda.
     </div>
 
+   </div>
+   <div class="hero-kanan">
     <!-- 4 PILLARS OF TRUST -->
     <div class="trust-grid">
       <div class="trust-card">
@@ -948,6 +991,8 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
       </div>
     </div>
 
+   </div>
+   <div class="hero-cta">
     <!-- PRIMARY CTAS -->
     <div class="hero-cta-stack">
       <a href="https://wa.me/6287771999977?text=Halo%20Jaya%20Denso%2C%20saya%20mau%20booking%20jadwal%20servis%20AC%20mobil%20hari%20ini" class="btn-primary-wa" target="_blank" rel="noopener">
@@ -958,6 +1003,8 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
       </a>
     </div>
 
+   </div>
+   <div class="hero-gejala">
     <!-- SYMPTOMS CHECKER (GALI KEBUTUHAN LEADS) -->
     <div class="symptom-box">
       <h3>Apakah Mobil Anda Mengalami Hal Ini?</h3>
@@ -977,10 +1024,12 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
       </div>
     </div>
 
+   </div>
+   <div class="hero-mesin">
     <!-- INDUSTRIAL MACHINE HIGHLIGHT -->
     <div class="machine-card">
       <span class="tech-label">Peralatan Bengkel Modern</span>
-      <h3>Mesin Recovery Full Flushing Tercanggih</h3>
+      <h3>Mesin Recovery Full Flushing Modern</h3>
       <p>
         Metode pembersihan total sistem penyejuk udara tanpa merusak drat baut, pipa, maupun klip orisinil kendaraan Anda.
       </p>
@@ -999,6 +1048,7 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
         </div>
       </div>
     </div>
+   </div>
   </section>
 
   <!-- COMPARISON TABLE -->
@@ -1009,7 +1059,7 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
     </div>
 
     <div class="compare-container">
-      <div class="compare-titlebar">Kenapa Ribuan Pemilik Mobil Pindah ke Jaya Denso?</div>
+      <div class="compare-titlebar">Kenapa Pilih Jaya Denso?</div>
       <div class="compare-grid">
         <div class="compare-col">
           <div class="compare-col-title">Bengkel Konvensional</div>
@@ -1025,7 +1075,7 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
           <ul>
             <li><strong>0 baut dibongkar</strong> (sirkulasi mesin)</li>
             <li>Baut orisinil pabrik tetap utuh &amp; aman</li>
-            <li>Kuras bersih 100% oli lama &amp; gram besi</li>
+            <li>Kuras oli lama &amp; gram besi secara menyeluruh</li>
             <li>Selesai cepat dalam hitungan jam</li>
           </ul>
         </div>
@@ -1107,7 +1157,7 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
   <section id="cabang-kami">
     <div class="sec-head">
       <span class="sec-kicker">Jangkauan Wilayah</span>
-      <h2>2 Titik Bengkel Resmi di Tangerang</h2>
+      <h2>2 Cabang Bengkel di Tangerang</h2>
     </div>
 
     <div class="branch-grid">
@@ -1115,7 +1165,7 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
       <div class="branch-card featured">
         <div class="branch-header">
           <span class="branch-pill">Cabang 1 — Curug</span>
-          <span style="font-size:11.5px; color:#16a34a; font-weight:700">● Buka Hari Ini</span>
+          <span class="status-cabang" style="font-size:11.5px; color:#16a34a; font-weight:700">Senin – Sabtu</span>
         </div>
         <h3>JAYA DENSO 1 Curug</h3>
         <p class="branch-addr">
@@ -1135,7 +1185,7 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
       <div class="branch-card">
         <div class="branch-header">
           <span class="branch-pill">Cabang 3 — Cimone</span>
-          <span style="font-size:11.5px; color:#16a34a; font-weight:700">● Buka Hari Ini</span>
+          <span class="status-cabang" style="font-size:11.5px; color:#16a34a; font-weight:700">Senin – Sabtu</span>
         </div>
         <h3>JAYA DENSO 3 Cimone</h3>
         <p class="branch-addr">
@@ -1153,23 +1203,20 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
     </div>
   </section>
 
-  <!-- TESTIMONIALS (SOCIAL PROOF) -->
+  <!-- ULASAN ASLI (tanpa testimoni karangan; tampilkan ulasan Google asli setelah izin pemilik) -->
   <section>
     <div class="sec-head">
       <span class="sec-kicker">Bukti Kepuasan</span>
-      <h2>Ulasan Pemilik Mobil</h2>
+      <h2>Ulasan Pelanggan di Google Maps</h2>
     </div>
-
     <div class="testi-grid">
       <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p>"Awalnya ragu ganti oli kompresor tanpa bongkar, ternyata mesinnya beneran otomatis narik oli hitam pekat sampai bersih. Sekarang AC Innova saya dinginnya nusuk lagi kayak baru keluar dealer."</p>
-        <div class="testi-author">Bpk. Hendra Gunawan <span>— Pemilik Toyota Innova</span></div>
+        <p style="font-style:normal">Baca ulasan asli pelanggan Jaya Denso Curug langsung di Google Maps.</p>
+        <a class="btn-pkg" href="https://maps.app.goo.gl/yVow9CKBEiV11woWA" target="_blank" rel="noopener">Lihat ulasan Cabang Curug →</a>
       </div>
       <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p>"Penjelasan mekaniknya jujur, dicek dulu pakai komputer jadi ketahuan masalah aslinya di relay bukan langsung disuruh ganti kompresor. Biaya jadi jauh lebih hemat. Rekomended!"</p>
-        <div class="testi-author">Ibu Rina S. <span>— Pemilik Honda HR-V</span></div>
+        <p style="font-style:normal">Baca ulasan asli pelanggan Jaya Denso Cimone langsung di Google Maps.</p>
+        <a class="btn-pkg" href="https://maps.app.goo.gl/zGbojemBfVJm9moq6" target="_blank" rel="noopener">Lihat ulasan Cabang Cimone →</a>
       </div>
     </div>
   </section>
@@ -1215,16 +1262,6 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
     </div>
   </section>
 
-  <!-- PROSPECT AGENT FOOTNOTE -->
-  <div class="agency-box">
-    <h5>💡 Pratinjau Desain Khusus untuk Manajemen Jaya Denso</h5>
-    <p>
-      Website profil berstandar Google Search &amp; Sales Conversion ini disiapkan oleh PixelWebID untuk memaksimalkan jumlah pelanggan yang datang ke cabang Curug &amp; Cimone.
-    </p>
-    <a href="https://wa.me/6285148367541?text=Halo%20PixelWebID%2C%20saya%20dari%20Jaya%20Denso%20Tangerang.%20Saya%20tertarik%20mengaktifkan%20website%20ini." class="agency-btn" target="_blank" rel="noopener">
-      Hubungi Tim PixelWebID (+62 851-4836-7541)
-    </a>
-  </div>
 </main>
 
 <!-- FOOTER -->
@@ -1255,6 +1292,15 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+  (function () {
+    var w = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Jakarta" }));
+    var hari = w.getDay(), m = w.getHours() * 60 + w.getMinutes();
+    var buka = hari >= 1 && hari <= 6 && m >= 510 && m < 1020;
+    var teks = buka ? "Buka Sekarang" : "Sedang Tutup";
+    document.getElementById("status-buka").textContent = (buka ? "Bengkel Buka Sekarang" : "Bengkel Tutup") + " • Senin – Sabtu 08.30 – 17.00 WIB";
+    document.querySelectorAll(".status-cabang").forEach(function (e) { e.textContent = "● " + teks; e.style.color = buka ? "#16a34a" : "#b91c1c"; });
+    if (!buka) { var d = document.querySelector(".pulse-dot"); if (d) d.style.background = "#ef4444"; }
+  })();
 </script>
 </body>
 </html>
