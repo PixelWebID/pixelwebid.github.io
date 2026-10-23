@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mie Aceh Bungoong Jeumpaa — Cendrawasih Ciputat</title>
+<meta name="description" content="Kuliner Khas Aceh Autentik di Ciputat Tangerang Selatan. Mie Aceh Spesial, Martabak Kari Daging, Roti Cane & Teh Tarik. Tersedia Dine-in, Takeaway & Katering.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#d97706">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b45309'/%3E%3Cpath d='M16 38 C16 48 48 48 48 38 Z' fill='%23fbbf24'/%3E%3Cpath d='M20 34 Q32 20 44 34' stroke='%23ffffff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #b45309;
+  --primary-dark: #78350f;
+  --accent: #d97706;
+  --bg-warm: #fffbeb;
+  --surface: #ffffff;
+  --text-main: #1c1917;
+  --text-muted: #78716c;
+  --border: #f5e0b7;
+  --shadow-sm: 0 2px 8px rgba(120, 53, 15, 0.06);
+  --shadow-md: 0 6px 20px rgba(120, 53, 15, 0.1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-warm);
+  color: var(--text-main);
+  line-height: 1.5;
+  padding-bottom: 90px;
+}
+.preview-banner {
+  background: #1c1917;
+  color: #fbbf24;
+  font-size: 11px;
+  text-align: center;
+  padding: 6px 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.header-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand-badge {
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+.brand-info h1 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  line-height: 1.2;
+}
+.brand-info p {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.quick-call {
+  background: #16a34a;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.hero {
+  background: linear-gradient(135deg, #78350f, #b45309);
+  color: white;
+  border-radius: 16px;
+  padding: 24px 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+.hero-tag {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fde68a;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 99px;
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 13.5px;
+  color: #fef3c7;
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+.hero-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.hero-pill {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.section-title {
+  margin: 24px 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.section-title h3 {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+.section-title span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.menu-grid {
+  display: grid;
+  gap: 12px;
+}
+.menu-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+.menu-card.popular {
+  border-left: 4px solid var(--accent);
+}
+.menu-main h4 {
+  font-size: 14.5px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.menu-main p {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+.menu-price {
+  text-align: right;
+  min-width: 80px;
+}
+.menu-price span.badge-pop {
+  display: inline-block;
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+.menu-price p {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--primary);
+}
+.info-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 20px;
+  box-shadow: var(--shadow-sm);
+}
+.info-card h4 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.branch-list {
+  display: grid;
+  gap: 12px;
+}
+.branch-item {
+  background: #fffbeb;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+.branch-item h5 {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+.branch-item p {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.branch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid var(--border);
+  padding: 10px 16px;
+  z-index: 100;
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.06);
+}
+.sticky-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+.btn-footer {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.btn-wa-main {
+  background: #16a34a;
+  color: white;
+}
+.btn-maps {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+</style>
+</head>
+<body>
+
+<div class="preview-banner">
+  Pratinjau Desain Khusus Bungoong Jeumpaa • oleh PixelWebID
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="brand-box">
+      <div class="brand-badge">ACEH</div>
+      <div class="brand-info">
+        <h1>BUNGOONG JEUMPAA</h1>
+        <p>Kuliner Autentik Khas Aceh Sejak 2016</p>
+      </div>
+    </div>
+    <a href="https://wa.me/6281318811008?text=Halo%20Bungoong%20Jeumpaa%2C%20saya%20mau%20tanya%20menu%20dan%20reservasi%20meja" class="quick-call" target="_blank" rel="noopener">
+      <span>Chat WA</span>
+    </a>
+  </div>
+</header>
+
+<main class="container">
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-tag">⭐ Rating 4.7 • Ratusan Ulasan Nyata</span>
+    <h2>Rempah Autentik Khas Serambi Mekkah di Ciputat</h2>
+    <p>Nikmati olahan Mie Aceh dengan kuah kari rempah kental, Martabak Daging gurih, Roti Cane kuah durian/kari, dan Kopi/Teh Tarik racikan asli.</p>
+    <div class="hero-badges">
+      <span class="hero-pill">✓ Bumbu Rempah Alami</span>
+      <span class="hero-pill">✓ Dine-in &amp; Takeaway</span>
+      <span class="hero-pill">✓ Siap Pesanan Katering</span>
+    </div>
+  </section>
+
+  <!-- MENU FAVORIT -->
+  <div class="section-title">
+    <h3>Menu Spesial &amp; Paling Diminati</h3>
+    <span>Buka 15.00 - 22.30 WIB</span>
+  </div>
+
+  <div class="menu-grid">
+    <div class="menu-card popular">
+      <div class="menu-main">
+        <h4>Mie Aceh Tumis Daging / Seafood</h4>
+        <p>Mie basah kenyal berpadu kuah rempah kari khas Aceh dengan irisan daging sapi / seafood segar.</p>
+      </div>
+      <div class="menu-price">
+        <span class="badge-pop">FAVORIT</span>
+        <p>Rp 37.500</p>
+      </div>
+    </div>
+
+    <div class="menu-card popular">
+      <div class="menu-main">
+        <h4>Mie Aceh Goreng Istimewa</h4>
+        <p>Kombinasi lengkap daging, udang, cumi, telur dan taburan emping renyah serta acar bawang segar.</p>
+      </div>
+      <div class="menu-price">
+        <span class="badge-pop">KOMPLIT</span>
+        <p>Rp 49.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-main">
+        <h4>Martabak Telor Kuah Kari Daging</h4>
+        <p>Martabak telur lembut khas Aceh disiram kuah kari gurih kental beraroma rempah wangi.</p>
+      </div>
+      <div class="menu-price">
+        <p>Rp 36.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-main">
+        <h4>Roti Cane Kari / Susu Keju</h4>
+        <p>Roti pipih gurih berlapis mentega, pilihan kuah kari autentik atau topping manis kekinian.</p>
+      </div>
+      <div class="menu-price">
+        <p>Rp 27.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-main">
+        <h4>Teh Tarik Aceh (Dingin / Panas)</h4>
+        <p>Racikan teh hitam pekat dan susu kental yang ditarik berbusa lembut, pelepas dahaga sempurna.</p>
+      </div>
+      <div class="menu-price">
+        <p>Rp 19.500</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CABANG & LOKASI FISIK -->
+  <section class="info-card">
+    <h4>📍 Dua Lokasi Cabang Resmi</h4>
+    <div class="branch-list">
+      <div class="branch-item">
+        <h5>1. Cabang Cendrawasih (Ciputat)</h5>
+        <p>Jl. Cendrawasih Raya No.14, Sawah Lama, Kec. Ciputat, Tangerang Selatan (Buka 15.00 - 22.30 WIB)</p>
+        <a href="https://maps.google.com/?cid=17073663085337873655" class="branch-btn" target="_blank" rel="noopener">🗺️ Buka Rute Google Maps &rarr;</a>
+      </div>
+      <div class="branch-item">
+        <h5>2. Cabang Kertamukti (Pisangan)</h5>
+        <p>Jl. Kertamukti No.4, Pisangan, Kec. Ciputat Timur, Tangerang Selatan (Buka 16.00 - 22.30 WIB)</p>
+        <a href="https://maps.google.com/?cid=3388159061534294232" class="branch-btn" target="_blank" rel="noopener">🗺️ Buka Rute Google Maps &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATERING & RESERVASI -->
+  <section class="info-card" style="background: linear-gradient(135deg, #fffbeb, #fef3c7); border-color: #fde68a;">
+    <h4>🍱 Melayani Pesanan Katering &amp; Acara Kantor</h4>
+    <p style="font-size: 12.5px; color: #78350f; line-height: 1.5; margin-bottom: 12px;">
+      Menerima pesanan nasi boks khas Aceh, mie aceh porsi besar, atau live cooking untuk acara keluarga, arisan, syukuran, dan gathering kantor di area Tangerang Selatan &amp; sekitarnya.
+    </p>
+    <a href="https://wa.me/6281318811008?text=Halo%20Bungoong%20Jeumpaa%2C%20mau%20tanya%20paket%20katering%20acara" style="display:inline-block; background: var(--primary); color: white; padding: 10px 16px; border-radius: 8px; font-size: 12px; font-weight: 700; text-decoration: none;" target="_blank" rel="noopener">
+      Hubungi untuk Pesanan Katering &rarr;
+    </a>
+  </section>
+</main>
+
+<div class="sticky-footer">
+  <div class="sticky-inner">
+    <a href="https://maps.google.com/?cid=17073663085337873655" class="btn-footer btn-maps" target="_blank" rel="noopener">
+      📍 Rute Maps
+    </a>
+    <a href="https://wa.me/6281318811008?text=Halo%20Bungoong%20Jeumpaa%2C%20mau%20tanya%20menu%20dan%20pesan" class="btn-footer btn-wa-main" target="_blank" rel="noopener">
+      💬 Pesan via WhatsApp
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
