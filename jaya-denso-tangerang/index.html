@@ -920,6 +920,21 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
 }
 
 @media (min-width: 1000px) { .ulasan-asli { grid-template-columns: repeat(3, 1fr); } }
+
+/* VIDEO YOUTUBE RINGAN (facade): gambar thumbnail dulu, pemutar YouTube dimuat hanya saat diklik */
+.video-grid { display: grid; gap: 14px; margin-bottom: 14px; }
+.yt { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--border); border-radius: 12px;
+      overflow: hidden; background: #1C1917; cursor: pointer; padding: 0; }
+.yt img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.yt .play { position: absolute; left: 50%; top: 50%; width: 64px; height: 44px; margin: -22px 0 0 -32px; border-radius: 10px;
+            background: rgba(28, 25, 23, .82); }
+.yt .play::after { content: ""; position: absolute; left: 26px; top: 13px; border-style: solid; border-width: 9px 0 9px 15px;
+                   border-color: transparent transparent transparent #fff; }
+.yt:hover .play { background: var(--denso-red); }
+.yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-cap { font-size: 13px; font-weight: 700; color: var(--carbon); margin-top: 8px; }
+.video-link { display: inline-block; font-size: 13px; font-weight: 700; color: var(--denso-red); text-decoration: none; margin-bottom: 26px; }
+@media (min-width: 720px) { .video-grid { grid-template-columns: repeat(3, 1fr); } }
 </style>
 </head>
 <body>
@@ -1053,6 +1068,38 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
       </div>
     </div>
    </div>
+  </section>
+
+  <!-- VIDEO PENGERJAAN (YouTube resmi Jaya Denso, dimuat saat diklik) -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-kicker">Lihat Langsung</span>
+      <h2>Video Pengerjaan di Bengkel</h2>
+    </div>
+    <div class="video-grid">
+      <div>
+        <button class="yt" type="button" data-id="MN4A3apxktI" aria-label="Putar video: Flushing &amp; ganti oli kompresor dengan mesin recovery">
+          <img src="https://i.ytimg.com/vi/MN4A3apxktI/hqdefault.jpg" alt="Flushing &amp; ganti oli kompresor dengan mesin recovery" loading="lazy" width="480" height="360">
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <div class="video-cap">Flushing &amp; ganti oli kompresor dengan mesin recovery</div>
+      </div>
+      <div>
+        <button class="yt" type="button" data-id="GFsOSClnYmM" aria-label="Putar video: Instal ulang total unit AC Honda Grand Civic">
+          <img src="https://i.ytimg.com/vi/GFsOSClnYmM/hqdefault.jpg" alt="Instal ulang total unit AC Honda Grand Civic" loading="lazy" width="480" height="360">
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <div class="video-cap">Instal ulang total unit AC Honda Grand Civic</div>
+      </div>
+      <div>
+        <button class="yt" type="button" data-id="XmQZs0jKzPw" aria-label="Putar video: Perbaikan &amp; penggantian evaporator Dodge Journey">
+          <img src="https://i.ytimg.com/vi/XmQZs0jKzPw/hqdefault.jpg" alt="Perbaikan &amp; penggantian evaporator Dodge Journey" loading="lazy" width="480" height="360">
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <div class="video-cap">Perbaikan &amp; penggantian evaporator Dodge Journey</div>
+      </div>
+    </div>
+    <a class="video-link" href="https://youtube.com/@jayadensotangerangacmobilo3267" target="_blank" rel="noopener">Lihat semua video di YouTube Jaya Denso →</a>
   </section>
 
   <!-- COMPARISON TABLE -->
@@ -1326,6 +1373,16 @@ footer a { color: var(--denso-red); text-decoration: none; font-weight: 600; }
     document.querySelectorAll(".status-cabang").forEach(function (e) { e.textContent = "● " + teks; e.style.color = buka ? "#166534" : "#7F1D1D"; });
     if (!buka) { var d = document.querySelector(".pulse-dot"); if (d) d.style.background = "#7F1D1D"; }
   })();
+  document.querySelectorAll(".yt").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/" + b.dataset.id + "?autoplay=1&rel=0";
+      f.title = b.getAttribute("aria-label");
+      f.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+      f.allowFullscreen = true;
+      b.innerHTML = ""; b.appendChild(f);
+    }, { once: true });
+  });
 </script>
 </body>
 </html>
