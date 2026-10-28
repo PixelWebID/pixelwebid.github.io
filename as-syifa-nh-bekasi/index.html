@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Klinik & Laboratorium As-Syifa NH — Layanan Kesehatan & Lab Terpercaya di Bekasi</title>
-  <meta name="description" content="Layanan medis dan pemeriksaan laboratorium terpercaya di Bekasi. Rating 4.9 dari 150+ ulasan pasien. Melayani tes darah, medical check-up (MCU), dan dokter umum.">
+  <meta name="description" content="Layanan medis dan laboratorium resmi di Bekasi. Melayani pemeriksaan darah lengkap, kimia darah, medical check-up (MCU) perorangan & perusahaan, dan praktik dokter.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,161 +14,277 @@
       --primary-dark: #0369a1;
       --accent: #059669;
       --dark: #0f172a;
-      --gray-light: #f8fafc;
-      --gray-border: #e2e8f0;
+      --light-bg: #f8fafc;
+      --border: #e2e8f0;
       --text: #334155;
       --text-muted: #64748b;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text); background: #ffffff; line-height: 1.6; }
-    header { background: #ffffff; border-bottom: 1px solid var(--gray-border); position: sticky; top: 0; z-index: 50; }
-    .nav-container { max-width: 1100px; margin: auto; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
-    .brand { font-size: 1.25rem; font-weight: 700; color: var(--primary-dark); display: flex; align-items: center; gap: 8px; }
+    .top-bar { background: #f1f5f9; border-bottom: 1px solid var(--border); font-size: 0.85rem; padding: 8px 20px; color: var(--text-muted); }
+    .top-bar-inner { max-width: 1140px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    header { background: #ffffff; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
+    .nav-container { max-width: 1140px; margin: auto; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-size: 1.25rem; font-weight: 700; color: var(--primary-dark); text-decoration: none; display: flex; align-items: center; gap: 8px; }
     .brand span { color: var(--accent); }
-    .btn-wa { background: #25d366; color: white; padding: 10px 20px; border-radius: 99px; text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,211,102,0.25); transition: 0.2s; }
-    .btn-wa:hover { background: #1eb956; transform: translateY(-1px); }
-    .hero { background: linear-gradient(135deg, #f0fdf4 0%, #f0f9ff 100%); padding: 60px 20px; text-align: center; }
-    .hero-content { max-width: 760px; margin: auto; }
-    .badge { display: inline-block; background: #e0f2fe; color: var(--primary-dark); padding: 6px 16px; border-radius: 99px; font-weight: 600; font-size: 0.85rem; margin-bottom: 20px; }
-    .hero h1 { font-size: 2.3rem; color: var(--dark); font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
-    .hero p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 28px; }
-    .hero-stats { display: flex; justify-content: center; gap: 30px; margin-top: 30px; border-top: 1px solid #cbd5e1; padding-top: 24px; }
-    .stat-item { text-align: center; }
-    .stat-val { font-size: 1.4rem; font-weight: 700; color: var(--dark); }
-    .stat-lbl { font-size: 0.85rem; color: var(--text-muted); }
-    .section { max-width: 1100px; margin: auto; padding: 60px 20px; }
-    .section-title { text-align: center; margin-bottom: 40px; }
-    .section-title h2 { font-size: 1.8rem; color: var(--dark); margin-bottom: 10px; }
-    .section-title p { color: var(--text-muted); }
-    .grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-    .card { background: white; border: 1px solid var(--gray-border); border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: 0.2s; }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.06); }
-    .card h3 { font-size: 1.2rem; color: var(--dark); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-    .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px; }
-    .card-list { list-style: none; margin-bottom: 20px; font-size: 0.9rem; }
-    .card-list li { margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-    .card-list li::before { content: "✓"; color: var(--accent); font-weight: bold; }
-    .btn-card { display: block; text-align: center; background: #f1f5f9; color: var(--dark); text-decoration: none; padding: 10px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; }
-    .btn-card:hover { background: #e2e8f0; }
-    .info-box { background: #f8fafc; border: 1px solid var(--gray-border); border-radius: 12px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 40px; }
-    .info-item h4 { color: var(--dark); margin-bottom: 8px; }
-    .info-item p { font-size: 0.9rem; color: var(--text-muted); }
+    .nav-menu { display: flex; gap: 20px; align-items: center; }
+    .nav-link { color: var(--text); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    .nav-link:hover { color: var(--primary); }
+    .btn-wa-header { background: #25d366; color: white; padding: 9px 18px; border-radius: 99px; text-decoration: none; font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(37,211,102,0.2); }
+    .hero { background: linear-gradient(135deg, #f0fdf4 0%, #f0f9ff 100%); padding: 50px 20px 60px; border-bottom: 1px solid var(--border); }
+    .hero-container { max-width: 1140px; margin: auto; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+    .badge-hero { display: inline-flex; align-items: center; gap: 6px; background: #e0f2fe; color: var(--primary-dark); padding: 6px 14px; border-radius: 99px; font-weight: 600; font-size: 0.85rem; margin-bottom: 16px; }
+    .hero h1 { font-size: 2.2rem; color: var(--dark); font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
+    .hero p { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 24px; }
+    .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary { background: var(--primary); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    .btn-outline { background: white; border: 1px solid var(--border); color: var(--dark); padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    .hero-card { background: white; border: 1px solid var(--border); border-radius: 16px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .hero-card h3 { font-size: 1.1rem; color: var(--dark); margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+    .card-row { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.9rem; }
+    .card-row span:first-child { color: var(--text-muted); }
+    .card-row span:last-child { font-weight: 600; color: var(--dark); }
+    .container { max-width: 1140px; margin: auto; padding: 60px 20px; }
+    .section-head { text-align: center; max-width: 700px; margin: 0 auto 40px; }
+    .section-head h2 { font-size: 1.8rem; color: var(--dark); margin-bottom: 10px; }
+    .section-head p { color: var(--text-muted); font-size: 1rem; }
+    .table-container { background: white; border: 1px solid var(--border); border-radius: 12px; overflow-x: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; }
+    th { background: #f8fafc; padding: 14px 18px; font-weight: 600; color: var(--dark); border-bottom: 1px solid var(--border); }
+    td { padding: 14px 18px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .tag-puasa { display: inline-block; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .tag-bebas { display: inline-block; background: #ecfdf5; color: #065f46; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+    .grid-mcu { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+    .mcu-card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 28px; position: relative; }
+    .mcu-card.featured { border: 2px solid var(--primary); box-shadow: 0 10px 25px rgba(2,132,199,0.1); }
+    .badge-populer { position: absolute; top: -12px; right: 24px; background: var(--primary); color: white; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 99px; text-transform: uppercase; }
+    .mcu-card h3 { font-size: 1.25rem; color: var(--dark); margin-bottom: 8px; }
+    .mcu-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px; }
+    .mcu-list { list-style: none; margin-bottom: 24px; font-size: 0.9rem; }
+    .mcu-list li { margin-bottom: 10px; display: flex; align-items: flex-start; gap: 8px; }
+    .mcu-list li::before { content: "✓"; color: var(--accent); font-weight: bold; }
+    .btn-block-wa { display: block; text-align: center; background: #25d366; color: white; text-decoration: none; padding: 11px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; }
+    .doctor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .doc-card { background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .doc-card h4 { font-size: 1.1rem; color: var(--dark); margin-bottom: 4px; }
+    .doc-spec { color: var(--primary); font-size: 0.85rem; font-weight: 600; margin-bottom: 12px; }
+    .doc-schedule { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+    .info-pane { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+    .info-pane h3 { font-size: 1.15rem; color: var(--dark); margin-bottom: 14px; }
     footer { background: var(--dark); color: #94a3b8; padding: 40px 20px; text-align: center; font-size: 0.9rem; margin-top: 60px; }
-    footer p { margin-bottom: 8px; }
-    .mockup-banner { background: #fef08a; color: #854d0e; text-align: center; padding: 10px; font-size: 0.85rem; font-weight: 600; }
-    @media (max-width: 640px) {
+    footer p { margin-bottom: 6px; }
+    .mockup-bar { background: #fef08a; color: #854d0e; text-align: center; padding: 10px; font-size: 0.85rem; font-weight: 600; }
+    @media (max-width: 768px) {
+      .hero-container { grid-template-columns: 1fr; }
+      .nav-menu { display: none; }
+      .info-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 1.8rem; }
-      .hero-stats { flex-direction: column; gap: 16px; }
     }
   </style>
 </head>
 <body>
-
-  <div class="mockup-banner">
-    Pratinjau Desain Khusus untuk Klinik & Laboratorium As-Syifa NH oleh PixelWebID
+  <div class="mockup-bar">
+    Pratinjau Desain Profil Fasilitas Kesehatan: Klinik & Laboratorium As-Syifa NH (Sesuai Standar Layanan Medis)
   </div>
-
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div>🏥 <b>Klinik Pratama & Lab Terakreditasi</b> • Izin Resmi Faskes Kota Bekasi</div>
+      <div>⏰ Buka Senin–Sabtu 08:00 - 20:00 WIB • Emergency 24/7 Hotline</div>
+    </div>
+  </div>
   <header>
     <div class="nav-container">
-      <div class="brand">
+      <a href="#" class="brand">
         🏥 As-Syifa NH <span>Klinik & Lab</span>
-      </div>
-      <a href="https://wa.me/6282122874226?text=Halo%20Admin%20Klinik%20As-Syifa%20NH,%20saya%20ingin%20tanya%20jadwal%20layanan" class="btn-wa" target="_blank">
-        Hubungi WhatsApp
+      </a>
+      <nav class="nav-menu">
+        <a href="#lab" class="nav-link">Pemeriksaan Lab</a>
+        <a href="#mcu" class="nav-link">Paket MCU</a>
+        <a href="#dokter" class="nav-link">Jadwal Praktik</a>
+        <a href="#lokasi" class="nav-link">Lokasi & Kontak</a>
+      </nav>
+      <a href="https://wa.me/6282122874226?text=Halo%20Admin%20Klinik%20As-Syifa%20NH,%20saya%20ingin%20konsultasi%20layanan" class="btn-wa-header" target="_blank">
+        💬 WhatsApp CS
       </a>
     </div>
   </header>
-
   <section class="hero">
-    <div class="hero-content">
-      <div class="badge">⭐ Terpercaya di Bekasi • Rating 4.9 di Google</div>
-      <h1>Layanan Medis Cepat, Laboratorium Akurat & Ramah Pasien</h1>
-      <p>Klinik & Laboratorium As-Syifa NH menyediakan pemeriksaan darah rutin, paket Medical Check-Up (MCU), dan layanan dokter umum dengan standar medis higienis.</p>
-      <a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa%20NH,%20saya%20mau%20konsultasi%20layanan%20lab" class="btn-wa" target="_blank">
-        💬 Konsultasi / Booking via WhatsApp
-      </a>
-
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-val">4.9 / 5.0</div>
-          <div class="stat-lbl">Rating Google Maps</div>
+    <div class="hero-container">
+      <div>
+        <div class="badge-hero">⭐ 4.9 dari 150+ Ulasan Pasien di Google Maps</div>
+        <h1>Layanan Laboratorium Akurat & Pelayanan Medis Terpadu di Bekasi</h1>
+        <p>Pemeriksaan spesimen darah lengkap, urinalisis, skrining penyakit metabolik, serta Medical Check-Up mandiri & instansi dengan standar kebersihan klinis.</p>
+        <div class="hero-cta">
+          <a href="#lab" class="btn-primary">Lihat Katalog Uji Lab</a>
+          <a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa%20NH,%20saya%20mau%20booking%20tes%20lab" class="btn-outline" target="_blank">Pendaftaran via WhatsApp</a>
         </div>
-        <div class="stat-item">
-          <div class="stat-val">150+</div>
-          <div class="stat-lbl">Ulasan Pasien Puas</div>
+      </div>
+      <div class="hero-card">
+        <h3>Ringkasan Operasional Faskes</h3>
+        <div class="card-row">
+          <span>Kategori Faskes:</span>
+          <span>Klinik Pratama & Laboratorium</span>
         </div>
-        <div class="stat-item">
-          <div class="stat-val">Cepat & Resmi</div>
-          <div class="stat-lbl">Hasil Lab Terverifikasi</div>
+        <div class="card-row">
+          <span>Layanan Utama:</span>
+          <span>Lab Darah, MCU, Dokter Umum</span>
+        </div>
+        <div class="card-row">
+          <span>Waktu Hasil Lab:</span>
+          <span>Selesai di Hari yang Sama</span>
+        </div>
+        <div class="card-row">
+          <span>Format Hasil:</span>
+          <span>Cetak Resmi & PDF via WhatsApp</span>
+        </div>
+        <div class="card-row">
+          <span>Asisten Digital:</span>
+          <span style="color:var(--accent);">Aktif Menjawab 24 Jam</span>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="section">
-    <div class="section-title">
-      <h2>Layanan Utama As-Syifa NH</h2>
-      <p>Pemeriksaan terintegrasi untuk kebutuhan perorangan, keluarga, dan instansi.</p>
+  <section class="container" id="lab">
+    <div class="section-head">
+      <h2>Daftar Pemeriksaan Laboratorium</h2>
+      <p>Pemeriksaan rutin dengan rujukan nilai normal standar kedokteran & panduan persiapan puasa yang jelas.</p>
     </div>
-
-    <div class="grid-services">
-      <div class="card">
-        <h3>🔬 Pemeriksaan Laboratorium</h3>
-        <p>Tes darah lengkap, kolesterol, gula darah, fungsi hati & ginjal dengan alat modern dan hasil akurat.</p>
-        <ul class="card-list">
-          <li>Hematologi & Darah Lengkap</li>
-          <li>Profil Lemak & Kolesterol</li>
-          <li>Uji Fungsi Ginjal & Hati</li>
-          <li>Hasil cetak & PDF siap kirim</li>
-        </ul>
-        <a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20mau%20tanya%20tarif%20tes%20lab" class="btn-card" target="_blank">Tanya Syarat & Tarif Lab &rarr;</a>
-      </div>
-
-      <div class="card">
-        <h3>📋 Medical Check-Up (MCU)</h3>
-        <p>Paket pemeriksaan kesehatan menyeluruh untuk calon karyawan, instansi, atau skrining berkala.</p>
-        <ul class="card-list">
-          <li>Paket Pra-Kerja & Syarat Kerja</li>
-          <li>MCU Tahunan Perusahaan / B2B</li>
-          <li>Pemeriksaan Fisik & Tanda Vital</li>
-          <li>Laporan MCU Resmi Dokter</li>
-        </ul>
-        <a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20ingin%20info%20paket%20MCU%20instansi" class="btn-card" target="_blank">Konsultasi Paket MCU &rarr;</a>
-      </div>
-
-      <div class="card">
-        <h3>👨‍⚕️ Konsultasi Dokter & Umum</h3>
-        <p>Penanganan keluhan medis harian, pemeriksaan umum, dan peresepan obat sesuai diagnosis dokter.</p>
-        <ul class="card-list">
-          <li>Pemeriksaan Keluhan Umum</li>
-          <li>Surat Keterangan Sehat</li>
-          <li>Tindakan Medis Ringan</li>
-          <li>Antrean Nyaman & Tertib</li>
-        </ul>
-        <a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20mau%20tanya%20jadwal%20dokter%20hari%20ini" class="btn-card" target="_blank">Cek Jadwal Praktek &rarr;</a>
-      </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Jenis Pemeriksaan</th>
+            <th>Item Uji / Parameter</th>
+            <th>Persiapan Pasien</th>
+            <th>Estimasi Hasil</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Darah Lengkap (Hematologi)</b></td>
+            <td>Hemoglobin, Leukosit, Trombosit, Hematokrit, Eritrosit, LED</td>
+            <td><span class="tag-bebas">Tidak Perlu Puasa</span></td>
+            <td>1 - 2 Jam</td>
+            <td><a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20ingin%20cek%20darah%20lengkap" style="color:var(--primary);font-weight:600;text-decoration:none;">Daftar &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><b>Panel Gula Darah</b></td>
+            <td>Gula Darah Puasa (GDP), Gula Darah 2 Jam PP, HbA1c</td>
+            <td><span class="tag-puasa">Puasa 8 - 10 Jam</span></td>
+            <td>Selesai Hari Ini</td>
+            <td><a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20ingin%20cek%20gula%20darah" style="color:var(--primary);font-weight:600;text-decoration:none;">Daftar &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><b>Profil Lemak / Kolesterol</b></td>
+            <td>Kolesterol Total, Trigliserida, HDL, LDL</td>
+            <td><span class="tag-puasa">Puasa 10 - 12 Jam</span></td>
+            <td>Selesai Hari Ini</td>
+            <td><a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20ingin%20cek%20kolesterol%20lengkap" style="color:var(--primary);font-weight:600;text-decoration:none;">Daftar &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><b>Fungsi Ginjal & Asam Urat</b></td>
+            <td>Ureum, Kreatinin, Asam Urat (Uric Acid)</td>
+            <td><span class="tag-bebas">Boleh Minum Air Putih</span></td>
+            <td>Selesai Hari Ini</td>
+            <td><a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20ingin%20cek%20fungsi%20ginjal%20dan%20asam%20urat" style="color:var(--primary);font-weight:600;text-decoration:none;">Daftar &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><b>Fungsi Hati (Liver Panel)</b></td>
+            <td>SGOT, SGPT, Bilirubin Total/Direk</td>
+            <td><span class="tag-puasa">Puasa 8 Jam</span></td>
+            <td>Selesai Hari Ini</td>
+            <td><a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20ingin%20cek%20fungsi%20hati" style="color:var(--primary);font-weight:600;text-decoration:none;">Daftar &rarr;</a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-    <div class="info-box">
-      <div class="info-item">
-        <h4>📍 Lokasi Klinik</h4>
-        <p>Bekasi, Jawa Barat<br>Akses mudah & parkir aman.</p>
+  </section>
+  <section class="container" id="mcu" style="padding-top:0;">
+    <div class="section-head">
+      <h2>Paket Medical Check-Up (MCU)</h2>
+      <p>Skrining menyeluruh untuk individu, syarat kerja, maupun program kesehatan berkala karyawan perusahaan.</p>
+    </div>
+    <div class="grid-mcu">
+      <div class="mcu-card">
+        <h3>MCU Pra-Kerja</h3>
+        <p class="mcu-desc">Paket standar untuk syarat administrasi masuk kerja atau instansi.</p>
+        <ul class="mcu-list">
+          <li>Pemeriksaan Fisik oleh Dokter</li>
+          <li>Darah Lengkap & Urin Rutin</li>
+          <li>Tes Bebas Narkoba (Multi-Panel)</li>
+          <li>Surat Keterangan Sehat Resmi</li>
+        </ul>
+        <a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20mau%20tanya%20biaya%20MCU%20Pra-Kerja" class="btn-block-wa" target="_blank">Booking Paket Pra-Kerja</a>
       </div>
-      <div class="info-item">
-        <h4>⏰ Jam Operasional</h4>
-        <p>Senin – Sabtu: 08:00 – 20:00 WIB<br>Minggu & Libur: Sesuai Jadwal</p>
+      <div class="mcu-card featured">
+        <span class="badge-populer">Paling Banyak Diambil</span>
+        <h3>MCU Skrining Sehat (Basic)</h3>
+        <p class="mcu-desc">Evaluasi tahunan organ vital dan risiko penyakit metabolik perorangan.</p>
+        <ul class="mcu-list">
+          <li>Pemeriksaan Tanda Vital & Konsul Dokter</li>
+          <li>Hematologi Lengkap (Darah)</li>
+          <li>Profil Lemak (Kolesterol, Trigliserida)</li>
+          <li>Gula Darah Puasa & Fungsi Ginjal</li>
+          <li>Laporan Resume Medis Lengkap</li>
+        </ul>
+        <a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20saya%20mau%20booking%20MCU%20Skrining%20Sehat" class="btn-block-wa" target="_blank">Booking Skrining Sehat</a>
       </div>
-      <div class="info-item">
-        <h4>⚡ Respon Cepat 24/7</h4>
-        <p>Dilengkapi sistem asisten digital cerdas yang siap menjawab pertanyaan pasien di luar jam kerja.</p>
+      <div class="mcu-card">
+        <h3>MCU Corporate / Instansi B2B</h3>
+        <p class="mcu-desc">Khusus rombongan karyawan pabrik, kantor, atau sekolah di area Bekasi.</p>
+        <ul class="mcu-list">
+          <li>Bisa On-Site (Tim Medis ke Kantor)</li>
+          <li>Parameter Tes Dapat Dikustomisasi</li>
+          <li>Rekapitulasi Kesehatan Kolektif HRD</li>
+          <li>Invoice Resmi & Surat Perjanjian Kerjasama</li>
+        </ul>
+        <a href="https://wa.me/6282122874226?text=Halo%20Klinik%20As-Syifa,%20kami%20dari%20instansi/perusahaan%20mau%20minta%20penawaran%20MCU%20karyawan" class="btn-block-wa" target="_blank">Minta Proposal MCU Kantor</a>
       </div>
     </div>
   </section>
-
+  <section class="container" id="dokter" style="padding-top:0;">
+    <div class="section-head">
+      <h2>Jadwal Praktik Dokter</h2>
+      <p>Konsultasi langsung dengan tim dokter umum berpengalaman untuk diagnosa tepat.</p>
+    </div>
+    <div class="doctor-grid">
+      <div class="doc-card">
+        <h4>dr. Tim Medis Umum As-Syifa</h4>
+        <div class="doc-spec">Layanan Dokter Umum & Konsultasi Lab</div>
+        <div class="doc-schedule">
+          <b>Pagi:</b> Senin – Sabtu, 08:30 – 12:00 WIB<br>
+          <b>Sore:</b> Senin – Sabtu, 16:00 – 20:00 WIB<br>
+          <i>Menerima konsultasi hasil uji laboratorium & rujukan tindakan.</i>
+        </div>
+      </div>
+      <div class="doc-card">
+        <h4>Pelayanan Pengambilan Sampel (Phlebotomy)</h4>
+        <div class="doc-spec">Analis Kesehatan / Laborat Berlisensi</div>
+        <div class="doc-schedule">
+          <b>Setiap Hari Kerja:</b> 08:00 – 17:00 WIB<br>
+          <i>Pengambilan darah higienis, jarum steril sekali pakai (disposable).</i>
+        </div>
+      </div>
+    </div>
+    <div class="info-grid">
+      <div class="info-pane" id="lokasi">
+        <h3>📍 Alamat & Akses Mudah</h3>
+        <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:14px;">Klinik dan Laboratorium As-Syifa NH berada di lokasi strategis Bekasi dengan akses jalan utama dan tempat parkir kendaraan yang memadai.</p>
+        <a href="https://maps.google.com/?q=Klinik+dan+Laboratorium+As-Syifa+NH+Bekasi" target="_blank" style="color:var(--primary);font-weight:600;text-decoration:none;">Buka Petunjuk Arah di Google Maps &rarr;</a>
+      </div>
+      <div class="info-pane">
+        <h3>🤖 Layanan WhatsApp 24 Jam</h3>
+        <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:14px;">Klinik dilengkapi sistem Karyawan Digital AI yang otomatis memandu calon pasien saat malam hari atau jam istirahat untuk cek syarat puasa tes lab dan jadwal layanan.</p>
+        <span style="display:inline-block;background:#ecfdf5;color:#065f46;padding:4px 10px;border-radius:6px;font-size:0.85rem;font-weight:600;">Sistem Aktif & Terintegrasi</span>
+      </div>
+    </div>
+  </section>
   <footer>
-    <p>&copy; 2026 Klinik dan Laboratorium As-Syifa NH Bekasi. Seluruh hak cipta dilindungi.</p>
-    <p style="font-size: 0.8rem; opacity: 0.7;">Pratinjau konsep website resmi dibuat oleh PixelWebID — Digital Partner UMKM & Bisnis Indonesia.</p>
+    <p>&copy; 2026 Klinik dan Laboratorium As-Syifa NH Bekasi.</p>
+    <p style="font-size: 0.8rem; opacity: 0.7;">Contoh mockup resmi disusun oleh PixelWebID — Partner Transformasi Digital & Otomasi AI.</p>
   </footer>
-
 </body>
 </html>
