@@ -137,11 +137,24 @@ header {
   text-decoration: none;
   color: var(--dark);
 }
-.brand-logo-img {
-  width: 42px;
-  height: 42px;
+.brand-logo-placeholder {
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
-  object-fit: contain;
+  border: 1.5px dashed #94A3B8;
+  border-radius: 8px;
+  background: #F1F5F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  color: #64748B;
+  font-size: 0.58rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 .brand-text h1 {
   font-size: 1.15rem;
@@ -554,7 +567,10 @@ footer {
 <header>
   <div class="layout-container header-inner">
     <a href="#" class="brand-link">
-      <img src="logo.svg" alt="Logo As-Syifa NH" class="brand-logo-img">
+      <div class="brand-logo-placeholder">
+        <span>LOGO</span>
+        <span style="font-size:0.5rem;color:#94A3B8;">KLINIK</span>
+      </div>
       <div class="brand-text">
         <h1>AS-SYIFA NH</h1>
         <p>Klinik & Laboratorium</p>
