@@ -44,16 +44,16 @@
 
 <style>
 :root {
-  --primary: #0284C7;
-  --primary-dark: #0369A1;
-  --primary-deep: #075985;
-  --accent: #0D9488;
+  --primary: #0F766E;          /* Deep Medical Teal */
+  --primary-dark: #115E59;
+  --primary-deep: #134E4A;
+  --accent: #D97706;           /* Amber Akses Medis */
   --dark: #0F172A;
   --slate: #1E293B;
   --text-body: #334155;
   --text-muted: #64748B;
-  --bg-soft: #F8FAFC;
-  --border: #E2E8F0;
+  --bg-soft: #F0FDFA;          /* Soft Mint / Teal Tint */
+  --border: #CCFBF1;
   --wa: #15803D;
   --wa-hover: #166534;
 }
@@ -184,9 +184,9 @@ header {
 
 /* HERO SECTION */
 .hero {
-  background: linear-gradient(180deg, #F0F9FF 0%, #FFFFFF 100%);
-  padding: 56px 0 60px;
-  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, #042F2E 0%, #0F766E 60%, #115E59 100%);
+  padding: 60px 0 70px;
+  color: #FFFFFF;
 }
 .hero-grid {
   display: grid;
@@ -198,8 +198,9 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #E0F2FE;
-  color: var(--primary-deep);
+  background: rgba(255,255,255,0.15);
+  color: #F0FDFA;
+  border: 1px solid rgba(255,255,255,0.25);
   padding: 6px 14px;
   border-radius: 6px;
   font-size: 0.85rem;
@@ -207,16 +208,16 @@ header {
   margin-bottom: 16px;
 }
 .hero h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 800;
-  color: var(--dark);
+  color: #FFFFFF;
   line-height: 1.25;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
 .hero-desc {
   font-size: 1.05rem;
-  color: var(--text-muted);
+  color: #CCFBF1;
   line-height: 1.6;
   margin-bottom: 24px;
 }
@@ -226,18 +227,18 @@ header {
   flex-wrap: wrap;
 }
 .btn-primary-action {
-  background: var(--primary);
-  color: white;
+  background: #F59E0B;
+  color: #0F172A;
   padding: 13px 24px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.92rem;
 }
 .btn-secondary-action {
-  background: white;
-  color: var(--slate);
-  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.1);
+  color: #FFFFFF;
+  border: 1px solid rgba(255,255,255,0.3);
   padding: 13px 22px;
   border-radius: 8px;
   text-decoration: none;
