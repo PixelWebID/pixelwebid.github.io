@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Supermarket Bangunan ACC — Depo Material, Granit, Cat & Pintu Baja Katulampa Bogor</title>
-<meta name="description" content="Supermarket Bangunan ACC Katulampa Bogor Timur. Pusat belanja bahan bangunan modern: Pintu Baja Fortress, Cat Tinting Propan & Dulux, Granit 60x60, Semen Mortar & Sanitair.">
+<title>Supermarket Bangunan ACC — Pusat E-Katalog Material, Granit, Cat & Pintu Baja Bogor</title>
+<meta name="description" content="Portal Resmi E-Katalog Supermarket Bangunan ACC Katulampa Bogor Timur. Telusuri katalog lengkap Granit Tile 60x60, Pintu Baja Fortress, Cat Tinting Propan & Dulux, serta Layanan Proyek B2B.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#18181B">
+<meta name="theme-color" content="#0F172A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
@@ -23,7 +23,6 @@
   --accent-amber: #F59E0B;
   --text-primary: #0F172A;
   --text-secondary: #475569;
-  --text-muted: #94A3B8;
   --border-subtle: #E2E8F0;
   --border-medium: #CBD5E1;
   --wa-brand: #15803D;
@@ -40,17 +39,14 @@ body {
   overflow-x: hidden;
 }
 
-/* KONTAINER SIMETRIS KELAS DUNIA (1140px) */
 .envato-container {
   width: 100%;
   max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin: auto;
+  padding: 0 24px;
 }
 
-/* TOP BAR OPERASIONAL REAL-TIME */
+/* TOP STATUS BAR */
 .envato-topbar {
   background: var(--dark-hero);
   color: #E2E8F0;
@@ -79,7 +75,7 @@ body {
   background: #22C55E;
 }
 
-/* NAVBAR BESPOKE (ALA THEMEFOREST E-COMMERCE HARDWARE) */
+/* HEADER & MULTI-PAGE NAVIGATION BAR */
 header.envato-nav {
   position: sticky;
   top: 0;
@@ -106,7 +102,6 @@ header.envato-nav {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 800;
   font-size: 16px;
-  letter-spacing: -0.02em;
   padding: 8px 12px;
   border-radius: 8px;
 }
@@ -128,43 +123,44 @@ header.envato-nav {
 .nav-action-links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 .nav-item-link {
   color: var(--text-secondary);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 13.5px;
   transition: color 0.15s;
+  padding: 6px 4px;
 }
-.nav-item-link:hover { color: var(--brand-orange); }
+.nav-item-link:hover, .nav-item-link.active {
+  color: var(--brand-orange);
+}
 .btn-nav-wa {
   background: var(--wa-brand);
   color: #FFFFFF;
   text-decoration: none;
-  padding: 10px 18px;
+  padding: 9px 16px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 13.5px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  font-size: 13px;
   transition: background 0.15s;
 }
 .btn-nav-wa:hover { background: var(--wa-hover); }
 
-/* HERO SECTION (MODERN ASYMMETRICAL INDUSTRIAL RETAIL HERO) */
+/* HERO PORTAL RESMI */
 .envato-hero {
   background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
   color: #FFFFFF;
-  padding: 64px 0 72px;
-  position: relative;
-  overflow: hidden;
+  padding: 56px 40px;
+  border-radius: 18px;
+  margin-top: 24px;
+  margin-bottom: 40px;
 }
 .envato-hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 44px;
+  gap: 40px;
   align-items: center;
 }
 .pill-rating-proof {
@@ -178,132 +174,59 @@ header.envato-nav {
   font-size: 12.5px;
   font-weight: 700;
   color: #F8FAFC;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .pill-rating-proof span.star { color: var(--accent-amber); }
 .hero-headline {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.18;
   letter-spacing: -0.03em;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
-.hero-headline span.orange-highlight {
-  color: #FB923C;
-}
+.hero-headline span.orange-highlight { color: #FB923C; }
 .hero-paragraph {
-  font-size: 16px;
+  font-size: 15.5px;
   color: #CBD5E1;
   line-height: 1.6;
-  margin-bottom: 28px;
-  max-width: 580px;
-}
-.hero-btn-stack {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-.btn-hero-solid {
-  background: var(--brand-orange);
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 15px;
-  padding: 14px 26px;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.btn-hero-solid:hover { background: var(--brand-orange-dark); }
-.btn-hero-trans {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.25);
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14.5px;
-  padding: 14px 22px;
-  border-radius: 8px;
+  margin-bottom: 24px;
 }
 
-/* HERO RIGHT (STORE IDENTITY HUD) */
 .store-hud-box {
   background: #FFFFFF;
   color: var(--text-primary);
   border-radius: 16px;
-  padding: 28px;
+  padding: 24px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 .hud-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   color: var(--dark-hero);
   border-bottom: 2px solid var(--bg-page);
-  padding-bottom: 12px;
-  margin-bottom: 16px;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .hud-line {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  font-size: 13.5px;
+  padding: 8px 0;
+  font-size: 13px;
   border-bottom: 1px dashed var(--border-subtle);
 }
 .hud-line:last-child { border-bottom: none; }
 .hud-key { color: var(--text-secondary); }
 .hud-val { font-weight: 700; color: var(--dark-hero); text-align: right; }
 
-/* TRUST BAR 4 PILAR */
-.trust-bar-section {
-  background: #FFFFFF;
-  border-bottom: 1px solid var(--border-subtle);
-  padding: 24px 0;
-}
-.trust-bar-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-.trust-bar-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-.trust-bar-badge {
-  background: #FFF7ED;
-  color: var(--brand-orange);
-  font-weight: 800;
-  font-size: 14px;
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.trust-bar-text strong {
-  display: block;
-  font-size: 14px;
-  color: var(--text-primary);
-  margin-bottom: 2px;
-}
-.trust-bar-text span {
-  font-size: 12.5px;
-  color: var(--text-secondary);
-}
-
-/* SECTION GLOBAL TITLE */
+/* ETALASE DEPARTEMEN E-KATALOG (MULTI-PAGE HUBS) */
 .sec-global-head {
   text-align: center;
-  max-width: 680px;
-  margin: 60px auto 40px;
+  max-width: 720px;
+  margin: 20px auto 36px;
 }
 .sec-pretitle {
   font-size: 12px;
@@ -319,245 +242,159 @@ header.envato-nav {
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -0.02em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .sec-title-desc {
-  font-size: 15px;
+  font-size: 14.5px;
   color: var(--text-secondary);
 }
 
-/* KATALOG PRODUK RIIL (SESUAI RISET NYATA TOKO ACC) */
-.product-showcase-grid {
+.departments-portal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+  margin-bottom: 48px;
 }
-.product-card-item {
+.dept-card {
   background: #FFFFFF;
   border: 1px solid var(--border-subtle);
   border-radius: 14px;
-  overflow: hidden;
+  padding: 26px;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
-.product-card-item:hover {
+.dept-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(15,23,42,0.06);
+  box-shadow: 0 16px 32px rgba(15,23,42,0.08);
+  border-color: var(--brand-orange);
 }
-.product-card-header {
-  padding: 16px 20px;
-  background: #F8FAFC;
-  border-bottom: 1px solid var(--border-subtle);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.product-category-tag {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--brand-orange);
-  background: #FFF7ED;
-  padding: 3px 8px;
-  border-radius: 4px;
-}
-.product-brand-tag {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--text-secondary);
-}
-.product-card-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.product-title-text {
+.dept-num {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--brand-orange);
+  margin-bottom: 12px;
+  background: #FFF7ED;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+.dept-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark-hero);
   margin-bottom: 8px;
 }
-.product-desc-text {
+.dept-summary {
   font-size: 13px;
   color: var(--text-secondary);
   line-height: 1.5;
-  margin-bottom: 16px;
-}
-.spec-list {
-  list-style: none;
-  font-size: 12.5px;
-  color: var(--text-primary);
   margin-bottom: 20px;
-  background: #F8FAFC;
-  padding: 10px 14px;
-  border-radius: 8px;
 }
-.spec-list li {
-  margin-bottom: 5px;
+.dept-action-arrow {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--brand-orange);
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.spec-list li:last-child { margin-bottom: 0; }
-.spec-list li::before {
-  content: "•";
-  color: var(--brand-orange);
-  font-weight: bold;
-}
-.btn-order-item-wa {
-  margin-top: auto;
-  display: block;
-  text-align: center;
-  background: var(--dark-hero);
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 11px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  transition: background 0.15s;
-}
-.btn-order-item-wa:hover { background: var(--brand-orange); }
 
-/* B2B / KONTRAKTOR PROCUREMENT BENEFIT BOX */
-.procurement-panel {
-  background: var(--dark-surface);
-  color: #FFFFFF;
-  border-radius: 16px;
-  padding: 36px 32px;
-  margin: 60px 0;
-}
-.procurement-panel h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  margin-bottom: 12px;
-}
-.procurement-panel p {
-  color: #CBD5E1;
-  font-size: 14.5px;
-  max-width: 720px;
-  margin-bottom: 24px;
-}
-.procurement-feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-.procure-feature-col {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 10px;
-  padding: 16px;
-}
-.procure-feature-col strong {
-  display: block;
-  font-size: 14px;
-  color: #FB923C;
-  margin-bottom: 4px;
-}
-.procure-feature-col span {
-  font-size: 12.5px;
-  color: #E2E8F0;
-  line-height: 1.45;
-}
-
-/* LOKASI & WAKTU PELAYANAN */
-.location-showcase-box {
+/* BANNER LAYANAN KHUSUS */
+.quick-feature-band {
   background: #FFFFFF;
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   padding: 32px;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
 }
-.location-showcase-grid {
+.quick-feature-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+.qf-item strong {
+  display: block;
+  font-size: 14.5px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.qf-item p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+/* LOKASI FISIK SHOWROOM KATULAMPA */
+.showroom-info-box {
+  background: var(--dark-surface);
+  color: #FFFFFF;
+  border-radius: 16px;
+  padding: 36px 32px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
   gap: 32px;
   align-items: center;
 }
-.loc-title {
+.showroom-info-box h3 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 22px;
   font-weight: 800;
-  color: var(--text-primary);
   margin-bottom: 8px;
 }
-.loc-address {
+.showroom-info-box p {
+  color: #CBD5E1;
   font-size: 14px;
-  color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
-.loc-hours-card {
-  background: var(--bg-page);
-  border-left: 3.5px solid var(--brand-orange);
-  border-radius: 6px;
-  padding: 14px 18px;
+.showroom-hours {
   font-size: 13px;
-  line-height: 1.6;
+  color: #FB923C;
+  font-weight: 700;
 }
+.btn-map-nav {
+  background: var(--brand-orange);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+}
+.btn-map-nav:hover { background: var(--brand-orange-dark); }
 
-/* REPUTASI GOOGLE MAPS */
-.google-reviews-band {
-  margin-bottom: 60px;
-}
-.reviews-grid-wrap {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-.review-quote-card {
-  background: #FFFFFF;
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 22px;
-}
-.review-quote-card p {
-  font-size: 13.5px;
-  color: var(--text-secondary);
-  line-height: 1.55;
-  margin-bottom: 12px;
-}
-.review-client-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 12.5px;
-}
-.client-name { font-weight: 700; color: var(--text-primary); }
-.star-score { color: var(--accent-amber); }
-
-/* FOOTER */
 footer.envato-footer {
   background: var(--dark-hero);
   color: #94A3B8;
-  padding: 44px 0;
+  padding: 40px 0;
   font-size: 13px;
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
-.footer-rights { margin-bottom: 6px; }
 
 @media (max-width: 860px) {
   .envato-hero-grid { grid-template-columns: 1fr; }
-  .location-showcase-grid { grid-template-columns: 1fr; }
-  .nav-action-links .nav-item-link { display: none; }
-  .hero-headline { font-size: 30px; }
+  .showroom-info-box { grid-template-columns: 1fr; }
+  .nav-action-links { display: none; }
+  .hero-headline { font-size: 28px; }
 }
 </style>
 </head>
 <body>
 
-<!-- TOP STATUS BAR OPERASIONAL -->
 <div class="envato-topbar">
   <div class="envato-container envato-topbar-inner">
-    <div>
-      <b>Supermarket Bangunan ACC</b> • Depo Bahan Bangunan Katulampa Bogor Timur
-    </div>
+    <div><b>Supermarket Bangunan ACC</b> • Depo Bahan Bangunan &amp; Granit Katulampa Bogor Timur</div>
     <div class="live-badge-status">
       <span class="pulse-green"></span>
       <span id="live-store-status">Showroom Buka Hari Ini • 08.00 - 18.00 WIB</span>
@@ -565,18 +402,17 @@ footer.envato-footer {
   </div>
 </div>
 
-<!-- HEADER NAVBAR -->
 <header class="envato-nav">
   <div class="envato-container nav-row">
-    <a href="#" class="brand-group">
+    <a href="index.html" class="brand-group">
       <div class="brand-icon-box">ACC</div>
       <div>
         <div class="brand-label-title">SUPERMARKET ACC</div>
-        <div class="brand-label-sub">Pusat Bahan Bangunan &amp; Granit</div>
+        <div class="brand-label-sub">Pusat E-Katalog Material</div>
       </div>
     </a>
     
-    <div class="nav-action-links">
+    <nav class="nav-action-links">
       <a href="katalog-granit-keramik.html" class="nav-item-link">Granit &amp; Keramik</a>
       <a href="katalog-pintu-baja.html" class="nav-item-link">Pintu Baja Fortress</a>
       <a href="katalog-cat-tinting.html" class="nav-item-link">Cat Tinting</a>
@@ -584,14 +420,14 @@ footer.envato-footer {
       <a href="https://wa.me/6281908646565?text=Halo%20Supermarket%20Bangunan%20ACC%2C%20saya%20mau%20tanya%20stok%20material" class="btn-nav-wa" target="_blank">
         WhatsApp Sales
       </a>
-    </div>
+    </nav>
   </div>
 </header>
 
 <main class="envato-container">
 
-  <!-- HERO SECTION BERSIH & BESPOKE -->
-  <section class="envato-hero" style="border-radius:18px;margin-top:24px;padding:56px 40px;">
+  <!-- HERO SECTION BERSIH PORTAL E-KATALOG -->
+  <section class="envato-hero">
     <div class="envato-hero-grid">
       <div>
         <div class="pill-rating-proof">
@@ -600,255 +436,119 @@ footer.envato-footer {
         </div>
         
         <h1 class="hero-headline">
-          DISTRIBUTOR MATERIAL PROYEK, <span class="orange-highlight">GRANIT &amp; PINTU BAJA</span> BOGOR
+          PORTAL RESMI <span class="orange-highlight">E-KATALOG MATERIAL</span> &amp; GRANIT BOGOR
         </h1>
         
         <p class="hero-paragraph">
-          Penyedia resmi Pintu Baja Fortress, Cat Oplos Komputer Propan &amp; Dulux, Granit Tile 60x60, Semen Mortar, hingga Besi Beton. Melayani pengadaan retail mandiri maupun suplai borongan proyek kontraktor di kawasan Bogor Timur dan sekitarnya.
+          Selamat datang di sistem katalog online Supermarket Bangunan ACC Katulampa. Silakan telusuri departemen produk di bawah untuk melihat spesifikasi detail, seri motif, dan konsultasi ketersediaan stok via WhatsApp.
         </p>
-
-        <div class="hero-btn-stack">
-          <a href="https://wa.me/6281908646565?text=Halo%20Supermarket%20Bangunan%20ACC%2C%20saya%20mau%20minta%20pricelist%20proyek%20dan%20cek%20stok" class="btn-hero-solid" target="_blank">
-            Cek Stok / Minta Penawaran WA
-          </a>
-          <a href="#katalog" class="btn-hero-trans">
-            Lihat Katalog Merek Resmi
-          </a>
-        </div>
       </div>
 
       <!-- STORE HUD BOX -->
       <div class="store-hud-box">
         <div class="hud-title">
-          <span>DATA OPERASIONAL TOKO</span>
-          <span style="font-size:12px;color:var(--brand-orange);font-weight:700;">RESMI</span>
+          <span>DATA OPERASIONAL RESMI</span>
+          <span style="font-size:12px;color:var(--brand-orange);font-weight:700;">TERVERIFIKASI</span>
         </div>
         <div class="hud-line">
-          <span class="hud-key">Alamat Showroom:</span>
+          <span class="hud-key">Lokasi Showroom:</span>
           <span class="hud-val">Jl. Kol. Ahmad Syam, Katulampa</span>
         </div>
         <div class="hud-line">
-          <span class="hud-key">Kecamatan / Kota:</span>
-          <span class="hud-val">Bogor Timur, Kota Bogor</span>
+          <span class="hud-key">Wilayah Distribusi:</span>
+          <span class="hud-val">Bogor Timur, Kota &amp; Kab. Bogor</span>
         </div>
         <div class="hud-line">
-          <span class="hud-key">Jam Buka Toko:</span>
+          <span class="hud-key">Jam Buka Showroom:</span>
           <span class="hud-val">Senin – Minggu (08.00 – 18.00 WIB)</span>
         </div>
         <div class="hud-line">
           <span class="hud-key">Armada Toko:</span>
-          <span class="hud-val">Ready Pick-Up &amp; Truk Engkel</span>
-        </div>
-        <div class="hud-line">
-          <span class="hud-key">Layanan Khusus:</span>
-          <span class="hud-val" style="color:var(--brand-orange-dark);">Pintu Fortress &amp; Tinting Cat</span>
+          <span class="hud-val">Pick-Up &amp; Truk Engkel Ready</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TRUST BAR 4 PILAR -->
-  <section class="trust-bar-section">
-    <div class="trust-bar-grid">
-      <div class="trust-bar-item">
-        <div class="trust-bar-badge">01</div>
-        <div class="trust-bar-text">
-          <strong>Agen Pintu Baja Fortress</strong>
-          <span>Anti rayap, anti susut, siap pasang</span>
-        </div>
-      </div>
-      <div class="trust-bar-item">
-        <div class="trust-bar-badge">02</div>
-        <div class="trust-bar-text">
-          <strong>Oplos Mesin Tinting Propan</strong>
-          <span>Ribuan warna akurat hitungan menit</span>
-        </div>
-      </div>
-      <div class="trust-bar-item">
-        <div class="trust-bar-badge">03</div>
-        <div class="trust-bar-text">
-          <strong>Kepastian Lot Keramik</strong>
-          <span>Satu nomor seri warna, nat tidak belang</span>
-        </div>
-      </div>
-      <div class="trust-bar-item">
-        <div class="trust-bar-badge">04</div>
-        <div class="trust-bar-text">
-          <strong>Kirim Langsung ke Lokasi</strong>
-          <span>Armada toko siap antar se-Bogor</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION KATALOG PRODUK RIIL (SESUAI DATA RISET TOKO ACC) -->
-  <div class="sec-global-head" id="katalog">
-    <div class="sec-pretitle">Katalog Material Riil</div>
-    <h2 class="sec-title-h2">PRODUK UNGGULAN SUPERMARKET ACC BOGOR</h2>
-    <p class="sec-title-desc">Daftar item material asli yang tersedia di showroom Katulampa untuk kebutuhan konstruksi dan renovasi rumah tinggal.</p>
+  <!-- PANDUAN DEPARTEMEN E-KATALOG (MULTI-PAGE HUBS) -->
+  <div class="sec-global-head">
+    <div class="sec-pretitle">Departemen E-Katalog</div>
+    <h2 class="sec-title-h2">PILIH KATEGORI PRODUK &amp; MATERIAL</h2>
+    <p class="sec-title-desc">Buka halaman katalog terpisah untuk melihat daftar item, seri ukuran, dan spesifikasi teknis lengkap.</p>
   </div>
 
-  <div class="product-showcase-grid">
-    <!-- ITEM 1: PINTU BAJA FORTRESS (RISET NYATA DARI GOOGLE MAPS ACC) -->
-    <div class="product-card-item">
-      <div class="product-card-header">
-        <span class="product-category-tag">Pintu Rumah</span>
-        <span class="product-brand-tag">Fortress Steel Door</span>
-      </div>
-      <div class="product-card-body">
-        <div class="product-title-text">Pintu Baja Modern Fortress</div>
-        <p class="product-desc-text">Alternatif pintu terbaik pengganti kayu. Praktis pemasangannya, 100% anti rayap, anti lengkung, dan dilengkapi kunci 5 titik pengaman.</p>
-        <ul class="spec-list">
-          <li>Tipe Single Door &amp; Mom-and-Son</li>
-          <li>Finishing urat kayu alami elegan</li>
-          <li>Kusen baja &amp; handle komplit set</li>
-        </ul>
-        <a href="https://wa.me/6281908646565?text=Halo%20Supermarket%20ACC%2C%20saya%20mau%20tanya%20model%20dan%20harga%20Pintu%20Baja%20Fortress" class="btn-order-item-wa" target="_blank">Tanya Ukuran &amp; Stok WA</a>
-      </div>
-    </div>
+  <div class="departments-portal-grid">
+    <!-- DEPT 1 -->
+    <a href="katalog-granit-keramik.html" class="dept-card">
+      <span class="dept-num">DEPARTEMEN 01</span>
+      <div class="dept-name">Granit &amp; Keramik Lantai</div>
+      <p class="dept-summary">Koleksi Granit Glazed Polished 60x60, Rustic Matt Industrial, dan Keramik Dinding Subway dengan garansi kesamaan lot warna.</p>
+      <div class="dept-action-arrow">Buka Katalog Granit &rarr;</div>
+    </a>
 
-    <!-- ITEM 2: PUSAT CAT TINTING PROPAN & DULUX -->
-    <div class="product-card-item">
-      <div class="product-card-header">
-        <span class="product-category-tag">Cat &amp; Pelapis</span>
-        <span class="product-brand-tag">Propan Raya &amp; Dulux</span>
-      </div>
-      <div class="product-card-body">
-        <div class="product-title-text">Cat Tinting Mesin Oplos Digital</div>
-        <p class="product-desc-text">Mesin tinting komputer resmi di toko. Pilih ribuan katalog kode warna Propan (Decorsafe, Eco Emulsion) dan Dulux untuk interior serta eksterior tahan cuaca.</p>
-        <ul class="spec-list">
-          <li>Kemasan Galon (2.5L / 5kg) &amp; Pail (20L)</li>
-          <li>Cat anti-bocor / waterproofing membran</li>
-          <li>Cat pelapis kayu &amp; besi anti karat</li>
-        </ul>
-        <a href="https://wa.me/6281908646565?text=Halo%20Supermarket%20ACC%2C%20saya%20mau%20konsultasi%20oplos%20warna%20cat%20Propan/Dulux" class="btn-order-item-wa" target="_blank">Konsultasi Warna Cat WA</a>
-      </div>
-    </div>
+    <!-- DEPT 2 -->
+    <a href="katalog-pintu-baja.html" class="dept-card">
+      <span class="dept-num">DEPARTEMEN 02</span>
+      <div class="dept-name">Pintu Baja Fortress</div>
+      <p class="dept-summary">Pusat rujukan resmi Pintu Baja Fortress di Bogor. Tipe Single Door, Grand Mom-and-Son, dan Double Door anti rayap serta kunci 5 titik.</p>
+      <div class="dept-action-arrow">Buka Katalog Pintu Baja &rarr;</div>
+    </a>
 
-    <!-- ITEM 3: GRANIT TILE & KERAMIK LANTAI -->
-    <div class="product-card-item">
-      <div class="product-card-header">
-        <span class="product-category-tag">Granit &amp; Lantai</span>
-        <span class="product-brand-tag">Merek SNI Terkemuka</span>
-      </div>
-      <div class="product-card-body">
-        <div class="product-title-text">Granit 60x60 &amp; Keramik Dinding</div>
-        <p class="product-desc-text">Koleksi granit glazed polished motif marmer, motif semen industrial, dan keramik kamar mandi bertekstur kasar anti-licin dengan jaminan lot produksi sama.</p>
-        <ul class="spec-list">
-          <li>Dimensi: 30x30, 40x40, 50x50, 60x60, 60x120</li>
-          <li>Pilihan permukaan: Polished, Matt, Rustic</li>
-          <li>Tersedia semen nat anti jamur aneka warna</li>
-        </ul>
-        <a href="https://wa.me/6281908646565?text=Halo%20Supermarket%20ACC%2C%20mau%20tanya%20katalog%20dan%20harga%20granit%2060x60" class="btn-order-item-wa" target="_blank">Cek Motif &amp; Stok Granit WA</a>
-      </div>
-    </div>
+    <!-- DEPT 3 -->
+    <a href="katalog-cat-tinting.html" class="dept-card">
+      <span class="dept-num">DEPARTEMEN 03</span>
+      <div class="dept-name">Cat Tinting Mesin Oplos</div>
+      <p class="dept-summary">Mesin tinting komputer resmi Propan Raya &amp; Dulux. Ribuan kode warna akurat dalam hitungan menit untuk interior dan eksterior cuaca tropis.</p>
+      <div class="dept-action-arrow">Buka Katalog Cat Tinting &rarr;</div>
+    </a>
 
-    <!-- ITEM 4: SEMEN MORTAR & BAHAN DASAR KONSTRUKSI -->
-    <div class="product-card-item">
-      <div class="product-card-header">
-        <span class="product-category-tag">Struktur Proyek</span>
-        <span class="product-brand-tag">Semen Zak &amp; Mortar</span>
+    <!-- DEPT 4 -->
+    <a href="layanan-proyek-b2b.html" class="dept-card">
+      <span class="dept-num">DEPARTEMEN 04</span>
+      <div class="dept-name">Layanan Proyek B2B</div>
+      <p class="dept-summary">Fasilitas khusus kontraktor, mandor, dan pengembang: faktur/invoice tertulis resmi, penguncian lot cadangan, dan armada kirim proyek.</p>
+      <div class="dept-action-arrow">Buka Fasilitas Kontraktor &rarr;</div>
+    </a>
+  </div>
+
+  <!-- QUICK FEATURE 3 PILAR -->
+  <div class="quick-feature-band">
+    <div class="quick-feature-grid">
+      <div class="qf-item">
+        <strong>1. Garansi Lot Tonalitas Keramik</strong>
+        <p>Memastikan setiap dus cadangan memiliki nomor produksi pabrik yang sama sehingga warna nat lantai tidak belang.</p>
       </div>
-      <div class="product-card-body">
-        <div class="product-title-text">Semen Instan, Semen Zak &amp; Besi</div>
-        <p class="product-desc-text">Suplai rutin perekat bata ringan (thinbed), plesteran praktis, acian putih halus, semen zak standar konstruksi, pipa saluran air, dan besi beton SNI.</p>
-        <ul class="spec-list">
-          <li>Kemasan zak 40kg &amp; 50kg</li>
-          <li>Daya rekat kuat mutu pabrik konsisten</li>
-          <li>Siap kirim kontinyu ke lokasi proyek</li>
-        </ul>
-        <a href="https://wa.me/6281908646565?text=Halo%20Supermarket%20ACC%2C%20saya%20kontraktor%20mau%20minta%20penawaran%20semen/mortar%20proyek" class="btn-order-item-wa" target="_blank">Minta Penawaran Partai WA</a>
+      <div class="qf-item">
+        <strong>2. Mesin Oplos Tinting Resmi di Toko</strong>
+        <p>Formula digital tersimpan rapi; bisa pesan ulang kode warna yang sama persis kapan pun rumah dicat ulang.</p>
+      </div>
+      <div class="qf-item">
+        <strong>3. Pengiriman Armada Toko Langsung</strong>
+        <p>Material berat diantar aman oleh driver toko langsung ke lokasi rumah atau proyek di seluruh Bogor.</p>
       </div>
     </div>
   </div>
 
-  <!-- PROCUREMENT PANEL KONTRAKTOR B2B -->
-  <div class="procurement-panel" id="proyek">
-    <h3>Layanan Pengadaan Khusus Mandor &amp; Kontraktor Proyek</h3>
-    <p>Kami memahami kendala perputaran material di lapangan. Supermarket Bangunan ACC menyediakan fasilitas nota resmi, penawaran harga tertulis (invoice), dan jadwal pengiriman armada toko yang fleksibel.</p>
-    
-    <div class="procurement-feature-grid">
-      <div class="procure-feature-col">
-        <strong>Faktur &amp; Invoice Resmi</strong>
-        <span>Kerapian administrasi belanja untuk laporan keuangan owner rumah atau instansi.</span>
-      </div>
-      <div class="procure-feature-col">
-        <strong>Cek Lot Seri Warna Granit</strong>
-        <span>Memastikan cadangan keramik tambahan memiliki nomor celup warna yang sama persis.</span>
-      </div>
-      <div class="procure-feature-col">
-        <strong>Layanan Antar Armada Toko</strong>
-        <span>Material berat diantar aman sampai ke titik proyek di seluruh area Kota &amp; Kabupaten Bogor.</span>
-      </div>
+  <!-- SHOWROOM PHYSICAL LOCATION -->
+  <div class="showroom-info-box">
+    <div>
+      <h3>Kunjungi Showroom Supermarket ACC Bogor</h3>
+      <p>Jl. Kol. Ahmad Syam, RT.03/RW.01, Katulampa, Kec. Bogor Timur, Kota Bogor, Jawa Barat 16144. Gedung supermarket luas di jalur utama R3 dengan area parkir mobil leluasa.</p>
+      <div class="showroom-hours">• Buka Setiap Hari: Pukul 08.00 – 18.00 WIB</div>
     </div>
-  </div>
-
-  <!-- LOKASI SHOWROOM FISIK (DATA RIIL GOOGLE MAPS) -->
-  <div class="location-showcase-box" id="lokasi">
-    <div class="location-showcase-grid">
-      <div>
-        <div class="loc-title">SHOWROOM SUPERMARKET ACC BOGOR</div>
-        <div class="loc-address">
-          Jl. Kol. Ahmad Syam, RT.03/RW.01, Kelurahan Katulampa, Kecamatan Bogor Timur, Kota Bogor, Jawa Barat 16144. (Kawasan jalur utama R3, gedung supermarket luas dengan area parkir mobil leluasa).
-        </div>
-        <div class="loc-hours-card">
-          <b>Waktu Buka Showroom:</b><br>
-          • <b>Setiap Hari (Senin – Minggu):</b> Pukul 08.00 – 18.00 WIB<br>
-          • <b>Layanan WhatsApp Sales:</b> Respon cepat pertanyaan spesifikasi &amp; ketersediaan stok
-        </div>
-      </div>
-
-      <div>
-        <a href="https://maps.google.com/?cid=5699193759350626145" target="_blank" class="btn-hero-solid" style="display:flex;justify-content:center;margin-bottom:12px;background:var(--dark-hero);">
-          Buka Navigasi Rute Google Maps &rarr;
-        </a>
-        <a href="https://wa.me/6281908646565?text=Halo%20Supermarket%20ACC%2C%20saya%20mau%20tanya%20patokan%20lokasi%20toko" target="_blank" class="btn-hero-trans" style="display:flex;justify-content:center;color:var(--text-primary);border-color:var(--border-medium);">
-          Petunjuk Arah via WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- REPUTASI PASIEN / KONSUMEN MAPS -->
-  <div class="sec-global-head" style="margin-top:0;">
-    <div class="sec-pretitle">Ulasan Terverifikasi</div>
-    <h2 class="sec-title-h2">4.8 DARI 213 ULASAN KONSUMEN DI GOOGLE MAPS</h2>
-    <p class="sec-title-desc">Pengalaman nyata para pemilik rumah dan pelaksana proyek yang mempercayakan kebutuhan bangunannya di Supermarket ACC Katulampa.</p>
-  </div>
-
-  <div class="reviews-grid-wrap">
-    <div class="review-quote-card">
-      <p>"Disini menjual pintu baja FORTRESS, praktis pemasangannya, anti rayap, anti susut dan tidak melengkung. Lebih terjangkau dan awet daripada pintu kayu."</p>
-      <div class="review-client-footer">
-        <span class="client-name">Konsumen Google Maps</span>
-        <span class="star-score">★★★★★</span>
-      </div>
-    </div>
-
-    <div class="review-quote-card">
-      <p>"Pilihan granit tile dan keramik lantainya banyak motif modern. Oplos cat Propan juga cepat hasilnya akurat. Staf sigap bantu angkut ke mobil."</p>
-      <div class="review-client-footer">
-        <span class="client-name">Pelanggan Katulampa</span>
-        <span class="star-score">★★★★★</span>
-      </div>
-    </div>
-
-    <div class="review-quote-card">
-      <p>"Depo bangunan paling nyaman di area Bogor Timur R3. Gedung luas, barang tersusun rapi per lorong, harga sangat bersaing untuk kontraktor."</p>
-      <div class="review-client-footer">
-        <span class="client-name">Kontraktor Renovasi</span>
-        <span class="star-score">★★★★★</span>
-      </div>
+    <div>
+      <a href="https://maps.google.com/?cid=5699193759350626145" target="_blank" class="btn-map-nav">
+        Navigasi Google Maps &rarr;
+      </a>
     </div>
   </div>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="envato-footer">
   <div class="envato-container">
-    <p class="footer-rights"><b>&copy; 2026 Supermarket Bangunan ACC Bogor</b> — Katulampa, Bogor Timur.</p>
-    <p style="font-size:12px;opacity:0.65;">Pratinjau konsep website resmi dikembangkan oleh PixelWebID.</p>
+    <p><b>&copy; 2026 Supermarket Bangunan ACC Bogor</b> — Katulampa, Bogor Timur.</p>
+    <p style="font-size:12px;opacity:0.65;margin-top:4px;">Portal Resmi E-Katalog &amp; Informasi Pengadaan Material.</p>
   </div>
 </footer>
 
@@ -856,7 +556,7 @@ footer.envato-footer {
 (function() {
   var w = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Jakarta" }));
   var jam = w.getHours() * 60 + w.getMinutes();
-  var buka = (jam >= 480 && jam < 1080); // 08:00 - 18:00 WIB sesuai data riil ACC
+  var buka = (jam >= 480 && jam < 1080);
   var teks = buka ? "Showroom Buka Sekarang • Sampai 18:00 WIB" : "Showroom Sedang Tutup • Buka Pukul 08:00 WIB";
   var dot = document.querySelector(".pulse-green");
   var lbl = document.getElementById("live-store-status");
