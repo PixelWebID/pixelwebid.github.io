@@ -1,70 +1,65 @@
 <!DOCTYPE html><html lang="id"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Katalog — Supermarket Bangunan ACC | Contoh tampilan oleh PixelWebID</title>
-<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#C2410C">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Beranda — Supermarket Bangunan ACC | Contoh tampilan oleh PixelWebID</title>
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#431407">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>:root{--a:#C2410C}
-*{box-sizing:border-box}html,body{margin:0}
-body{font-family:'Plus Jakarta Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
-background:#faf8f5;color:#12201f;-webkit-font-smoothing:antialiased;line-height:1.55}
-a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-.lencana{position:sticky;top:0;z-index:50;background:#fff3d6;color:#6b4d00;font-size:12.5px;font-weight:700;
-text-align:center;padding:7px 12px;border-bottom:1px solid #eed9a0}
-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
-.logo{font-weight:800;font-size:19px;letter-spacing:-.02em}.logo i{font-style:normal;color:var(--a)}
-.menu{display:flex;gap:18px;font-size:14.5px;font-weight:600;color:#3b4a48;flex-wrap:wrap}
-.menu a.aktif{color:var(--a)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:700;font-size:15px}
-.btn-a{background:var(--a);color:#fff;box-shadow:0 8px 22px -10px var(--a)}.btn-g{border:1.5px solid #12201f}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center;padding:30px 0 56px}
-.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.06;letter-spacing:-.035em;margin:14px 0}
-.hero p{font-size:17.5px;color:#4a5856;max-width:48ch;margin:0 0 26px}
-.chip{display:inline-block;background:color-mix(in srgb,var(--a) 12%,#fff);color:var(--a);font-weight:700;
-font-size:13px;padding:6px 12px;border-radius:999px}
-.foto{border-radius:22px;min-height:320px;display:flex;align-items:flex-end;padding:18px;color:#fff;font-size:13px;
-font-weight:600;background:linear-gradient(135deg,var(--a),color-mix(in srgb,var(--a) 35%,#0d1b1a));position:relative;overflow:hidden}
-.foto::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 25%,rgba(255,255,255,.28),transparent 45%),
-repeating-linear-gradient(45deg,rgba(255,255,255,.07) 0 2px,transparent 2px 22px)}
-.foto span{position:relative;z-index:1;background:rgba(0,0,0,.28);padding:6px 10px;border-radius:8px}
-section{padding:56px 0}.putih{background:#fff}
-h2{font-size:clamp(24px,3.2vw,34px);letter-spacing:-.025em;margin:0 0 8px}.sub{color:#5b6967;margin:0 0 26px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.kartu{background:#fff;border:1px solid #ebe6de;border-radius:18px;padding:22px}
-.putih .kartu{background:#faf8f5}.kartu h3{margin:0 0 6px;font-size:17px}.kartu p{margin:0;color:#56645f;font-size:14.5px}
-.ikon{width:42px;height:42px;border-radius:12px;background:color-mix(in srgb,var(--a) 14%,#fff);color:var(--a);
-display:flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:12px}
-.cek{list-style:none;padding:0;margin:0;display:grid;gap:12px}
-.cek li{background:#fff;border:1px solid #ebe6de;border-radius:14px;padding:15px 18px}
-.cek li::before{content:"✓";color:var(--a);font-weight:800;margin-right:10px}
-.maps{border:0;width:100%;height:300px;border-radius:18px;background:#e9e5de}
-.cta{background:#10201f;color:#fff;border-radius:24px;padding:42px 30px;text-align:center}
-.cta p{color:#c5d1cf;max-width:56ch;margin:8px auto 24px}
-.item{background:#fff;border:1px solid #ebe6de;border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
-.item .gbr{height:150px;background:linear-gradient(135deg,color-mix(in srgb,var(--a) 70%,#fff),color-mix(in srgb,var(--a) 25%,#fff));
-display:flex;align-items:center;justify-content:center;color:#fff;font-size:12.5px;font-weight:700}
-.item .isi{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}.item h3{margin:0;font-size:16px}
-.item p{margin:0;color:#5b6967;font-size:14px;flex:1}.harga{font-weight:700;color:#8a8377;font-size:13px}
-.item .btn{justify-content:center;padding:11px}
-.filter{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.filter span{border:1px solid #d9d3c9;border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:600}
-.filter span:first-child{background:var(--a);color:#fff;border-color:var(--a)}
-.promo{background:linear-gradient(135deg,var(--a),color-mix(in srgb,var(--a) 40%,#10201f));color:#fff;border-radius:26px;padding:44px 32px}
-.promo h1{font-size:clamp(32px,5.4vw,56px);line-height:1.04;margin:14px 0}.promo p{color:rgba(255,255,255,.86);max-width:52ch}
-.promo .chip{background:rgba(255,255,255,.18);color:#fff}.promo .btn-a{background:#fff;color:var(--a)}
-.wa-mengambang{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;font-weight:800;border-radius:999px;
-padding:14px 20px;box-shadow:0 10px 26px -10px rgba(0,0,0,.45);z-index:60}
-.keranjang{position:fixed;right:18px;bottom:84px;background:#10201f;color:#fff;border-radius:16px;padding:12px 16px;font-size:14px;z-index:60}
-footer{padding:34px 0 90px;color:#6c7876;font-size:13.5px;border-top:1px solid #ebe6de;margin-top:40px}
-footer a{color:var(--a);text-decoration:underline}
-details{background:#fff;border:1px solid #ebe6de;border-radius:14px;padding:14px 18px;margin-bottom:10px}
-summary{font-weight:700;cursor:pointer}
-@media(max-width:820px){.hero{grid-template-columns:1fr}.menu{display:none}.foto{min-height:220px}}
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--b:#9A3412;--bd:#431407;--bg:#F7F3EF;--ink:#1C1917;--mut:#57534E;--line:#E7E5E4;--sf:#FFFFFF;
+--fj:'Roboto',Georgia,serif;--fi:'Roboto',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:var(--fi);color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.w{max-width:1160px;margin:0 auto;padding:0 20px}
+.lencana{background:#F5F0E6;color:#57534E;font-size:12.5px;font-weight:600;text-align:center;padding:7px 12px;border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.merek{font-family:var(--fj);font-weight:700;font-size:20px;color:var(--bd);letter-spacing:-.01em}
+.menu{display:none;gap:22px;font-size:14.5px;font-weight:600;color:var(--mut)}.menu a.on{color:var(--b)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:8px;font-weight:700;font-size:14.5px;border:1.5px solid var(--b)}
+.btn.p{background:var(--b);color:#fff}.btn.o{color:var(--b);background:transparent}.btn.s{padding:9px 14px;font-size:13px}
+h1,h2,h3{font-family:var(--fj);line-height:1.15;letter-spacing:-.015em;color:var(--ink);margin:0}
+h1{font-size:clamp(32px,4.6vw,54px)}h2{font-size:clamp(25px,3vw,36px)}h3{font-size:18px}
+.kick{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--b);margin-bottom:10px}
+.lead{font-size:17px;color:var(--mut);max-width:60ch}
+section{padding:64px 0}.alt{background:var(--bg)}.gelap{background:var(--bd);color:#F5F5F4}.gelap h2,.gelap h3{color:#fff}.gelap .lead{color:#D6D3D1}
+.kepala{margin-bottom:30px;max-width:720px}
+.foto{position:relative;background:var(--bg);border:1px solid color-mix(in srgb,var(--b) 14%,var(--line));border-radius:10px;display:flex;
+align-items:flex-end;padding:14px;color:var(--bd);font-size:12.5px;font-weight:600;min-height:200px}
+.foto::before{content:"";position:absolute;left:50%;top:44%;width:34px;height:34px;margin:-17px 0 0 -17px;opacity:.35;background:var(--b);
+-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center/contain no-repeat;
+mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center/contain no-repeat}
+.hero{padding:56px 0 64px}.hero .g{display:grid;gap:36px;align-items:center}.hero .foto{min-height:300px}
+.hero.penuh{background:var(--bd);color:#fff}.hero.penuh h1{color:#fff}.hero.penuh .lead{color:#D6D3D1}.hero.penuh .btn.o{color:#fff;border-color:#fff}
+.hero.tengah{text-align:center}.hero.tengah .lead{margin:0 auto}.hero.tengah .aksi{justify-content:center}
+.aksi{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.grid{display:grid;gap:16px}.kartu{background:var(--sf);border:1px solid var(--line);border-radius:10px;padding:22px}
+.kartu p{margin:8px 0 0;color:var(--mut);font-size:14.5px}.no{font-family:var(--fj);font-size:15px;font-weight:700;color:var(--b);margin-bottom:10px}
+.kat{display:flex;flex-direction:column;gap:10px}.kat .foto{min-height:150px}
+.filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.filter button{font:inherit;font-size:13.5px;font-weight:600;border:1px solid var(--line);
+background:#fff;color:var(--mut);padding:8px 14px;border-radius:999px;cursor:pointer}.filter button.on{background:var(--b);border-color:var(--b);color:#fff}
+.item{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.item .foto{border-radius:0;min-height:170px}.item .isi{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.item p{margin:0;color:var(--mut);font-size:14px;flex:1}.tag{font-size:12px;font-weight:700;color:var(--b);text-transform:uppercase;letter-spacing:.06em}
+.harga{font-size:13px;color:#78716C;font-weight:600}.ket-umum{font-size:11.5px;color:#A8A29E}
+.langkah{counter-reset:l}.langkah .kartu::before{counter-increment:l;content:"0" counter(l);font-family:var(--fj);font-weight:700;color:var(--b);display:block;margin-bottom:8px}
+.cek{list-style:none;padding:0;margin:0;display:grid;gap:10px}.cek li{padding-left:26px;position:relative}
+.cek li::before{content:"";position:absolute;left:4px;top:9px;width:11px;height:6px;border-left:2px solid var(--b);border-bottom:2px solid var(--b);transform:rotate(-45deg)}
+.paket{display:flex;flex-direction:column}.paket .btn{margin-top:auto}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}summary{font-weight:700;cursor:pointer}
+.peta{border:0;width:100%;height:320px;border-radius:10px;background:#E7E2DA}
+.cta{background:var(--bd);color:#fff;border-radius:14px;padding:44px 28px;text-align:center}.cta h2{color:#fff}.cta p{color:#D6D3D1;margin:10px auto 22px;max-width:56ch}
+.cta .btn.p{background:#fff;color:var(--bd);border-color:#fff}
+.rating{font-family:var(--fj);font-size:44px;font-weight:700;color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:32px 0 96px;color:#78716C;font-size:13.5px}footer a{color:var(--b);text-decoration:underline}
+.wa{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--b);color:#fff;font-weight:700;border-radius:999px;padding:13px 20px;font-size:14px}
+@media(min-width:720px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(2,1fr)}.g4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.menu{display:flex}.hero .g{grid-template-columns:1.1fr .9fr}.hero.tengah .g{grid-template-columns:1fr}
+.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}section{padding:84px 0}.wa{display:none}footer{padding-bottom:40px}}
 </style></head><body>
-<div class="lencana">Contoh tampilan (mockup) Website Katalog Produk — belum situs resmi Supermarket Bangunan ACC</div>
-<div class="wrap"><nav><a class="logo" href="index.html">Supermarket Bangunan ACC<i>.</i></a><div class="menu"><a href="#layanan">Produk</a></div>
-<a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Supermarket%20Bangunan%20ACC%20%28Bogor%29.%20Mau%20tanya-tanya%20dulu." style="padding:8px 14px;font-size:12px">Kontak</a></nav></div>
-<div class="wrap"><div class="hero"><div><span class="chip">supplier bahan bangunan · Bogor</span><h1>Pilih Keramik dan Sanitair, Pesan Langsung lewat WhatsApp</h1><p>Supermarket Bangunan ACC di Bogor menyediakan bahan bangunan, keramik, dan sanitair dengan informasi produk yang jelas serta pemesanan mudah lewat WhatsApp.</p><a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Supermarket%20Bangunan%20ACC%20%28Bogor%29.%20Mau%20tanya-tanya%20dulu.">Konsultasi via WhatsApp</a> <a class="btn btn-g" href="#layanan">Lihat Layanan</a></div><div class="foto"><span>Foto produk unggulan</span></div></div></div><section class="putih" id="layanan"><div class="wrap"><h2>Katalog</h2><p class="sub">Pilih yang Anda mau, tekan tombol, pesanan langsung masuk WhatsApp admin.</p><div class="filter"><span>Semua</span><span>supplier</span><span>Terbaru</span></div><div class="grid"><div class="item"><div class="gbr">Foto Keramik Lantai</div><div class="isi"><h3>Keramik Lantai</h3><p>Beragam pilihan motif dan ukuran untuk kebutuhan ruang hunian maupun proyek.</p><span class="harga">Harga: diisi pemilik usaha</span><a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Keramik%20Lantai%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item"><div class="gbr">Foto Keramik Dinding</div><div class="isi"><h3>Keramik Dinding</h3><p>Pilihan keramik dinding untuk area kamar mandi, dapur, dan ruang lainnya.</p><span class="harga">Harga: diisi pemilik usaha</span><a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Keramik%20Dinding%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item"><div class="gbr">Foto Sanitair</div><div class="isi"><h3>Sanitair</h3><p>Kloset, wastafel, dan perlengkapan kamar mandi untuk kebutuhan renovasi.</p><span class="harga">Harga: diisi pemilik usaha</span><a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Sanitair%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item"><div class="gbr">Foto Cat dan Perlengkapannya</div><div class="isi"><h3>Cat dan Perlengkapannya</h3><p>Cat tembok serta perlengkapan pengecatan untuk pekerjaan interior dan eksterior.</p><span class="harga">Harga: diisi pemilik usaha</span><a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Cat%20dan%20Perlengkapannya%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item"><div class="gbr">Foto Semen dan Mortar</div><div class="isi"><h3>Semen dan Mortar</h3><p>Bahan perekat untuk pekerjaan pasangan, plester, dan perbaikan struktur ringan.</p><span class="harga">Harga: diisi pemilik usaha</span><a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Semen%20dan%20Mortar%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item"><div class="gbr">Foto Pipa dan Fitting</div><div class="isi"><h3>Pipa dan Fitting</h3><p>Perlengkapan saluran air untuk kebutuhan instalasi rumah maupun proyek.</p><span class="harga">Harga: diisi pemilik usaha</span><a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Pipa%20dan%20Fitting%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div></div></div></section><section><div class="wrap"><h2>Kenapa memilih kami</h2><ul class="cek"><li>Informasi produk tersusun rapi dan mudah dibagikan ke rekan proyek</li><li>Tombol pesan WhatsApp tersedia di setiap item katalog</li><li>Melayani kontraktor, reseller, dan pemilik rumah yang sedang membangun</li></ul></div></section><section class="putih"><div class="wrap"><h2>Pertanyaan yang sering ditanyakan</h2><details><summary>Apakah bisa memesan lewat WhatsApp?</summary><p>Bisa. Setiap item di katalog memiliki tombol pesan yang terhubung langsung ke WhatsApp tim kami.</p></details><details><summary>Apakah melayani pembelian untuk reseller atau proyek?</summary><p>Ya, kami melayani pembelian untuk kebutuhan reseller maupun proyek. Silakan tanyakan ketentuan minimal order melalui WhatsApp.</p></details><details><summary>Bagaimana cara mengetahui ketersediaan stok?</summary><p>Silakan hubungi tim kami lewat WhatsApp untuk menanyakan ketersediaan produk yang Anda butuhkan.</p></details></div></section><section><div class="wrap"><div class="cta"><h2>Siap melayani Anda</h2><p>Tanya layanan, harga, atau jadwal langsung lewat WhatsApp.</p><a class="btn btn-a" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Supermarket%20Bangunan%20ACC%20%28Bogor%29.%20Mau%20tanya-tanya%20dulu.">Chat WhatsApp</a></div></div></section>
-<div class="wrap"><footer>&copy; 2026 Supermarket Bangunan ACC — halaman ini <b>contoh tampilan (mockup)</b> buatan
-<a href="https://pixelweb.id/" target="_blank" rel="noopener">PixelWebID</a>, belum dipesan/dibayar. Semua foto masih
-placeholder, bukan aset resmi Supermarket Bangunan ACC.</footer></div>
-<a class="wa-mengambang" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Supermarket%20Bangunan%20ACC%20%28Bogor%29.%20Mau%20tanya-tanya%20dulu.">WhatsApp</a></body></html>
+<div class="lencana">Contoh tampilan (mockup) Website Katalog Produk — belum situs resmi Supermarket Bangunan ACC · foto masih placeholder</div>
+<header><div class="w nav"><a class="merek" href="index.html">Supermarket Bangunan ACC</a><nav class="menu"><a href="index.html" class=on>Beranda</a><a href="katalog.html">Katalog Produk</a><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak &amp; Cara Pesan</a></nav>
+<a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Supermarket%20Bangunan%20ACC.%20Mau%20tanya%20dulu.">WhatsApp</a></div></header>
+<section class="hero split"><div class="w"><div class="g"><div><span class="kick">supermarket bahan bangunan dan sanitari · Bogor</span><h1>Katalog keramik, sanitari, dan perkakas bangunan di Bogor</h1><p class="lead">Supermarket Bangunan ACC di Katulampa, Bogor Timur, merangkum granit, keramik, sanitari, perkakas, dan mesin dalam satu katalog yang mudah dibagikan ke kontraktor atau pemilik rumah.</p><div class="aksi"><a class="btn p" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Supermarket%20Bangunan%20ACC.%20Mau%20tanya%20dulu.">Tanya via WhatsApp</a><a class="btn o" href="katalog.html">Lihat Katalog</a></div></div><div class="foto">Foto supermarket bahan bangunan dan sanitari Supermarket Bangunan ACC (dipasang dari foto asli)</div></div></div></section><section class="alt"><div class="w"><div class="kepala"><span class="kick">Kategori</span><h2>Pilih berdasarkan kebutuhan</h2></div><div class="grid g4"><a class="kat" href="katalog.html#granit"><div class="foto">Foto Granit</div><h3>Granit</h3><span class="ket-umum">Granit untuk lantai dan area bangunan, pilihan motif dicek ke admin.</span></a><a class="kat" href="katalog.html#keramik"><div class="foto">Foto Keramik</div><h3>Keramik</h3><span class="ket-umum">Keramik lantai dan dinding dengan beragam ukuran dan motif.</span></a><a class="kat" href="katalog.html#sanitari"><div class="foto">Foto Sanitari</div><h3>Sanitari</h3><span class="ket-umum">Perlengkapan kamar mandi seperti kloset dan wastafel.</span></a><a class="kat" href="katalog.html#perkakas-hard-tools-"><div class="foto">Foto Perkakas (hard tools)</div><h3>Perkakas (hard tools)</h3><span class="ket-umum">Alat kerja bangunan untuk kebutuhan harian tukang dan proyek.</span></a><a class="kat" href="katalog.html#mesin"><div class="foto">Foto Mesin</div><h3>Mesin</h3><span class="ket-umum">Mesin dan alat kerja bangunan, tipe tersedia ditanyakan ke admin.</span></a><a class="kat" href="katalog.html#material-dasar"><div class="foto">Foto Material dasar</div><h3>Material dasar</h3><span class="ket-umum">Kategori umum bahan bangunan dasar, ketersediaan dikonfirmasi ke admin.</span></a></div></div></section><section><div class="w"><div class="kepala"><span class="kick">Unggulan</span><h2>Yang sering dicari pelanggan</h2></div><div class="grid g4"><div class="item"><div class="foto"><span>Foto Granit</span></div><div class="isi"><span class="tag">Granit</span><h3>Granit</h3><p>Granit untuk lantai dan area bangunan, ukuran dan motif dikonfirmasi ke admin.</p></div></div><div class="item"><div class="foto"><span>Foto Keramik</span></div><div class="isi"><span class="tag">Keramik</span><h3>Keramik</h3><p>Keramik lantai dan dinding, pilihan ukuran dan motif ditanyakan lewat WhatsApp.</p></div></div><div class="item"><div class="foto"><span>Foto Sanitari</span></div><div class="isi"><span class="tag">Sanitari</span><h3>Sanitari</h3><p>Perlengkapan kamar mandi seperti kloset dan wastafel, model dicek ke admin.</p></div></div><div class="item"><div class="foto"><span>Foto Perkakas (hard tools)</span></div><div class="isi"><span class="tag">Perkakas (hard tools)</span><h3>Perkakas (hard tools)</h3><p>Alat kerja bangunan untuk tukang dan pekerja proyek.</p></div></div></div><div class="aksi"><a class="btn p" href="katalog.html">Buka katalog lengkap</a></div></div></section><section class="alt"><div class="w"><div class="kepala"><span class="kick">Kenapa kami</span><h2>Alasan pelanggan memilih Supermarket Bangunan ACC</h2></div><ul class="cek"><li>Rating 4,8 dari 212 ulasan di Google Maps</li><li>Lokasi di Jl. Kol. Ahmad Syam, Katulampa, Bogor Timur, mudah dicari</li><li>Ragam kategori dalam satu toko: granit, keramik, sanitari, perkakas, dan mesin</li><li>Dibantu banyak staf sales saat memilih material</li><li>Katalog online bisa dibagikan ke kontraktor atau pemilik rumah sebelum datang</li></ul></div></section><section><div class="w"><div class="kepala"><span class="kick">Ulasan</span><h2>Kata pelanggan di Google</h2></div><div class="kartu" style="max-width:520px"><div class="rating">4,8 / 5</div><p>dari 212 ulasan di Google Maps.</p><a class="btn o s" style="margin-top:14px" href="https://maps.google.com/?cid=5699193759350626145&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener">Baca ulasan di Google</a></div></div></section><section class="alt"><div class="w"><div class="grid g2" style="align-items:center"><div><div class="kepala"><span class="kick">Tentang</span><h2>Supermarket Bangunan ACC</h2></div><p class="lead">Supermarket Bangunan ACC adalah toko material di Jl. Kol. Ahmad Syam, Katulampa, Bogor Timur, yang menyediakan bahan bangunan seperti granit, keramik, sanitari, perkakas, dan mesin. Toko ini dikenal lewat ulasan Google Maps dengan rating tinggi dan dibantu banyak staf sales. Website ini dibuat agar kontraktor dan pemilik rumah bisa melihat kategori dan produk sebelum bertanya langsung ke admin lewat WhatsApp.</p></div><div class="foto" style="min-height:280px">Foto tempat usaha / tim</div></div></div></section><section><div class="w"><div class="cta"><h2>Cek katalog dulu, tanya stok via WhatsApp</h2><p>Tanya produk, layanan, atau jadwal langsung ke admin Supermarket Bangunan ACC lewat WhatsApp.</p><a class="btn p" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Supermarket%20Bangunan%20ACC.%20Mau%20tanya%20dulu.">Chat WhatsApp</a></div></div></section>
+<div class="w"><footer>&copy; Supermarket Bangunan ACC — halaman ini <b>contoh tampilan (mockup)</b> buatan <a href="https://pixelweb.id/" target="_blank" rel="noopener">PixelWebID</a>,
+belum dipesan/dibayar. Isi disusun dari riset publik; produk bertanda "contoh kategori" & semua foto diganti aset asli saat website dibuat.</footer></div>
+<a class="wa" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Supermarket%20Bangunan%20ACC.%20Mau%20tanya%20dulu.">WhatsApp</a><script>document.querySelectorAll('.filter button').forEach(function(b){b.onclick=function(){
+document.querySelectorAll('.filter button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+var k=b.dataset.k;document.querySelectorAll('#daftar .item').forEach(function(i){i.style.display=(k==='semua'||i.dataset.k===k)?'':'none'})}})</script></body></html>
