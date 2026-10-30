@@ -1,165 +1,65 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaya Denso Tangerang - Spesialis AC Mobil Profesional Berteknologi Komputer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .accent-blue { color: #38bdf8; }
-        .bg-accent-blue { background-color: #0284c7; }
-    </style>
-</head>
-<body class="bg-slate-50 text-slate-800 font-sans">
-
-    <!-- Navbar Profil Perusahaan -->
-    <nav class="gradient-bg text-white sticky top-0 z-50 shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="bg-sky-500 text-white font-black text-xl px-3 py-1 rounded">DENSO</div>
-                <div>
-                    <h1 class="font-bold text-lg leading-tight">JAYA DENSO TANGERANG</h1>
-                    <p class="text-xs text-slate-300">Spesialis AC Mobil & Recovery Full Flushing</p>
-                </div>
-            </div>
-            <div class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="#tentang" class="hover:text-sky-400">Tentang Bengkel</a>
-                <a href="#teknologi" class="hover:text-sky-400">Teknologi Komputer</a>
-                <a href="#layanan" class="hover:text-sky-400">Layanan & Garansi</a>
-                <a href="#lokasi" class="hover:text-sky-400">Lokasi Cabang</a>
-            </div>
-            <a href="https://wa.me/6287771999977?text=Halo%20Jaya%20Denso,%20saya%20mau%20booking%20jadwal%20servis%20AC" class="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-lg flex items-center space-x-2 transition">
-                <i class="fab fa-whatsapp text-lg"></i>
-                <span>Booking Servis</span>
-            </a>
-        </div>
-    </nav>
-
-    <!-- Hero Section Profil Perusahaan -->
-    <header class="gradient-bg text-white py-16 px-4 border-b border-slate-700">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-            <div>
-                <span class="bg-sky-500/20 text-sky-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Bengkel Spesialis AC Mobil</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-4 leading-tight">Solusi Pasti & Akurat dengan <span class="accent-blue">Sistem Komputerisasi</span></h2>
-                <p class="mt-4 text-slate-300 text-base leading-relaxed">
-                    Menggunakan mesin <strong>RECOVERY FULL FLUSHING</strong> tercanggih. Efisien, hemat waktu, perawatan kompresor optimal & kuras oli tanpa bongkar baut mesin.
-                </p>
-                <div class="mt-8 flex flex-wrap gap-4">
-                    <a href="#lokasi" class="bg-accent-blue hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition">Kunjungi Cabang</a>
-                    <a href="#layanan" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white font-semibold px-6 py-3 rounded-lg transition">Lihat Layanan</a>
-                </div>
-            </div>
-            <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 shadow-2xl">
-                <h3 class="text-lg font-bold text-sky-400 mb-4 flex items-center"><i class="fas fa-shield-alt mr-2"></i> Keunggulan Resmi Jaya Denso</h3>
-                <ul class="space-y-3 text-sm text-slate-200">
-                    <li class="flex items-start"><i class="fas fa-check-circle text-sky-400 mt-1 mr-3"></i> <span><strong>Scan Komputer Akurat:</strong> Deteksi kebocoran & performa presisi.</span></li>
-                    <li class="flex items-start"><i class="fas fa-check-circle text-sky-400 mt-1 mr-3"></i> <span><strong>Mesin Recovery Flushing:</strong> Ganti oli kompresor tanpa bongkar mesin.</span></li>
-                    <li class="flex items-start"><i class="fas fa-check-circle text-sky-400 mt-1 mr-3"></i> <span><strong>Sparepart Asli Denso:</strong> Kualitas terjamin dengan masa garansi nyata.</span></li>
-                    <li class="flex items-start"><i class="fas fa-check-circle text-sky-400 mt-1 mr-3"></i> <span><strong>Teknisi Berpengalaman:</strong> Puluhan tahun menangani ribuan mobil Jepang & Eropa.</span></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <!-- Profil Bengkel & Teknologi -->
-    <section id="teknologi" class="py-14 px-4 max-w-6xl mx-auto">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Teknologi Servis Standar Bengkel Modern</h3>
-            <p class="text-slate-600 mt-2 text-sm">Diagnosa tepat dan penanganan efisien tanpa spekulasi teknis yang buang-buang waktu.</p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fas fa-laptop-medical"></i></div>
-                <h4 class="font-bold text-lg text-slate-800">Computer Diagnostic</h4>
-                <p class="text-sm text-slate-600 mt-2">Pemeriksaan digital tekanan freon, sensor suhu, kelistrikan modul AC, dan kesehatan magnetic clutch secara akurat.</p>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fas fa-sync-alt"></i></div>
-                <h4 class="font-bold text-lg text-slate-800">Recovery Full Flushing</h4>
-                <p class="text-sm text-slate-600 mt-2">Pengurasan oli kompresor lama yang hitam pekat dan penggantian oli baru steril tanpa risiko baut slek atau bocor sambungan.</p>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fas fa-award"></i></div>
-                <h4 class="font-bold text-lg text-slate-800">Garansi Servis Pasti</h4>
-                <p class="text-sm text-slate-600 mt-2">Jaminan kepuasan dingin maksimal dengan garansi pengerjaan dan keaslian komponen OEM resmi Denso.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Layanan Kami -->
-    <section id="layanan" class="bg-slate-100 py-14 px-4 border-y border-slate-200">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center max-w-2xl mx-auto mb-10">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Layanan Bengkel Jaya Denso</h3>
-                <p class="text-slate-600 mt-2 text-sm">Pilihan perawatan lengkap untuk kenyamanan berkendara harian Anda.</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="bg-white p-5 rounded-lg border border-slate-200">
-                    <h5 class="font-bold text-slate-800 flex items-center"><i class="fas fa-tools text-sky-500 mr-2"></i> Servis AC Rutin</h5>
-                    <p class="text-xs text-slate-600 mt-2">Pembersihan blower, filter kabin, cek kebocoran freon, dan desinfektan antibakteri.</p>
-                </div>
-                <div class="bg-white p-5 rounded-lg border border-slate-200">
-                    <h5 class="font-bold text-slate-800 flex items-center"><i class="fas fa-compress-arrows-alt text-sky-500 mr-2"></i> Ganti Kompresor</h5>
-                    <p class="text-xs text-slate-600 mt-2">Pergantian kompresor original Denso baru bergaransi untuk pendinginan maksimal.</p>
-                </div>
-                <div class="bg-white p-5 rounded-lg border border-slate-200">
-                    <h5 class="font-bold text-slate-800 flex items-center"><i class="fas fa-cogs text-sky-500 mr-2"></i> Sparepart Original</h5>
-                    <p class="text-xs text-slate-600 mt-2">Kondensor, evaporator, ekspansi, motor extra fan, relay, dan magnetic clutch.</p>
-                </div>
-                <div class="bg-white p-5 rounded-lg border border-slate-200">
-                    <h5 class="font-bold text-slate-800 flex items-center"><i class="fas fa-car-side text-sky-500 mr-2"></i> Home Service</h5>
-                    <p class="text-xs text-slate-600 mt-2">Layanan pengecekan dan perbaikan langsung ke rumah atau kantor Anda di area Tangerang.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2 Cabang Lokasi Google Maps -->
-    <section id="lokasi" class="py-14 px-4 max-w-6xl mx-auto">
-        <div class="text-center max-w-2xl mx-auto mb-10">
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Cabang & Lokasi Bengkel Kami</h3>
-            <p class="text-slate-600 mt-2 text-sm">Kunjungi bengkel resmi terdekat dari posisi Anda di Tangerang.</p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <div class="flex items-center justify-between mb-4">
-                    <h4 class="font-bold text-lg text-slate-800 flex items-center"><i class="fas fa-map-marker-alt text-red-500 mr-2"></i> Cabang Utama Curug</h4>
-                    <span class="text-xs bg-green-100 text-green-700 px-2.5 py-1 rounded-full font-semibold">Buka Hari Ini</span>
-                </div>
-                <p class="text-sm text-slate-600 mb-4">Area Curug, Tangerang — Melayani perawatan harian, flashing komputer, dan instalasi AC baru.</p>
-                <a href="https://maps.app.goo.gl/zGbojemBfVJm9moq6" target="_blank" class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700">
-                    <span>Petunjuk Rute Google Maps</span>
-                    <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                </a>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <div class="flex items-center justify-between mb-4">
-                    <h4 class="font-bold text-lg text-slate-800 flex items-center"><i class="fas fa-map-marker-alt text-red-500 mr-2"></i> Cabang Karawaci / Tangerang</h4>
-                    <span class="text-xs bg-green-100 text-green-700 px-2.5 py-1 rounded-full font-semibold">Buka Hari Ini</span>
-                </div>
-                <p class="text-sm text-slate-600 mb-4">Wilayah Tangerang Kota & Sekitarnya — Siap melayani booking servis cepat dan konsultasi teknis.</p>
-                <a href="https://maps.app.goo.gl/yVow9CKBEiV11woWA" target="_blank" class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700">
-                    <span>Petunjuk Rute Google Maps</span>
-                    <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Profil Perusahaan -->
-    <footer class="gradient-bg text-slate-300 py-10 px-4 border-t border-slate-800 text-sm">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div>
-                <h5 class="font-bold text-white text-base">JAYA DENSO TANGERANG</h5>
-                <p class="text-xs text-slate-400 mt-1">Spesialis AC Mobil & Mesin Recovery Full Flushing Berteknologi Komputer.</p>
-            </div>
-            <div class="text-xs text-slate-400">
-                © 2026 Jaya Denso. Powered by <a href="https://pixelweb.id" class="text-sky-400 hover:underline">PixelWebID</a>.
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Beranda — Jaya Denso Curug | Contoh tampilan oleh PixelWebID</title>
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0F172A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--b:#1E3A5F;--bd:#0F172A;--bg:#F3F5F8;--ink:#1C1917;--mut:#57534E;--line:#E7E5E4;--sf:#FFFFFF;
+--fj:'Barlow',Georgia,serif;--fi:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:var(--fi);color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.w{max-width:1160px;margin:0 auto;padding:0 20px}
+.lencana{background:#F5F0E6;color:#57534E;font-size:12.5px;font-weight:600;text-align:center;padding:7px 12px;border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.merek{font-family:var(--fj);font-weight:700;font-size:20px;color:var(--bd);letter-spacing:-.01em}
+.menu{display:none;gap:22px;font-size:14.5px;font-weight:600;color:var(--mut)}.menu a.on{color:var(--b)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:8px;font-weight:700;font-size:14.5px;border:1.5px solid var(--b)}
+.btn.p{background:var(--b);color:#fff}.btn.o{color:var(--b);background:transparent}.btn.s{padding:9px 14px;font-size:13px}
+h1,h2,h3{font-family:var(--fj);line-height:1.15;letter-spacing:-.015em;color:var(--ink);margin:0}
+h1{font-size:clamp(32px,4.6vw,54px)}h2{font-size:clamp(25px,3vw,36px)}h3{font-size:18px}
+.kick{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--b);margin-bottom:10px}
+.lead{font-size:17px;color:var(--mut);max-width:60ch}
+section{padding:64px 0}.alt{background:var(--bg)}.gelap{background:var(--bd);color:#F5F5F4}.gelap h2,.gelap h3{color:#fff}.gelap .lead{color:#D6D3D1}
+.kepala{margin-bottom:30px;max-width:720px}
+.foto{position:relative;background:var(--bg);border:1px solid color-mix(in srgb,var(--b) 14%,var(--line));border-radius:10px;display:flex;
+align-items:flex-end;padding:14px;color:var(--bd);font-size:12.5px;font-weight:600;min-height:200px}
+.foto::before{content:"";position:absolute;left:50%;top:44%;width:34px;height:34px;margin:-17px 0 0 -17px;opacity:.35;background:var(--b);
+-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center/contain no-repeat;
+mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center/contain no-repeat}
+.hero{padding:56px 0 64px}.hero .g{display:grid;gap:36px;align-items:center}.hero .foto{min-height:300px}
+.hero.penuh{background:var(--bd);color:#fff}.hero.penuh h1{color:#fff}.hero.penuh .lead{color:#D6D3D1}.hero.penuh .btn.o{color:#fff;border-color:#fff}
+.hero.tengah{text-align:center}.hero.tengah .lead{margin:0 auto}.hero.tengah .aksi{justify-content:center}
+.aksi{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.grid{display:grid;gap:16px}.kartu{background:var(--sf);border:1px solid var(--line);border-radius:10px;padding:22px}
+.kartu p{margin:8px 0 0;color:var(--mut);font-size:14.5px}.no{font-family:var(--fj);font-size:15px;font-weight:700;color:var(--b);margin-bottom:10px}
+.kat{display:flex;flex-direction:column;gap:10px}.kat .foto{min-height:150px}
+.filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.filter button{font:inherit;font-size:13.5px;font-weight:600;border:1px solid var(--line);
+background:#fff;color:var(--mut);padding:8px 14px;border-radius:999px;cursor:pointer}.filter button.on{background:var(--b);border-color:var(--b);color:#fff}
+.item{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.item .foto{border-radius:0;min-height:170px}.item .isi{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.item p{margin:0;color:var(--mut);font-size:14px;flex:1}.tag{font-size:12px;font-weight:700;color:var(--b);text-transform:uppercase;letter-spacing:.06em}
+.harga{font-size:13px;color:#78716C;font-weight:600}.ket-umum{font-size:11.5px;color:#A8A29E}
+.langkah{counter-reset:l}.langkah .kartu::before{counter-increment:l;content:"0" counter(l);font-family:var(--fj);font-weight:700;color:var(--b);display:block;margin-bottom:8px}
+.cek{list-style:none;padding:0;margin:0;display:grid;gap:10px}.cek li{padding-left:26px;position:relative}
+.cek li::before{content:"";position:absolute;left:4px;top:9px;width:11px;height:6px;border-left:2px solid var(--b);border-bottom:2px solid var(--b);transform:rotate(-45deg)}
+.paket{display:flex;flex-direction:column}.paket .btn{margin-top:auto}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}summary{font-weight:700;cursor:pointer}
+.peta{border:0;width:100%;height:320px;border-radius:10px;background:#E7E2DA}
+.cta{background:var(--bd);color:#fff;border-radius:14px;padding:44px 28px;text-align:center}.cta h2{color:#fff}.cta p{color:#D6D3D1;margin:10px auto 22px;max-width:56ch}
+.cta .btn.p{background:#fff;color:var(--bd);border-color:#fff}
+.rating{font-family:var(--fj);font-size:44px;font-weight:700;color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:32px 0 96px;color:#78716C;font-size:13.5px}footer a{color:var(--b);text-decoration:underline}
+.wa{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--b);color:#fff;font-weight:700;border-radius:999px;padding:13px 20px;font-size:14px}
+@media(min-width:720px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(2,1fr)}.g4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.menu{display:flex}.hero .g{grid-template-columns:1.1fr .9fr}.hero.tengah .g{grid-template-columns:1fr}
+.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}section{padding:84px 0}.wa{display:none}footer{padding-bottom:40px}}
+</style></head><body>
+<div class="lencana">Contoh tampilan (mockup) Website Satu Halaman — belum situs resmi Jaya Denso Curug · foto masih placeholder</div>
+<header><div class="w nav"><a class="merek" href="index.html">Jaya Denso Curug</a><nav class="menu"></nav>
+<a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Jaya%20Denso%20Curug.%20Mau%20tanya%20dulu.">WhatsApp</a></div></header>
+<section class="hero split"><div class="w"><div class="g"><div><span class="kick">bengkel spesialis AC mobil Denso · Curug, Tangerang</span><h1>Spesialis AC Mobil Denso di Curug, Tangerang</h1><p class="lead">Servis dan perbaikan AC mobil dengan sparepart merek Denso serta penjelasan garansi servis sebelum pengerjaan. Tanya jadwal dan rincian pekerjaan lewat WhatsApp sebelum datang.</p><div class="aksi"><a class="btn p" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Jaya%20Denso%20Curug.%20Mau%20tanya%20dulu.">Tanya via WhatsApp</a><a class="btn o" href="#layanan">Lihat Layanan</a></div></div><div class="foto">Foto bengkel spesialis AC mobil Denso Jaya Denso Curug (dipasang dari foto asli)</div></div></div></section><section class="alt" id="layanan"><div class="w"><div class="kepala"><span class="kick">Layanan</span><h2>Yang kami kerjakan</h2></div><div class="grid g3"><div class="kartu"><div class="no">01</div><h3>Servis AC tidak dingin</h3><p>Pemeriksaan dan perbaikan AC mobil yang tidak dingin, berisik, atau anginnya lemah.</p></div><div class="kartu"><div class="no">02</div><h3>Isi freon AC</h3><p>Pengisian ulang freon setelah kondisi sistem AC diperiksa lebih dulu.</p></div><div class="kartu"><div class="no">03</div><h3>Deteksi kebocoran freon</h3><p>Pencarian sumber bocor sebelum pekerjaan perbaikan atau penggantian komponen dilakukan.</p></div><div class="kartu"><div class="no">04</div><h3>Cuci evaporator &amp; kondensor</h3><p>Pembersihan komponen AC dari kotoran agar aliran udara dan pendinginan kembali normal.</p></div><div class="kartu"><div class="no">05</div><h3>Perbaikan kompresor AC</h3><p>Penanganan kompresor yang bermasalah, termasuk pengecekan sebelum diganti.</p></div><div class="kartu"><div class="no">06</div><h3>Penggantian sparepart Denso</h3><p>Pemasangan komponen AC bermerek Denso dengan keaslian dikonfirmasi ke pelanggan.</p></div></div></div></section><section><div class="w"><div class="kepala"><span class="kick">Kenapa kami</span><h2>Alasan pelanggan memilih Jaya Denso Curug</h2></div><ul class="cek"><li>Fokus pada AC mobil, bukan servis kendaraan umum</li><li>Sparepart bermerek Denso untuk komponen pengganti</li><li>Keaslian sparepart dijelaskan sebelum pengerjaan</li><li>Ketentuan garansi servis disampaikan di awal</li><li>Bisa tanya kondisi AC lewat WhatsApp sebelum datang</li><li>Berlokasi di Curug, Tangerang</li></ul></div></section><section id="produk"><div class="w"><div class="kepala"><span class="kick">Katalog</span><h2>Produk Jaya Denso Curug</h2><p class=lead>Pilih kategori, tekan tombol, pertanyaan langsung masuk WhatsApp admin.</p></div><div class="filter"><button class="on" data-k="semua">Semua</button><button data-k="Servis &amp; perawatan AC">Servis &amp; perawatan AC</button><button data-k="Perbaikan komponen">Perbaikan komponen</button><button data-k="Sparepart Denso">Sparepart Denso</button></div><div class="grid g4" id="daftar"><div class="item" data-k="Servis &amp; perawatan AC" id="servis-perawatan-ac"><div class="foto">Foto Servis AC tidak dingin</div><div class="isi"><span class="tag">Servis &amp; perawatan AC</span><h3>Servis AC tidak dingin</h3><p>Cek tekanan freon dan kondisi komponen untuk mencari penyebab AC tidak dingin.</p><span class="harga">Harga & stok: tanya admin</span><span class="ket-umum">contoh kategori — diganti produk asli</span><a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Servis%20AC%20tidak%20dingin%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item" data-k="Servis &amp; perawatan AC" id="servis-perawatan-ac"><div class="foto">Foto Isi freon AC</div><div class="isi"><span class="tag">Servis &amp; perawatan AC</span><h3>Isi freon AC</h3><p>Pengisian freon dilakukan setelah pemeriksaan sistem, bukan tanpa cek.</p><span class="harga">Harga & stok: tanya admin</span><span class="ket-umum">contoh kategori — diganti produk asli</span><a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Isi%20freon%20AC%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item" data-k="Servis &amp; perawatan AC" id="servis-perawatan-ac"><div class="foto">Foto Cuci evaporator</div><div class="isi"><span class="tag">Servis &amp; perawatan AC</span><h3>Cuci evaporator</h3><p>Pembersihan evaporator untuk mengurangi bau dan angin yang lemah.</p><span class="harga">Harga & stok: tanya admin</span><span class="ket-umum">contoh kategori — diganti produk asli</span><a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Cuci%20evaporator%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item" data-k="Servis &amp; perawatan AC" id="servis-perawatan-ac"><div class="foto">Foto Deteksi kebocoran freon</div><div class="isi"><span class="tag">Servis &amp; perawatan AC</span><h3>Deteksi kebocoran freon</h3><p>Penelusuran titik bocor agar freon tidak habis berulang.</p><span class="harga">Harga & stok: tanya admin</span><span class="ket-umum">contoh kategori — diganti produk asli</span><a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Deteksi%20kebocoran%20freon%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item" data-k="Perbaikan komponen" id="perbaikan-komponen"><div class="foto">Foto Servis kompresor AC</div><div class="isi"><span class="tag">Perbaikan komponen</span><h3>Servis kompresor AC</h3><p>Pengecekan kompresor untuk menentukan perbaikan atau penggantian.</p><span class="harga">Harga & stok: tanya admin</span><span class="ket-umum">contoh kategori — diganti produk asli</span><a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Servis%20kompresor%20AC%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item" data-k="Sparepart Denso" id="sparepart-denso"><div class="foto">Foto Kompresor AC Denso</div><div class="isi"><span class="tag">Sparepart Denso</span><h3>Kompresor AC Denso</h3><p>Komponen pengganti bermerek Denso; tipe yang cocok dikonfirmasi ke admin.</p><span class="harga">Harga & stok: tanya admin</span><a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Kompresor%20AC%20Denso%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item" data-k="Sparepart Denso" id="sparepart-denso"><div class="foto">Foto Filter kabin</div><div class="isi"><span class="tag">Sparepart Denso</span><h3>Filter kabin</h3><p>Penyaring udara kabin; ketersediaan ukuran ditanyakan lewat WhatsApp.</p><span class="harga">Harga & stok: tanya admin</span><span class="ket-umum">contoh kategori — diganti produk asli</span><a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Filter%20kabin%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div><div class="item" data-k="Sparepart Denso" id="sparepart-denso"><div class="foto">Foto Kondensor AC</div><div class="isi"><span class="tag">Sparepart Denso</span><h3>Kondensor AC</h3><p>Komponen pendingin yang letaknya di depan radiator; tipe disesuaikan mobil.</p><span class="harga">Harga & stok: tanya admin</span><span class="ket-umum">contoh kategori — diganti produk asli</span><a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Kondensor%20AC%20%28dari%20contoh%20website%29.">Pesan via WhatsApp</a></div></div></div></div></section><section class="alt"><div class="w"><div class="kepala"><span class="kick">Paket</span><h2>Pilihan paket</h2><p class=lead>Harga dikonfirmasi admin sesuai kebutuhan.</p></div><div class="grid g3"><div class="kartu paket"><h3>Paket pemeriksaan AC</h3><ul class="cek" style="margin:14px 0 18px"><li>Pengecekan kondisi AC dan tekanan freon</li><li>Penjelasan temuan sebelum pekerjaan</li><li>Rincian biaya dikonfirmasi lewat WhatsApp</li></ul><a class="btn o s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Paket%20pemeriksaan%20AC">Tanya paket ini</a></div><div class="kartu paket"><h3>Paket perawatan AC</h3><ul class="cek" style="margin:14px 0 18px"><li>Pembersihan evaporator dan kondensor</li><li>Pengecekan aliran udara kabin</li><li>Jadwal pengerjaan diatur lewat WhatsApp</li></ul><a class="btn o s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Paket%20perawatan%20AC">Tanya paket ini</a></div><div class="kartu paket"><h3>Paket penggantian sparepart Denso</h3><ul class="cek" style="margin:14px 0 18px"><li>Komponen bermerek Denso sesuai kebutuhan</li><li>Keaslian sparepart dijelaskan ke pelanggan</li><li>Ketentuan garansi dikonfirmasi admin</li></ul><a class="btn o s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20mau%20tanya%20Paket%20penggantian%20sparepart%20Denso">Tanya paket ini</a></div></div></div></section><section><div class="w"><div class="kepala"><span class="kick">Alur</span><h2>Cara kerja kami</h2></div><div class="grid g4 langkah"><div class="kartu"><h3>Tanya lewat WhatsApp</h3><p>Sampaikan keluhan AC, merek dan tipe mobil, lalu tanyakan jadwal kedatangan.</p></div><div class="kartu"><h3>Pemeriksaan di bengkel</h3><p>Teknisi memeriksa kondisi AC dan mencari sumber masalahnya.</p></div><div class="kartu"><h3>Konfirmasi pekerjaan</h3><p>Komponen yang perlu diganti, keaslian sparepart, dan garansi dijelaskan sebelum dikerjakan.</p></div><div class="kartu"><h3>Pengerjaan</h3><p>Perbaikan atau penggantian komponen dikerjakan di bengkel.</p></div><div class="kartu"><h3>Penyerahan unit</h3><p>Hasil pekerjaan dicek bersama pelanggan, termasuk ketentuan garansi servisnya.</p></div></div></div></section><section class="alt"><div class="w"><div class="grid g2" style="align-items:center"><div><div class="kepala"><span class="kick">Tentang</span><h2>Jaya Denso Curug</h2></div><p class="lead">Jaya Denso Curug melayani perawatan dan perbaikan AC mobil dengan fokus pada komponen bermerek Denso. Pelanggan bisa menanyakan keaslian sparepart dan masa garansi servis langsung ke admin sebelum datang ke bengkel. Pengerjaan dilakukan teknisi yang biasa menangani AC berbagai jenis mobil.</p></div><div class="foto" style="min-height:280px">Foto tempat usaha / tim</div></div></div></section><section><div class="w"><div class="kepala"><span class="kick">Galeri</span><h2>Lihat langsung</h2><p class=lead>Foto asli dipasang saat website dibuat.</p></div><div class="grid g4"><div class="foto">Tampak depan bengkel</div><div class="foto">Area pengerjaan AC</div><div class="foto">Meja penerimaan dan konsultasi</div><div class="foto">Komponen dan sparepart Denso</div><div class="foto">Unit mobil saat diservis</div><div class="foto">Ruang tunggu pelanggan</div></div></div></section><section class="alt"><div class="w" style="max-width:860px"><div class="kepala"><span class="kick">FAQ</span><h2>Pertanyaan yang sering ditanyakan</h2></div><details><summary>Apakah harus menghubungi admin dulu sebelum datang?</summary><p>Sebaiknya begitu, agar jadwal dan antrean bisa dipastikan. Silakan tanya jadwal kedatangan lewat WhatsApp.</p></details><details><summary>Apakah sparepart yang dipakai asli Denso?</summary><p>Merek dan keaslian komponen dijelaskan admin saat konfirmasi pekerjaan. Silakan tanyakan lewat WhatsApp.</p></details><details><summary>Berapa lama masa garansi servisnya?</summary><p>Masa garansi berbeda untuk tiap jenis pekerjaan. Silakan konfirmasi ke admin lewat WhatsApp.</p></details><details><summary>Bisa menangani AC semua merek mobil?</summary><p>Sampaikan merek dan tipe mobil ke admin lewat WhatsApp agar bisa dipastikan penanganannya.</p></details><details><summary>Berapa biaya servis AC di sini?</summary><p>Biaya tergantung hasil pemeriksaan dan komponen yang diganti. Rinciannya disampaikan admin lewat WhatsApp.</p></details><details><summary>Apakah bisa datang tanpa janji?</summary><p>Bisa ditanyakan langsung, tetapi lebih aman konfirmasi jadwal lewat WhatsApp lebih dulu.</p></details></div></section><section><div class="w"><div class="cta"><h2>Tanya garansi &amp; keaslian sparepart dulu</h2><p>Tanya produk, layanan, atau jadwal langsung ke admin Jaya Denso Curug lewat WhatsApp.</p><a class="btn p" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Jaya%20Denso%20Curug.%20Mau%20tanya%20dulu.">Chat WhatsApp</a></div></div></section><section class="alt"><div class="w"><div class="grid g2"><div><div class="kepala"><span class="kick">Kontak</span><h2>Kunjungi atau hubungi kami</h2></div><ul class="cek"><li>Alamat: Curug, Tangerang (alamat lengkap diisi)</li><li>Jam buka: diisi pemilik</li><li>WhatsApp admin: tombol di bawah</li></ul><div class="aksi"><a class="btn p" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Jaya%20Denso%20Curug.%20Mau%20tanya%20dulu.">Chat WhatsApp</a></div></div><iframe class="peta" loading="lazy" src="https://www.google.com/maps?q=Jaya%20Denso%20Curug%20Curug%2C%20Tangerang&output=embed" title="Peta Jaya Denso Curug"></iframe></div></div></section>
+<div class="w"><footer>&copy; Jaya Denso Curug — halaman ini <b>contoh tampilan (mockup)</b> buatan <a href="https://pixelweb.id/" target="_blank" rel="noopener">PixelWebID</a>,
+belum dipesan/dibayar. Isi disusun dari riset publik; produk bertanda "contoh kategori" & semua foto diganti aset asli saat website dibuat.</footer></div>
+<a class="wa" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20Jaya%20Denso%20Curug.%20Mau%20tanya%20dulu.">WhatsApp</a><script>document.querySelectorAll('.filter button').forEach(function(b){b.onclick=function(){
+document.querySelectorAll('.filter button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+var k=b.dataset.k;document.querySelectorAll('#daftar .item').forEach(function(i){i.style.display=(k==='semua'||i.dataset.k===k)?'':'none'})}})</script></body></html>
