@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Layanan Terapi — FISIOTERAPI BOGOR | Contoh tampilan oleh PixelWebID</title>
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#134E4A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--b:#0F766E;--bd:#134E4A;--bg:#F0F7F6;--ink:#1C1917;--mut:#57534E;--line:#E7E5E4;--sf:#FFFFFF;
+--fj:'Manrope',Georgia,serif;--fi:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:var(--fi);color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.w{max-width:1160px;margin:0 auto;padding:0 20px}
+.lencana{background:#F5F0E6;color:#57534E;font-size:12.5px;font-weight:600;text-align:center;padding:7px 12px;border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.merek{font-family:var(--fj);font-weight:700;font-size:20px;color:var(--bd);letter-spacing:-.01em}
+.menu{display:none;gap:22px;font-size:14.5px;font-weight:600;color:var(--mut)}.menu a.on{color:var(--b)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:8px;font-weight:700;font-size:14.5px;border:1.5px solid var(--b)}
+.btn.p{background:var(--b);color:#fff}.btn.o{color:var(--b);background:transparent}.btn.s{padding:9px 14px;font-size:13px}
+h1,h2,h3{font-family:var(--fj);line-height:1.15;letter-spacing:-.015em;color:var(--ink);margin:0}
+h1{font-size:clamp(32px,4.6vw,54px)}h2{font-size:clamp(25px,3vw,36px)}h3{font-size:18px}
+.kick{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--b);margin-bottom:10px}
+.lead{font-size:17px;color:var(--mut);max-width:60ch}
+section{padding:64px 0}.alt{background:var(--bg)}.gelap{background:var(--bd);color:#F5F5F4}.gelap h2,.gelap h3{color:#fff}.gelap .lead{color:#D6D3D1}
+.kepala{margin-bottom:30px;max-width:720px}
+.foto{position:relative;background:var(--bg);border:1px solid color-mix(in srgb,var(--b) 14%,var(--line));border-radius:10px;display:flex;
+align-items:flex-end;padding:14px;color:var(--bd);font-size:12.5px;font-weight:600;min-height:200px}
+.foto::before{content:"";position:absolute;left:50%;top:44%;width:34px;height:34px;margin:-17px 0 0 -17px;opacity:.35;background:var(--b);
+-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center/contain no-repeat;
+mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center/contain no-repeat}
+.hero{padding:56px 0 64px}.hero .g{display:grid;gap:36px;align-items:center}.hero .foto{min-height:300px}
+.hero.penuh{background:var(--bd);color:#fff}.hero.penuh h1{color:#fff}.hero.penuh .lead{color:#D6D3D1}.hero.penuh .btn.o{color:#fff;border-color:#fff}
+.hero.tengah{text-align:center}.hero.tengah .lead{margin:0 auto}.hero.tengah .aksi{justify-content:center}
+.aksi{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.grid{display:grid;gap:16px}.kartu{background:var(--sf);border:1px solid var(--line);border-radius:10px;padding:22px}
+.kartu p{margin:8px 0 0;color:var(--mut);font-size:14.5px}.no{font-family:var(--fj);font-size:15px;font-weight:700;color:var(--b);margin-bottom:10px}
+.kat{display:flex;flex-direction:column;gap:10px}.kat .foto{min-height:150px}
+.filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.filter button{font:inherit;font-size:13.5px;font-weight:600;border:1px solid var(--line);
+background:#fff;color:var(--mut);padding:8px 14px;border-radius:999px;cursor:pointer}.filter button.on{background:var(--b);border-color:var(--b);color:#fff}
+.item{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.item .foto{border-radius:0;min-height:170px}.item .isi{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.item p{margin:0;color:var(--mut);font-size:14px;flex:1}.tag{font-size:12px;font-weight:700;color:var(--b);text-transform:uppercase;letter-spacing:.06em}
+.harga{font-size:13px;color:#78716C;font-weight:600}.ket-umum{font-size:11.5px;color:#A8A29E}
+.langkah{counter-reset:l}.langkah .kartu::before{counter-increment:l;content:"0" counter(l);font-family:var(--fj);font-weight:700;color:var(--b);display:block;margin-bottom:8px}
+.cek{list-style:none;padding:0;margin:0;display:grid;gap:10px}.cek li{padding-left:26px;position:relative}
+.cek li::before{content:"";position:absolute;left:4px;top:9px;width:11px;height:6px;border-left:2px solid var(--b);border-bottom:2px solid var(--b);transform:rotate(-45deg)}
+.paket{display:flex;flex-direction:column}.paket .btn{margin-top:auto}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}summary{font-weight:700;cursor:pointer}
+.peta{border:0;width:100%;height:320px;border-radius:10px;background:#E7E2DA}
+.cta{background:var(--bd);color:#fff;border-radius:14px;padding:44px 28px;text-align:center}.cta h2{color:#fff}.cta p{color:#D6D3D1;margin:10px auto 22px;max-width:56ch}
+.cta .btn.p{background:#fff;color:var(--bd);border-color:#fff}
+.rating{font-family:var(--fj);font-size:44px;font-weight:700;color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:32px 0 96px;color:#78716C;font-size:13.5px}footer a{color:var(--b);text-decoration:underline}
+.wa{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--b);color:#fff;font-weight:700;border-radius:999px;padding:13px 20px;font-size:14px}
+@media(min-width:720px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(2,1fr)}.g4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.menu{display:flex}.hero .g{grid-template-columns:1.1fr .9fr}.hero.tengah .g{grid-template-columns:1fr}
+.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}section{padding:84px 0}.wa{display:none}footer{padding-bottom:40px}}
+</style></head><body>
+<div class="lencana">Contoh tampilan (mockup) Website Profil Usaha — belum situs resmi FISIOTERAPI BOGOR · foto masih placeholder</div>
+<header><div class="w nav"><a class="merek" href="index.html">FISIOTERAPI BOGOR</a><nav class="menu"><a href="index.html">Beranda</a><a href="tentang.html">Tentang Kami</a><a href="layanan.html" class=on>Layanan Terapi</a><a href="tim-fasilitas.html">Terapis &amp; Fasilitas</a><a href="kontak.html">Kontak &amp; Jadwal</a></nav>
+<a class="btn p s" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20FISIOTERAPI%20BOGOR.%20Mau%20tanya%20dulu.">WhatsApp</a></div></header>
+<section class="alt" style="padding:44px 0"><div class="w"><span class="kick">FISIOTERAPI BOGOR</span><h1 style="font-size:clamp(28px,3.6vw,42px)">Layanan Terapi</h1></div></section><section class="alt" id="layanan"><div class="w"><div class="kepala"><span class="kick">Layanan</span><h2>Yang kami kerjakan</h2></div><div class="grid g3"><div class="kartu"><div class="no">01</div><h3>Fisioterapi Cedera Olahraga</h3><p>Penanganan terarah untuk memulihkan jaringan otot dan sendi yang cedera akibat aktivitas olahraga.</p></div><div class="kartu"><div class="no">02</div><h3>Rehabilitasi &amp; Return to Sport</h3><p>Program latihan bertahap guna mengembalikan kesiapan fisik sebelum kembali aktif berolahraga secara optimal.</p></div><div class="kartu"><div class="no">03</div><h3>Pemulihan Fungsi Gerak</h3><p>Terapi fisik untuk meredakan kekakuan serta mengembalikan rentang gerak tubuh pada aktivitas harian.</p></div><div class="kartu"><div class="no">04</div><h3>Asesmen Fisioterapi Awal</h3><p>Pemeriksaan menyeluruh terhadap keluhan fisik guna menentukan rencana program terapi yang sesuai.</p></div></div></div></section><section><div class="w"><div class="kepala"><span class="kick">Alur</span><h2>Cara kerja kami</h2></div><div class="grid g4 langkah"><div class="kartu"><h3>Konsultasi Keluhan Awal</h3><p>Calon pasien menyampaikan keluhan cedera dan riwayat aktivitas melalui WhatsApp admin.</p></div><div class="kartu"><h3>Konfirmasi Jadwal Sesi</h3><p>Admin membantu menentukan waktu kedatangan yang tersedia untuk sesi fisioterapi di klinik.</p></div><div class="kartu"><h3>Pemeriksaan Fisik Langsung</h3><p>Fisioterapis memeriksa rentang gerak, tingkat nyeri, dan kondisi jaringan tubuh yang bermasalah.</p></div><div class="kartu"><h3>Pelaksanaan Terapi &amp; Evaluasi</h3><p>Pasien menjalani tindakan terapi terarah disertai panduan latihan mandiri di rumah.</p></div></div></div></section><section class="alt"><div class="w" style="max-width:860px"><div class="kepala"><span class="kick">FAQ</span><h2>Pertanyaan yang sering ditanyakan</h2></div><details><summary>Bagaimana cara mengatur jadwal sesi fisioterapi?</summary><p>Silakan konfirmasi ke admin lewat WhatsApp untuk mencocokkan waktu sesi terapi yang tersedia.</p></details><details><summary>Berapa lama durasi untuk setiap sesi terapi?</summary><p>Durasi dan rincian tahapan sesi dapat dikonfirmasikan langsung ke admin lewat WhatsApp.</p></details><details><summary>Apakah melayani penanganan cedera selain cedera olahraga?</summary><p>Untuk rincian jenis cedera atau keluhan fisik yang dapat ditangani, silakan tanyakan kepada admin lewat WhatsApp.</p></details><details><summary>Berapa biaya per sesi fisioterapi di klinik ini?</summary><p>Informasi biaya layanan dan program penanganan silakan konfirmasi langsung ke admin lewat WhatsApp.</p></details></div></section><section><div class="w"><div class="cta"><h2>Konsultasi keluhan gerak lewat WhatsApp</h2><p>Tanya produk, layanan, atau jadwal langsung ke admin FISIOTERAPI BOGOR lewat WhatsApp.</p><a class="btn p" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20FISIOTERAPI%20BOGOR.%20Mau%20tanya%20dulu.">Chat WhatsApp</a></div></div></section>
+<div class="w"><footer>&copy; FISIOTERAPI BOGOR — halaman ini <b>contoh tampilan (mockup)</b> buatan <a href="https://pixelweb.id/" target="_blank" rel="noopener">PixelWebID</a>,
+belum dipesan/dibayar. Isi disusun dari riset publik; produk bertanda "contoh kategori" & semua foto diganti aset asli saat website dibuat.</footer></div>
+<a class="wa" href="https://wa.me/6285148367541?text=Halo%2C%20saya%20lihat%20contoh%20tampilan%20website%20FISIOTERAPI%20BOGOR.%20Mau%20tanya%20dulu.">WhatsApp</a></body></html>
